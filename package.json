@@ -1,14 +1,17 @@
 {
   "name": "@Reiket/ecars-web-lib",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "files": [
-    "/dist"
+    "dist/*",
+    "src/**/*",
+    "package.json"
   ],
+
   "scripts": {
     "build": "tsc && vite build",
     "build:dev": "tsc && vite build --mode development",
@@ -24,11 +27,12 @@
     "ajv": "^8.17.1",
     "ajv-draft-04": "^1.0.0",
     "clsx": "^2.1.1",
+    "esbuild-plugin-sass": "^1.0.1",
     "init": "^0.1.2",
     "prettier": "^3.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "^1.82.0",
+    "sass": "^1.83.4",
     "storybook": "^8.4.6",
     "storybook-addon-sass-postcss": "^0.3.2"
   },
@@ -58,7 +62,8 @@
     "vite-plugin-dts": "^4.3.0"
   },
   "peerDependencies": {
-    "react": "^18.3.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "repository": "https://github.com/Reiket/ecars-web-lib.git",
   "author": "Reiket <olinyko2607@gmail.com>",
