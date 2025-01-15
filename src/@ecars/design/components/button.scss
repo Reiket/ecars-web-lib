@@ -1,0 +1,48 @@
+@use "sass:math";
+@import "@ecars/design/settings";
+.button {
+  display: inline-block;
+  padding: rem(16.5) rem(32);
+  border-radius: rem(8);
+  color: $whiteColor;
+  outline: none;
+  font-weight: 500;
+  line-height: math.div(19.36, 16);
+  transition: all 0.3s linear;
+  border: rem(1) solid transparent;
+  &.red {
+    background: red;
+  }
+  &.blue {
+    background: blue;
+  }
+  &:disabled {
+    cursor: auto;
+    border-color: transparent;
+  }
+  &-green {
+    background-color: get-color($buttonGreenColor, "default");
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: get-color($buttonGreenColor, "hover");
+      }
+    }
+    &:active {
+      background-color: get-color($buttonGreenColor, "press");
+      border-color: get-color($buttonGreenColor, "press-border");
+    }
+    &:disabled {
+      background-color: get-color($buttonGreenColor, "disabled");
+      color: get-color($buttonGreenColor, "disabled-text");
+    }
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(10);
+    svg {
+      font-size: rem(12);
+    }
+  }
+}
