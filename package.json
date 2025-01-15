@@ -1,7 +1,7 @@
 {
-  "name": "ecars-web-lib",
+  "name": "@Reiket/ecars-web-lib",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -10,10 +10,8 @@
     "/dist"
   ],
   "scripts": {
-    "start": "vite",
     "build": "tsc && vite build",
     "build:dev": "tsc && vite build --mode development",
-    "preview": "vite preview",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "prettier": "prettier src --ext .js,.jsx,.ts,.tsx",
@@ -62,10 +60,10 @@
   "peerDependencies": {
     "react": "^18.3.1"
   },
-  "repository": "https://github.com/Reiket/ecars-web.git",
+  "repository": "https://github.com/Reiket/ecars-web-lib.git",
   "author": "Reiket <olinyko2607@gmail.com>",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/Reiket"
   }
 }
