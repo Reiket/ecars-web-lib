@@ -20,6 +20,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
+    "typeRoots": ["./dist/index.d.ts", "node_modules/@types"]
   },
-  "include": ["src", "src/declaration.d.ts", "jest.setup.js", "vite.config.ts"]
+  "include": ["src", "./index.ts","src/declaration.d.ts", "jest.setup.js", "vite.config.ts"],
 }
