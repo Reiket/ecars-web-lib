@@ -1,0 +1,487 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Additional tests for Button component changes button text according to the children text 1`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    Confirm
+  </button>
+</div>
+`;
+
+exports[`Additional tests for Button component changes button text according to the text prop 1`] = `
+<div>
+  <button
+    class="button button-big button-white"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    Confirm
+  </button>
+</div>
+`;
+
+exports[`Additional tests for Button component handles the click event 1`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size big, type button 1`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    disabled=""
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size big, type button 2`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size big, type reset 1`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    disabled=""
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size big, type reset 2`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size big, type submit 1`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    disabled=""
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size big, type submit 2`] = `
+<div>
+  <button
+    class="button button-big button-gray"
+    data-testid="buttonTestId"
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size small, type button 1`] = `
+<div>
+  <button
+    class="button button-small button-gray"
+    data-testid="buttonTestId"
+    disabled=""
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size small, type button 2`] = `
+<div>
+  <button
+    class="button button-small button-gray"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size small, type reset 1`] = `
+<div>
+  <button
+    class="button button-small button-gray"
+    data-testid="buttonTestId"
+    disabled=""
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size small, type reset 2`] = `
+<div>
+  <button
+    class="button button-small button-gray"
+    data-testid="buttonTestId"
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size small, type submit 1`] = `
+<div>
+  <button
+    class="button button-small button-gray"
+    data-testid="buttonTestId"
+    disabled=""
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color gray, size small, type submit 2`] = `
+<div>
+  <button
+    class="button button-small button-gray"
+    data-testid="buttonTestId"
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size big, type button 1`] = `
+<div>
+  <button
+    class="button button-big button-green"
+    data-testid="buttonTestId"
+    disabled=""
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size big, type button 2`] = `
+<div>
+  <button
+    class="button button-big button-green"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size big, type reset 1`] = `
+<div>
+  <button
+    class="button button-big button-green"
+    data-testid="buttonTestId"
+    disabled=""
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size big, type reset 2`] = `
+<div>
+  <button
+    class="button button-big button-green"
+    data-testid="buttonTestId"
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size big, type submit 1`] = `
+<div>
+  <button
+    class="button button-big button-green"
+    data-testid="buttonTestId"
+    disabled=""
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size big, type submit 2`] = `
+<div>
+  <button
+    class="button button-big button-green"
+    data-testid="buttonTestId"
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size small, type button 1`] = `
+<div>
+  <button
+    class="button button-small button-green"
+    data-testid="buttonTestId"
+    disabled=""
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size small, type button 2`] = `
+<div>
+  <button
+    class="button button-small button-green"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size small, type reset 1`] = `
+<div>
+  <button
+    class="button button-small button-green"
+    data-testid="buttonTestId"
+    disabled=""
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size small, type reset 2`] = `
+<div>
+  <button
+    class="button button-small button-green"
+    data-testid="buttonTestId"
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size small, type submit 1`] = `
+<div>
+  <button
+    class="button button-small button-green"
+    data-testid="buttonTestId"
+    disabled=""
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color green, size small, type submit 2`] = `
+<div>
+  <button
+    class="button button-small button-green"
+    data-testid="buttonTestId"
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size big, type button 1`] = `
+<div>
+  <button
+    class="button button-big button-white"
+    data-testid="buttonTestId"
+    disabled=""
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size big, type button 2`] = `
+<div>
+  <button
+    class="button button-big button-white"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size big, type reset 1`] = `
+<div>
+  <button
+    class="button button-big button-white"
+    data-testid="buttonTestId"
+    disabled=""
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size big, type reset 2`] = `
+<div>
+  <button
+    class="button button-big button-white"
+    data-testid="buttonTestId"
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size big, type submit 1`] = `
+<div>
+  <button
+    class="button button-big button-white"
+    data-testid="buttonTestId"
+    disabled=""
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size big, type submit 2`] = `
+<div>
+  <button
+    class="button button-big button-white"
+    data-testid="buttonTestId"
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size small, type button 1`] = `
+<div>
+  <button
+    class="button button-small button-white"
+    data-testid="buttonTestId"
+    disabled=""
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size small, type button 2`] = `
+<div>
+  <button
+    class="button button-small button-white"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size small, type reset 1`] = `
+<div>
+  <button
+    class="button button-small button-white"
+    data-testid="buttonTestId"
+    disabled=""
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size small, type reset 2`] = `
+<div>
+  <button
+    class="button button-small button-white"
+    data-testid="buttonTestId"
+    type="reset"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size small, type submit 1`] = `
+<div>
+  <button
+    class="button button-small button-white"
+    data-testid="buttonTestId"
+    disabled=""
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Button component renders button with color white, size small, type submit 2`] = `
+<div>
+  <button
+    class="button button-small button-white"
+    data-testid="buttonTestId"
+    type="submit"
+  >
+    button
+  </button>
+</div>
+`;

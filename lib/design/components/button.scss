@@ -1,0 +1,65 @@
+@use "sass:math";
+@import "../settings";
+.button {
+  font-weight: 600;
+  display: inline-block;
+  border-radius: rem(8);
+  position: relative;
+  transition: all .5s ease 0s;
+  z-index: 1;
+  overflow: hidden;
+  &:not(&:disabled) {
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      border-radius: rem(8);
+      transition: all .5s ease;
+    }
+    @media (any-hover: hover){
+      &:hover {
+        &::after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-green {
+    background: get-color($buttonColors, "green");
+    color: get-color($buttonColors, "white");
+    &::after {
+      background-color: get-color($buttonColors, "hover-green");
+    }
+  }
+  &-white {
+    background: get-color($buttonColors, "white");
+    color: get-color($buttonColors, "green");
+    &::after {
+      background-color: get-color($buttonColors, "hover-white");
+    }
+  }
+  &-gray {
+    background: get-color($buttonColors, "gray");
+    color: $main-color;
+    &::after {
+      background-color: get-color($buttonColors, "hover-gray");
+    }
+  }
+  &-big {
+    padding: rem(12) rem(29.5);
+  }
+  &-small {
+    padding: rem(6) rem(12);
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 40%;
+  }
+}
+
+

@@ -4,9 +4,6 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "paths": {
-      "@ecars/*": ["src/@ecars/*"]
-    },
     "target": "ESNext",
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
@@ -20,7 +17,10 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
+    "paths": {
+      "@/*": ["lib/*"]
+    },
     "typeRoots": ["./dist/index.d.ts", "node_modules/@types"]
   },
-  "include": ["src", "./index.ts","src/declaration.d.ts", "jest.setup.js", "vite.config.ts"],
+  "include": ["src", "lib"]
 }
