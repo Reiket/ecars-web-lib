@@ -14,7 +14,7 @@ describe('Button component', () => {
     sizes.forEach((size) => {
       types.forEach((type) => {
         disabledOptions.forEach((disabled) => {
-          const testName = `renders button with color ${color}, size ${size}, type ${type || 'button'}`;
+          const testName = `renders button with color ${color}, size ${size}, type ${type || 'button'} and disabled`;
           test(testName, () => {
             const {container} = render(
               <Button

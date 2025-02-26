@@ -3,12 +3,12 @@ import {BUTTON_TEST_ID, ButtonAttributesType, ButtonColorType, ButtonSizeType} f
 import {cn} from '@/services/helpers';
 
 export interface ButtonProps {
+  size: ButtonSizeType;
+  children: ReactNode;
+  color: ButtonColorType;
   type?: ButtonAttributesType;
   disabled?: boolean;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-  children: ReactNode;
-  color: ButtonColorType;
-  size: ButtonSizeType;
 }
 
 export const Button: FC<ButtonProps> = ({children, size, color, onClick, type = "button", disabled = false}) => {

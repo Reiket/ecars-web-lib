@@ -5,20 +5,20 @@ function App() {
   return (
     <Section title="Button Example">
       <Button
-        color={'green'}
-        size={'big'}
+        color="green"
+        size="big"
       >
         Click Me!
       </Button>
       <Button
-        color={'gray'}
-        size={'big'}
+        color="gray"
+        size="big"
       >
         Click Me!
       </Button>
       <Button
-        color={'white'}
-        size={'big'}
+        color="white"
+        size="small"
       >
         Click Me!
       </Button>
