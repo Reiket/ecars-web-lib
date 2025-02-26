@@ -1,5 +1,5 @@
 import type {Preview} from '@storybook/react';
-import '@ecars/design/styles.scss';
+import '@/global.scss'
 const preview: Preview = {
   parameters: {
     controls: {

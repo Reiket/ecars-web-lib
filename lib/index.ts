@@ -1,3 +1,3 @@
-import './@ecars/design/styles.scss';
+import '@/global.scss'
 
 export { Button } from "./components/Button/Button";
