@@ -44,6 +44,7 @@
     "prettier": "^3.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
     "storybook": "^8.4.6",
     "storybook-addon-sass-postcss": "^0.3.2",
     "ts-jest": "^29.2.5",

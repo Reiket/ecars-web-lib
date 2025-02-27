@@ -1,0 +1,65 @@
+@use "sass:math";
+@import "../settings";
+.favorite-button {
+  width: rem(32);
+  height: rem(32);
+  z-index: 10;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s linear;
+  svg {
+    transition: color 0.3s linear;
+
+  }
+  &:disabled svg {
+    cursor: auto;
+    opacity: 80%;
+  }
+  &-transparent {
+    svg {
+      color: get-color($favButtonColors, "transparent");
+      font-size: rem(20);
+    }
+    &:not(&:disabled) {
+      @media (any-hover: hover) {
+        &:hover {
+          svg {
+            color: get-color($favButtonColors, "transparent-hover");
+          }
+        }
+      }
+      &.active {
+        @media (any-hover: hover) {
+          &:hover {
+            svg {
+              color: get-color($favButtonColors, "transparent-hover-active");
+            }
+          }
+        }
+      }
+
+    }
+    &.active {
+      svg {
+        color: get-color($favButtonColors, "transparent-active");
+      }
+    }
+  }
+  &-circle {
+    background: get-color($favButtonColors, "circle");
+    border-radius: 50%;
+    svg {
+      color: $color-white;
+      font-size: rem(16);
+    }
+    &:not(&:disabled) {
+      @media (any-hover: hover) {
+        &:hover {
+          background: get-color($favButtonColors, "circle-hover");
+        }
+      }
+    }
+  }
+}
