@@ -11,12 +11,12 @@ export interface ButtonProps {
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const Button: FC<ButtonProps> = ({children, size, color, onClick, type = "button", disabled = false}) => {
-  const classNames = cn("button", `button-${size}`, `button-${color}`)
+export const Button: FC<ButtonProps> = ({children, size, color, onClick, type = 'button', disabled = false}) => {
+  const classNames = cn('button', `button-${size}`, `button-${color}`);
   return (
     <button
       data-testid={BUTTON_TEST_ID}
-      className= {classNames}
+      className={classNames}
       disabled={disabled}
       type={type}
       onClick={onClick}

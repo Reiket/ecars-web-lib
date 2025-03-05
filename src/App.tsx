@@ -27,8 +27,8 @@ function App() {
       </Section>
       <Section title="Favorite Button Example">
         <FavButton
-          type="circle"
           isFavorite
+          type="circle"
         />
         <FavButton type="transparent" />
       </Section>

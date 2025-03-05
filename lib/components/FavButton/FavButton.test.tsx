@@ -3,9 +3,9 @@ import '@testing-library/jest-dom';
 import {FAV_BUTTON_TEST_ID, FAV_BUTTON_TYPE} from '@/components/FavButton/constants';
 import {FavButton} from '@/components/FavButton/FavButton';
 
-
 describe('Fav Button component', () => {
-  afterEach(cleanup);const types = Object.values(FAV_BUTTON_TYPE);
+  afterEach(cleanup);
+  const types = Object.values(FAV_BUTTON_TYPE);
   const disabledOptions = [true, false];
   types.forEach((type) => {
     disabledOptions.forEach((disabled) => {
@@ -15,7 +15,7 @@ describe('Fav Button component', () => {
           <FavButton
             type={type}
             disabled={disabled}
-          />
+          />,
         );
         const favButtonElement = screen.getByTestId(FAV_BUTTON_TEST_ID) as HTMLButtonElement;
         expect(favButtonElement).toBeInTheDocument();
@@ -32,7 +32,7 @@ describe('Fav Button component', () => {
       <FavButton
         type="circle"
         onClick={() => onClick()}
-      />
+      />,
     );
     fireEvent.click(screen.getByTestId(FAV_BUTTON_TEST_ID));
     expect(onClick).toHaveBeenCalledTimes(1);
@@ -45,7 +45,7 @@ describe('Fav Button component', () => {
         type="circle"
         disabled
         onClick={onClick}
-      />
+      />,
     );
     fireEvent.click(screen.getByTestId(FAV_BUTTON_TEST_ID));
     expect(onClick).not.toHaveBeenCalled();
@@ -59,16 +59,26 @@ describe('Fav Button component', () => {
         isFavorite
         disabled
         onClick={onClick}
-      />
+      />,
     );
-    expect(screen.getByTestId(FAV_BUTTON_TEST_ID)).toHaveClass("active");
+    expect(screen.getByTestId(FAV_BUTTON_TEST_ID)).toHaveClass('active');
     expect(container).toMatchSnapshot();
   });
   test('renders correct icon based on isFavorite prop', () => {
-    const {rerender} = render(<FavButton type="circle" isFavorite />);
+    const {rerender} = render(
+      <FavButton
+        type="circle"
+        isFavorite
+      />,
+    );
     expect(screen.getByTestId(FAV_BUTTON_TEST_ID)).toContainHTML('<svg');
 
-    rerender(<FavButton type="circle" isFavorite={false} />);
+    rerender(
+      <FavButton
+        type="circle"
+        isFavorite={false}
+      />,
+    );
     expect(screen.getByTestId(FAV_BUTTON_TEST_ID)).toContainHTML('<svg');
   });
-})
+});

@@ -4,7 +4,7 @@ import {fn} from '@storybook/test';
 import {FavButton} from '../lib/components/FavButton/FavButton';
 import {FAV_BUTTON_TYPE} from '../lib/components/FavButton/constants';
 
-type StoryProps = ComponentProps<typeof FavButton>
+type StoryProps = ComponentProps<typeof FavButton>;
 
 const meta: Meta<StoryProps> = {
   component: FavButton,
@@ -28,7 +28,7 @@ export default meta;
 type Story = StoryObj<StoryProps>;
 
 export const Primary: Story = {
-  render: ({ ...args}) => {
-    return <FavButton {...args}/>;
+  render: ({...args}) => {
+    return <FavButton {...args} />;
   },
 };

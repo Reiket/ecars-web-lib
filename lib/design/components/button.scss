@@ -5,7 +5,7 @@
   display: inline-block;
   border-radius: rem(8);
   position: relative;
-  transition: all .5s ease 0s;
+  transition: all 0.5s ease 0s;
   z-index: 1;
   overflow: hidden;
   &:not(&:disabled) {
@@ -18,9 +18,9 @@
       right: 0;
       z-index: -1;
       border-radius: rem(8);
-      transition: all .5s ease;
+      transition: all 0.5s ease;
     }
-    @media (any-hover: hover){
+    @media (any-hover: hover) {
       &:hover {
         &::after {
           left: 0;
@@ -35,6 +35,9 @@
     &::after {
       background-color: get-color($buttonColors, "hover-green");
     }
+    &:active {
+      background-color: get-color($buttonColors, "hover-green");
+    }
   }
   &-white {
     background: get-color($buttonColors, "white");
@@ -42,11 +45,17 @@
     &::after {
       background-color: get-color($buttonColors, "hover-white");
     }
+    &:active {
+      background-color: get-color($buttonColors, "hover-white");
+    }
   }
   &-gray {
     background: get-color($buttonColors, "gray");
     color: $main-color;
     &::after {
+      background-color: get-color($buttonColors, "hover-gray");
+    }
+    &:active {
       background-color: get-color($buttonColors, "hover-gray");
     }
   }

@@ -1,19 +1,19 @@
 import type {FC, MouseEvent} from 'react';
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai';
 import {cn} from '@/services/helpers';
 import {FAV_BUTTON_TEST_ID, FavButtonType} from '@/components/FavButton/constants';
 
 interface Props {
-  type: FavButtonType
+  type: FavButtonType;
   isFavorite?: boolean;
   disabled?: boolean;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const FavButton: FC<Props> = ({ disabled, isFavorite, type, onClick}) => {
-  const classNames = cn("favorite-button", `favorite-button-${type}`, {
-    "active": isFavorite
-  })
+export const FavButton: FC<Props> = ({disabled, isFavorite, type, onClick}) => {
+  const classNames = cn('favorite-button', `favorite-button-${type}`, {
+    'active': isFavorite,
+  });
   return (
     <button
       data-testid={FAV_BUTTON_TEST_ID}
@@ -22,11 +22,7 @@ export const FavButton: FC<Props> = ({ disabled, isFavorite, type, onClick}) => 
       onClick={onClick}
       type="button"
     >
-      {isFavorite ? (
-        <AiFillHeart />
-      ) : (
-        <AiOutlineHeart />
-      )}
+      {isFavorite ? <AiFillHeart /> : <AiOutlineHeart />}
     </button>
   );
 };
