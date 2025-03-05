@@ -13,11 +13,24 @@ $favButtonColors: (
   "transparent": #a3a3a3,
   "transparent-hover": #e49a49,
   "transparent-active": #e49a49,
+<<<<<<< HEAD
   "transparent-press": #af7743,
   "transparent-hover-active": #c28140,
   "circle": #312f2f,
   "circle-hover": #1a1a1a,
   "circle-press": #000,
+=======
+  "transparent-hover-active": #c28140,
+  "circle": #312f2f,
+  "circle-hover": #000,
+);
+
+$navigateButtonColors: (
+  "hover-background": #3c7d46,
+  "hover-color": #ffffff,
+  "active-background": #1f3b23,
+  "active-color": #ffffff,
+>>>>>>> 2440935 (added SliderNavigate components)
 );
 
 //Colors that are used many times

@@ -1,6 +1,7 @@
 import {Section} from './components/Section';
 import {Button} from '@/components/Button/Button';
 import {FavButton} from '@/components/FavButton/FavButton';
+import {SliderNavigate} from '@/components/SliderNavigate/SliderNavigate';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
           type="circle"
         />
         <FavButton type="transparent" />
+      </Section>
+      <Section title="Slider Navigate Example">
+        <SliderNavigate />
       </Section>
     </>
   );

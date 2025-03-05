@@ -1,0 +1,31 @@
+@use "sass:math";
+@import "../settings";
+
+.slider-navigate {
+  font-size: rem(20);
+  display: flex;
+  gap: rem(16);
+  &__button {
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    @media (any-hover: hover) {
+      &:hover {
+        color: get-color($navigateButtonColors, "hover-color");
+        background: get-color($navigateButtonColors, "hover-background");
+      }
+    }
+    @media (any-hover: none) {
+      color: get-color($navigateButtonColors, "hover-color");
+      background: get-color($navigateButtonColors, "hover-background");
+    }
+    &:active {
+      color: get-color($navigateButtonColors, "active-color");
+      background: get-color($navigateButtonColors, "active-background");
+    }
+  }
+}
