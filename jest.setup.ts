@@ -1,3 +1,12 @@
+import {TextEncoder, TextDecoder as NodeTextDecoder} from 'util';
+
+global.TextEncoder = TextEncoder;
+
+global.TextDecoder = NodeTextDecoder as unknown as {
+  new (label?: string, options?: TextDecoderOptions): TextDecoder;
+  prototype: TextDecoder;
+};
+
 Object.defineProperty(window.navigator, 'language', {
   value: 'en-US',
   writable: true,
