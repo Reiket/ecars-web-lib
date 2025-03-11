@@ -4,11 +4,11 @@ import {ROUTER_LINK_TEST_ID, RouterLinkColorType, RouterLinkSizeType} from '@/co
 import {cn} from '@/services/helpers';
 
 interface Props {
+  color: RouterLinkColorType;
+  children: ReactNode;
   to?: string;
   href?: string;
-  color: RouterLinkColorType;
   size?: RouterLinkSizeType;
-  children: ReactNode;
   withIcon?: boolean;
 }
 
