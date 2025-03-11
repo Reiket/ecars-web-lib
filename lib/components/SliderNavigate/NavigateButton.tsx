@@ -1,14 +1,14 @@
 import React, {FC} from 'react';
 import {NAVIGATE_BUTTON_TEST_ID, NavigateButtonPlacement} from '@/components/SliderNavigate/constants';
-import {MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from 'react-icons/md';
+import {Icons} from '@/services/icons';
 
 interface Props {
   placement: NavigateButtonPlacement;
 }
 
 const icons = {
-  left: <MdOutlineKeyboardArrowLeft />,
-  right: <MdOutlineKeyboardArrowRight />,
+  left: <Icons.ArrowNarrowLeft />,
+  right: <Icons.ArrowNarrowRight />,
 };
 
 export const NavigateButton: FC<Props> = ({placement}) => {
