@@ -1,7 +1,7 @@
 import {Section} from './components/Section';
 import {Button} from '@/components/Button/Button';
 import {FavButton} from '@/components/FavButton/FavButton';
-import {SliderNavigate} from '@/components/SliderNavigate/SliderNavigate';
+import {RouterLink} from '@/components/RouterLink/RouterLink';
 
 function App() {
   return (
@@ -33,8 +33,14 @@ function App() {
         />
         <FavButton type="transparent" />
       </Section>
-      <Section title="Slider Navigate Example">
-        <SliderNavigate />
+      <Section title="Link Example">
+        <RouterLink
+          href={'/'}
+          size={'bold'}
+          color={'dark'}
+        >
+          Link
+        </RouterLink>
       </Section>
     </>
   );

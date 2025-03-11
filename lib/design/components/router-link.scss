@@ -1,0 +1,65 @@
+@use "sass:math";
+@import "../settings";
+
+.link {
+  transition: all 0.5s linear;
+  font-weight: 400;
+  svg {
+    font-size: rem(20);
+  }
+  &-green {
+    color: get-color($linkColors, "green");
+    @media (any-hover: hover) {
+      &:hover {
+        color: get-color($linkColors, "hover-green");
+      }
+    }
+    &:active {
+      color: get-color($linkColors, "hover-green");
+    }
+  }
+  &-gray {
+    color: get-color($linkColors, "gray");
+    @media (any-hover: hover) {
+      &:hover {
+        color: get-color($linkColors, "hover-gray");
+      }
+    }
+    &:active {
+      color: get-color($linkColors, "hover-gray");
+    }
+  }
+  &-lightgray {
+    color: get-color($linkColors, "lightgray");
+    @media (any-hover: hover) {
+      &:hover {
+        color: get-color($linkColors, "hover-lightgray");
+      }
+    }
+    &:active {
+      color: get-color($linkColors, "hover-lightgray");
+    }
+  }
+  &-dark {
+    color: get-color($linkColors, "dark");
+    @media (any-hover: hover) {
+      &:hover {
+        color: get-color($linkColors, "hover-dark");
+      }
+    }
+    &:active {
+      color: get-color($linkColors, "hover-dark");
+    }
+  }
+  &-semibold {
+    font-weight: 600;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    gap: rem(6);
+  }
+}
