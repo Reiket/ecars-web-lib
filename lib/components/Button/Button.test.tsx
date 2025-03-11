@@ -8,7 +8,7 @@ describe('Button component', () => {
 
   const colors = Object.values(BUTTON_COLOR);
   const sizes = Object.values(BUTTON_SIZE);
-  const types: ButtonAttributesType[] = ["submit", "reset", "button"];
+  const types: ButtonAttributesType[] = ['submit', 'reset', 'button'];
   const disabledOptions = [true, false];
   colors.forEach((color) => {
     sizes.forEach((size) => {
@@ -22,7 +22,9 @@ describe('Button component', () => {
                 size={size}
                 type={type}
                 disabled={disabled}
-              >button</Button>
+              >
+                button
+              </Button>,
             );
             const buttonElement = screen.getByTestId(BUTTON_TEST_ID) as HTMLButtonElement;
             expect(buttonElement).toBeInTheDocument();
@@ -41,14 +43,14 @@ describe('Button component', () => {
 describe('Additional tests for Button component', () => {
   const props = {
     color: BUTTON_COLOR.GRAY,
-    size: BUTTON_SIZE.BIG
-  }
+    size: BUTTON_SIZE.BIG,
+  };
   test('changes button text according to the children text', () => {
     const {container, getByText, rerender} = render(<Button {...props}>button</Button>);
     let button = getByText('button');
     expect(button).toBeInTheDocument();
 
-    rerender((<Button {...props}>Confirm</Button>))
+    rerender(<Button {...props}>Confirm</Button>);
     button = getByText('Confirm');
     expect(button).toBeInTheDocument();
     expect(container).toMatchSnapshot();
@@ -60,7 +62,9 @@ describe('Additional tests for Button component', () => {
       <Button
         {...props}
         onClick={() => onClick()}
-      >button</Button>
+      >
+        button
+      </Button>,
     );
     fireEvent.click(getByText('button'));
     expect(onClick).toHaveBeenCalledTimes(1);
@@ -74,7 +78,9 @@ describe('Additional tests for Button component', () => {
         {...props}
         disabled
         onClick={onClick}
-      >button</Button>
+      >
+        button
+      </Button>,
     );
     const button = getByText('button');
     fireEvent.click(button);
@@ -87,7 +93,9 @@ describe('Additional tests for Button component', () => {
       <Button
         {...props}
         disabled
-      >button</Button>
+      >
+        button
+      </Button>,
     );
     const button = getByText('button');
     expect(button).toHaveClass('button');

@@ -11,7 +11,6 @@
   transition: background 0.3s linear;
   svg {
     transition: color 0.3s linear;
-
   }
   &:disabled svg {
     cursor: auto;
@@ -38,12 +37,21 @@
             }
           }
         }
+        &:active {
+          svg {
+            color: get-color($favButtonColors, "transparent-press");
+          }
+        }
       }
-
     }
     &.active {
       svg {
         color: get-color($favButtonColors, "transparent-active");
+      }
+    }
+    &:active {
+      svg {
+        color: get-color($favButtonColors, "transparent-press");
       }
     }
   }
@@ -59,6 +67,9 @@
         &:hover {
           background: get-color($favButtonColors, "circle-hover");
         }
+      }
+      &:active {
+        background: get-color($favButtonColors, "circle-press");
       }
     }
   }

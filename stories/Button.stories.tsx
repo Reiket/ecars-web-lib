@@ -26,7 +26,7 @@ const meta: Meta<StoryProps> = {
       },
     },
     type: {
-      options: ["button", "submit", "reset"] as ButtonAttributesType[],
+      options: ['button', 'submit', 'reset'] as ButtonAttributesType[],
       control: {
         type: 'select',
       },
@@ -35,7 +35,7 @@ const meta: Meta<StoryProps> = {
   args: {
     color: BUTTON_COLOR.GRAY,
     size: BUTTON_SIZE.BIG,
-    type: "button",
+    type: 'button',
     onClick: fn(),
   },
 };

@@ -1,22 +1,23 @@
 //Default color
-$main-color: #1A1A1A;
+$main-color: #1a1a1a;
 $buttonColors: (
-        "green": #3C7D46,
-        "hover-green": #244d29,
-        "white": #FFFFFF,
-        "hover-white": #d3d3d3,
-        "gray": #F0F0F0,
-        "hover-gray": #d3d3d3,
+  "green": #3c7d46,
+  "hover-green": #244d29,
+  "white": #ffffff,
+  "hover-white": #d3d3d3,
+  "gray": #f0f0f0,
+  "hover-gray": #d3d3d3,
 );
 
 $favButtonColors: (
-  "transparent": #A3A3A3,
-  "transparent-hover": #E49A49,
-  "transparent-active": #E49A49,
+  "transparent": #a3a3a3,
+  "transparent-hover": #e49a49,
+  "transparent-active": #e49a49,
+  "transparent-press": #af7743,
   "transparent-hover-active": #c28140,
-   "circle": #312f2f,
-   "circle-hover": #000,
-
+  "circle": #312f2f,
+  "circle-hover": #1a1a1a,
+  "circle-press": #000,
 );
 
 //Colors that are used many times
@@ -24,41 +25,41 @@ $favButtonColors: (
 $color-white: #ffffff;
 $color-pale-white: #d3d3d3;
 /*green*/
-$color-green: #3C7D46;
+$color-green: #3c7d46;
 $color-dark-green: #1f3b23;
 $color-page-green: #9fc299;
-$color-pale-green: #D7ECDA;
+$color-pale-green: #d7ecda;
 /*gray*/
 $color-gray: #484848;
 $color-light-gray: #767676;
-$color-pale-gray: #A3A3A3;
+$color-pale-gray: #a3a3a3;
 /*black*/
 $color-black: #000;
 /*yellow*/
-$color-yellow: #E49A49;
+$color-yellow: #e49a49;
 /*red-error*/
-$color-error: #C31C27;
+$color-error: #c31c27;
 
 //Background colors
-$background-dark: #2C2926;
-$background-white: #F6F5F4;
+$background-dark: #2c2926;
+$background-white: #f6f5f4;
 $background-contacts-btn: #d5d3d3;
-$background-dark-white: #F0F0F0;
+$background-dark-white: #f0f0f0;
 
 //Border colors
-$border-white: #E6E6E6;
-$border-pale: #D1D1D1;
+$border-white: #e6e6e6;
+$border-pale: #d1d1d1;
 //Hover colors
 $hover-green-btn: #244d29;
 $hover-svg: #bbbbbb;
 //Shadow colors
-$shadow: #1C1E2214;
+$shadow: #1c1e2214;
 
 //Colors that use one or two components
 /*Find*/
 
 $color-find-scroll: #555;
-$color-find-premium: #F2AC29;
+$color-find-premium: #f2ac29;
 /*Authorize*/
 $background-authorize: #fafafa;
 /*News*/
@@ -66,15 +67,13 @@ $color-news-link: #2d2d2d;
 /*Sell-Possibility*/
 $color-sell-possibility: #3a3838;
 /*BlogItem*/
-$background-blogItem-blue: #E6F4FF;
-$background-blogItem-orange: #FFF1E8;
-$background-blogItem-purple: #EEEAFE;
+$background-blogItem-blue: #e6f4ff;
+$background-blogItem-orange: #fff1e8;
+$background-blogItem-purple: #eeeafe;
 
-$color-blogItem-blue: #0394FC;
-$color-blogItem-orange: #DD7437;
-$color-blogItem-purple: #603FE2;
+$color-blogItem-blue: #0394fc;
+$color-blogItem-orange: #dd7437;
+$color-blogItem-purple: #603fe2;
 
 /*Menu*/
 $menuActiveColor: #413e3b;
-
-

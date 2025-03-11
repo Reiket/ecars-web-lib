@@ -11,8 +11,7 @@ export const BUTTON_COLOR = Object.freeze({
   GRAY: 'gray',
 });
 
-
-export type ButtonAttributesType = ButtonHTMLAttributes<HTMLButtonElement>['type']
+export type ButtonAttributesType = ButtonHTMLAttributes<HTMLButtonElement>['type'];
 export type ButtonSizeType = (typeof BUTTON_SIZE)[keyof typeof BUTTON_SIZE];
 export type ButtonColorType = (typeof BUTTON_COLOR)[keyof typeof BUTTON_COLOR];
 
