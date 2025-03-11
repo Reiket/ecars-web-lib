@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router Link component applies "link-icon" class when withIcon is true 1`] = `
+<div>
+  <a
+    class="link link-gray link-bold link-icon"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link with Icon
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders an external link when "href" is provided 1`] = `
+<div>
+  <a
+    class="link link-gray link-bold"
+    data-testid="routerLinkTestId"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders an internal link when "to" is provided 1`] = `
+<div>
+  <a
+    class="link link-gray link-bold"
+    data-discover="true"
+    data-testid="routerLinkTestId"
+    href="/internal"
+  >
+    Internal Link
+  </a>
+  ,
+</div>
+`;
+
+exports[`Router Link component renders links with colors dark and sizes bold 1`] = `
+<div>
+  <a
+    class="link link-dark link-bold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with colors dark and sizes semibold 1`] = `
+<div>
+  <a
+    class="link link-dark link-semibold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with colors gray and sizes bold 1`] = `
+<div>
+  <a
+    class="link link-gray link-bold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with colors gray and sizes semibold 1`] = `
+<div>
+  <a
+    class="link link-gray link-semibold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with colors green and sizes bold 1`] = `
+<div>
+  <a
+    class="link link-green link-bold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with colors green and sizes semibold 1`] = `
+<div>
+  <a
+    class="link link-green link-semibold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with colors lightgray and sizes bold 1`] = `
+<div>
+  <a
+    class="link link-lightgray link-bold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with colors lightgray and sizes semibold 1`] = `
+<div>
+  <a
+    class="link link-lightgray link-semibold"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
