@@ -2,16 +2,18 @@ import {Section} from './components/Section';
 import {Button} from '@/components/Button/Button';
 import {FavButton} from '@/components/FavButton/FavButton';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
+import {Icons} from '@/services/icons';
 
 function App() {
   return (
     <>
       <Section title="Button Example">
         <Button
-          color="green"
-          size="big"
+          color="gray"
+          size="small"
+          isTransparent
         >
-          Click Me!
+          Reset
         </Button>
         <Button
           color="gray"
@@ -22,8 +24,11 @@ function App() {
         <Button
           color="white"
           size="small"
+          withIcon
+          isTransparent
         >
-          Click Me!
+          More filters
+          <Icons.ArrowNarrowRight />
         </Button>
       </Section>
       <Section title="Favorite Button Example">

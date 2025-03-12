@@ -9,10 +9,24 @@ export interface ButtonProps {
   type?: ButtonAttributesType;
   disabled?: boolean;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+  isTransparent?: boolean;
+  withIcon?: boolean;
 }
 
-export const Button: FC<ButtonProps> = ({children, size, color, onClick, type = 'button', disabled = false}) => {
-  const classNames = cn('button', `button-${size}`, `button-${color}`);
+export const Button: FC<ButtonProps> = ({
+  children,
+  size,
+  color,
+  onClick,
+  type = 'button',
+  disabled = false,
+  isTransparent = false,
+  withIcon = false,
+}) => {
+  const classNames = cn('button', `button-${size}`, `button-${color}`, {
+    'button-transparent': isTransparent,
+    'button-icon': withIcon,
+  });
   return (
     <button
       data-testid={BUTTON_TEST_ID}
