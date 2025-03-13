@@ -2,6 +2,7 @@ import type {ButtonHTMLAttributes} from 'react';
 
 export const BUTTON_SIZE = Object.freeze({
   BIG: 'big',
+  MEDIUM: 'medium',
   SMALL: 'small',
 });
 

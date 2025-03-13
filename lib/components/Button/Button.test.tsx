@@ -9,6 +9,10 @@ describe('Button component', () => {
   const colors = Object.values(BUTTON_COLOR);
   const sizes = Object.values(BUTTON_SIZE);
   const types: ButtonAttributesType[] = ['submit', 'reset', 'button'];
+  const props = {
+    color: BUTTON_COLOR.GRAY,
+    size: BUTTON_SIZE.BIG,
+  };
   const disabledOptions = [true, false];
   colors.forEach((color) => {
     sizes.forEach((size) => {
@@ -38,13 +42,6 @@ describe('Button component', () => {
       });
     });
   });
-});
-
-describe('Additional tests for Button component', () => {
-  const props = {
-    color: BUTTON_COLOR.GRAY,
-    size: BUTTON_SIZE.BIG,
-  };
   test('changes button text according to the children text', () => {
     const {container, getByText, rerender} = render(<Button {...props}>button</Button>);
     let button = getByText('button');
@@ -99,6 +96,32 @@ describe('Additional tests for Button component', () => {
     );
     const button = getByText('button');
     expect(button).toHaveClass('button');
+    expect(container).toMatchSnapshot();
+  });
+  test('button has button-transparent if receive prop isTransparent', () => {
+    const {container} = render(
+      <Button
+        {...props}
+        isTransparent
+      >
+        button
+      </Button>,
+    );
+    const button = screen.getByTestId(BUTTON_TEST_ID);
+    expect(button).toHaveClass('button-transparent');
+    expect(container).toMatchSnapshot();
+  });
+  test('button has button-icon if receive prop withIcon', () => {
+    const {container} = render(
+      <Button
+        {...props}
+        withIcon
+      >
+        button
+      </Button>,
+    );
+    const button = screen.getByTestId(BUTTON_TEST_ID);
+    expect(button).toHaveClass('button-icon');
     expect(container).toMatchSnapshot();
   });
 });

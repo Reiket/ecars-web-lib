@@ -60,13 +60,40 @@
     }
   }
   &-big {
-    padding: rem(12) rem(29.5);
+    padding: rem(12) rem(25);
+    font-size: rem(16);
+    line-height: math.div(24, 16);
+  }
+  &-medium {
+    padding: rem(6) rem(12.8);
+    font-size: rem(14);
+    line-height: math.div(24, 14);
   }
   &-small {
-    padding: rem(6) rem(12);
+    padding: rem(2) rem(7);
+    font-size: rem(12);
+    line-height: math.div(16, 12);
   }
   &:disabled {
     cursor: default;
     opacity: 40%;
+  }
+  &-transparent {
+    @media (any-hover: hover) {
+      background: transparent;
+    }
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    > svg {
+      transition: transform 0.3s linear;
+      font-size: rem(20);
+    }
+    &._rotate {
+      svg {
+        transform: scale(-1, 1);
+      }
+    }
   }
 }
