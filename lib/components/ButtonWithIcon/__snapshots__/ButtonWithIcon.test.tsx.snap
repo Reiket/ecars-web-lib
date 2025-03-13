@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonWithIcon component renders LeftIcon when provided 1`] = `
+<div>
+  <button
+    class="button button-big button-gray button-icon"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    <svg
+      data-testid="leftIconButtonTestId"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+      />
+    </svg>
+    Click
+  </button>
+</div>
+`;
+
+exports[`ButtonWithIcon component renders RightIcon when provided 1`] = `
+<div>
+  <button
+    class="button button-big button-gray button-icon"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    Click
+    <svg
+      data-testid="rightIconButtonTestId"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`ButtonWithIcon component renders both LeftIcon and RightIcon when provided 1`] = `
+<div>
+  <button
+    class="button button-big button-gray button-icon"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    <svg
+      data-testid="leftIconButtonTestId"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+      />
+    </svg>
+    Click
+    <svg
+      data-testid="rightIconButtonTestId"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`ButtonWithIcon component renders component correctly 1`] = `
+<div>
+  <button
+    class="button button-big button-gray button-icon"
+    data-testid="buttonTestId"
+    type="button"
+  >
+    Click me
+  </button>
+</div>
+`;
