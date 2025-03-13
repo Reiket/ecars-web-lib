@@ -10,7 +10,7 @@ describe('LinkWithIcon component', () => {
   const props = {
     color: ROUTER_LINK_COLOR.GRAY,
     size: ROUTER_LINK_SIZE.BOLD,
-    href: "/"
+    href: '/',
   };
   test('renders component correctly', () => {
     const {container} = render(<LinkWithIcon {...props}>Link</LinkWithIcon>);
