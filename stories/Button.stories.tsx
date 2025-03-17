@@ -81,7 +81,7 @@ const createButtonWithIconStory = (LeftIcon?: ComponentType, RightIcon?: Compone
 
 export const ButtonWithTwoIcon: StoryButtonIcon = {
   args: {
-    buttonText: 'All Icon',
+    buttonText: 'All icons',
     RightIcon: Icons.ArrowNarrowRight,
     LeftIcon: Icons.ArrowNarrowLeft,
   },
