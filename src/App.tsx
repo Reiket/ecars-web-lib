@@ -40,9 +40,9 @@ function App() {
       </Section>
       <Section title="Link Example">
         <RouterLink
-          href={'/'}
-          size={'bold'}
-          color={'dark'}
+          href='/'
+          size='bold'
+          color='dark'
         >
           Link
         </RouterLink>
