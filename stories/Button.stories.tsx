@@ -12,8 +12,6 @@ type StoryProps = ComponentProps<typeof Button> & {
 };
 type ButtonIconStoryProps = ComponentProps<typeof ButtonWithIcon> & {
   buttonText: string;
-  RightIcon?: ComponentType;
-  LeftIcon?: ComponentType;
   children: ReactNode;
 };
 
@@ -56,7 +54,7 @@ const meta: Meta<StoryProps> = {
 export default meta;
 
 type Story = StoryObj<StoryProps>;
-type ButtonStory = StoryObj<ButtonIconStoryProps>;
+type StoryButtonIcon = StoryObj<ButtonIconStoryProps>;
 
 export const Primary: Story = {
   args: {
@@ -67,14 +65,9 @@ export const Primary: Story = {
   },
 };
 
-export const ButtonIcon: ButtonStory = {
-  args: {
-    buttonText: 'Blue',
-    RightIcon: Icons.ArrowNarrowRight,
-    LeftIcon: Icons.ArrowNarrowLeft,
-  },
-  render: ({buttonText, RightIcon, LeftIcon, ...args}) => {
-    return (
+const createButtonWithIconStory = (LeftIcon?: ComponentType, RightIcon?: ComponentType) => {
+  return {
+    render: ({buttonText, ...args}: ButtonIconStoryProps) => (
       <ButtonWithIcon
         {...args}
         LeftIcon={LeftIcon}
@@ -82,40 +75,31 @@ export const ButtonIcon: ButtonStory = {
       >
         {buttonText}
       </ButtonWithIcon>
-    );
-  },
+    ),
+  };
 };
 
-export const ButtonWithRightIcon: ButtonStory = {
+export const ButtonWithTwoIcon: StoryButtonIcon = {
+  args: {
+    buttonText: 'All Icon',
+    RightIcon: Icons.ArrowNarrowRight,
+    LeftIcon: Icons.ArrowNarrowLeft,
+  },
+  ...createButtonWithIconStory(Icons.ArrowNarrowLeft, Icons.ArrowNarrowRight),
+};
+
+export const ButtonWithRightIcon: StoryButtonIcon = {
   args: {
     buttonText: 'Right Only',
     RightIcon: Icons.ArrowNarrowRight,
   },
-  render: ({buttonText, RightIcon, ...args}) => {
-    return (
-      <ButtonWithIcon
-        {...args}
-        RightIcon={RightIcon}
-      >
-        {buttonText}
-      </ButtonWithIcon>
-    );
-  },
+  ...createButtonWithIconStory(undefined, Icons.ArrowNarrowRight),
 };
 
-export const ButtonWithLeftIcon: ButtonStory = {
+export const ButtonWithLeftIcon: StoryButtonIcon = {
   args: {
     buttonText: 'Left Only',
     LeftIcon: Icons.ArrowNarrowLeft,
   },
-  render: ({buttonText, LeftIcon, ...args}) => {
-    return (
-      <ButtonWithIcon
-        {...args}
-        LeftIcon={LeftIcon}
-      >
-        {buttonText}
-      </ButtonWithIcon>
-    );
-  },
+  ...createButtonWithIconStory(Icons.ArrowNarrowLeft, undefined),
 };
