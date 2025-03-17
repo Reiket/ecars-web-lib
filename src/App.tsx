@@ -3,6 +3,7 @@ import {Button} from '@/components/Button/Button';
 import {FavButton} from '@/components/FavButton/FavButton';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
 import {Icons} from '@/services/icons';
+import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
 
 function App() {
   return (
@@ -46,6 +47,16 @@ function App() {
         >
           Link
         </RouterLink>
+      </Section>
+      <Section title="Link with icon Example">
+        <LinkWithIcon
+          href='/'
+          size='bold'
+          color='green'
+          LeftIcon={Icons.ArrowNarrowLeft}
+        >
+          +971 55 811 9024
+        </LinkWithIcon>
       </Section>
     </>
   );
