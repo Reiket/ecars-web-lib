@@ -5,7 +5,8 @@
   transition: all 0.5s linear;
   font-weight: 400;
   svg {
-    font-size: rem(20);
+    font-size: rem(16);
+    transform: translateY(rem(1));
   }
   &-green {
     color: get-color($linkColors, "green");
@@ -60,6 +61,6 @@
   &-icon {
     display: flex;
     align-items: center;
-    gap: rem(6);
+    gap: rem(4);
   }
 }
