@@ -41,18 +41,18 @@ function App() {
       </Section>
       <Section title="Link Example">
         <RouterLink
-          href={'/'}
-          size={'bold'}
-          color={'dark'}
+          href='/'
+          size='bold'
+          color='dark'
         >
           Link
         </RouterLink>
       </Section>
       <Section title="Link with icon Example">
         <LinkWithIcon
-          href={'/'}
-          size={'bold'}
-          color={'green'}
+          href='/'
+          size='bold'
+          color='green'
           LeftIcon={Icons.ArrowNarrowLeft}
         >
           +971 55 811 9024
