@@ -68,9 +68,9 @@ export const Primary: Story = {
   },
 };
 
-export const ButtonWithTwoIcon: StoryLinkIcon = {
+export const LinkWithTwoIcon: StoryLinkIcon = {
   args: {
-    linkText: 'Blue',
+    linkText: 'All icons',
     href: '/',
     RightIcon: Icons.ArrowNarrowRight,
     LeftIcon: Icons.ArrowNarrowLeft,
@@ -78,7 +78,7 @@ export const ButtonWithTwoIcon: StoryLinkIcon = {
   ...createLinkWithIconStory(Icons.ArrowNarrowLeft, Icons.ArrowNarrowRight),
 };
 
-export const ButtonWithRightIcon: StoryLinkIcon = {
+export const LinkWithRightIcon: StoryLinkIcon = {
   args: {
     linkText: 'Right Only',
     href: '/',
@@ -87,7 +87,7 @@ export const ButtonWithRightIcon: StoryLinkIcon = {
   ...createLinkWithIconStory(undefined, Icons.ArrowNarrowRight),
 };
 
-export const ButtonWithLeftIcon: StoryLinkIcon = {
+export const LinkWithLeftIcon: StoryLinkIcon = {
   args: {
     linkText: 'Left Only',
     href: '/',
