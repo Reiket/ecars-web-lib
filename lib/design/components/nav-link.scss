@@ -1,0 +1,35 @@
+@import "../settings";
+
+@mixin navLinkState() {
+  color: $navLinkColor;
+  &:after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+}
+
+.nav-link {
+  position: relative;
+  z-index: 10;
+  font-weight: 600;
+  transition: color 0.3s linear;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: rem(-5);
+    left: 0;
+    width: 100%;
+    height: rem(3);
+    border-radius: rem(8);
+    background: $navLinkColor;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+    transform-origin: bottom right;
+  }
+  @media (any-hover: hover) {
+    @include navLinkState;
+  }
+  &.link-active {
+    @include navLinkState;
+  }
+}
