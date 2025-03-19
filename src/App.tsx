@@ -5,6 +5,7 @@ import {RouterLink} from '@/components/RouterLink/RouterLink';
 import {Icons} from '@/services/icons';
 import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
+import {NavLink} from '@/components/NavLink/NavLink';
 function App() {
   return (
     <>
@@ -59,6 +60,9 @@ function App() {
         >
           More filters
         </ButtonWithIcon>
+      </Section>
+      <Section title="Nav Link Example">
+        <NavLink to="/test">Link</NavLink>
       </Section>
     </>
   );
