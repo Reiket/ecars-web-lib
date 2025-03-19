@@ -1,0 +1,40 @@
+@use "sass:math";
+@import "../settings";
+
+@mixin inputState() {
+  border-color: get-color($fieldsColor, "state-border");
+  background: get-color($fieldsColor, "state-background");
+}
+
+.input {
+  padding: rem(13) rem(12);
+  border: rem(1) solid get-color($fieldsColor, "border");
+  border-radius: rem(8);
+  font-size: rem(14);
+  line-height: math.div(20, 14);
+  outline: none;
+  transition: all 0.3s linear;
+  @media (any-hover: hover) {
+    &:hover {
+      @include inputState;
+    }
+  }
+  &:focus {
+    @include inputState;
+  }
+  &::placeholder {
+    transition: color 0.3s linear;
+    color: get-color($fieldsColor, "placeholder");
+  }
+  &:disabled {
+    opacity: 40%;
+    cursor: auto;
+  }
+  &.error {
+    color: get-color($fieldsColor, "error");
+    border-color: get-color($fieldsColor, "error");
+    &::placeholder {
+      color: get-color($fieldsColor, "error");
+    }
+  }
+}
