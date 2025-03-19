@@ -2,6 +2,7 @@ import {ComponentProps} from 'react';
 import {Meta, StoryObj} from '@storybook/react';
 import {NavLink} from '../lib/components/NavLink/NavLink';
 import {MemoryRouter} from 'react-router';
+import {MOCK_ROUTE_LINK} from '../lib/components/NavLink/constants';
 
 type StoryProps = ComponentProps<typeof NavLink> & {
   linkText: string;
@@ -13,7 +14,7 @@ const meta: Meta<StoryProps> = {
   tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <MemoryRouter initialEntries={['/active']}>
+      <MemoryRouter>
         <Story />
       </MemoryRouter>
     ),
@@ -27,7 +28,7 @@ type Story = StoryObj<StoryProps>;
 export const Primary: Story = {
   args: {
     linkText: 'Blue',
-    to: '/storybook',
+    to: MOCK_ROUTE_LINK,
   },
   render: ({linkText, to, ...args}) => {
     return (

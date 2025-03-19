@@ -1,5 +1,5 @@
 import {NavLink as Link} from 'react-router';
-import {FC, ReactNode} from 'react';
+import type {FC, ReactNode} from 'react';
 import {cn} from '@/services/helpers';
 
 interface Props {

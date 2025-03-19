@@ -2,6 +2,7 @@ import {cleanup, render} from '@testing-library/react';
 import {NavLink} from './NavLink';
 import '@testing-library/jest-dom';
 import {MemoryRouter, Route, Routes} from 'react-router';
+import {MOCK_ROUTE_LINK} from '@/components/NavLink/constants';
 
 describe('NavLink component', () => {
   afterEach(cleanup);
@@ -18,10 +19,10 @@ describe('NavLink component', () => {
 
   test("applies 'link-active' class when the link is active", () => {
     const {container, getByText} = render(
-      <MemoryRouter initialEntries={['/active']}>
+      <MemoryRouter initialEntries={[MOCK_ROUTE_LINK]}>
         <Routes>
           <Route
-            path="/active"
+            path={MOCK_ROUTE_LINK}
             element={<NavLink to="/active">Active Link</NavLink>}
           />
         </Routes>
@@ -33,9 +34,10 @@ describe('NavLink component', () => {
   });
 
   test("does not apply 'link-active' class when the link is not active", () => {
+    const testRoute = '/other';
     const {container, getByText} = render(
-      <MemoryRouter initialEntries={['/other']}>
-        <NavLink to="/test">Test Link</NavLink>
+      <MemoryRouter initialEntries={[testRoute]}>
+        <NavLink to={MOCK_ROUTE_LINK}>Test Link</NavLink>
       </MemoryRouter>,
     );
 
