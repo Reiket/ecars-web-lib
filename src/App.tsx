@@ -4,12 +4,8 @@ import {FavButton} from '@/components/FavButton/FavButton';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
 import {Icons} from '@/services/icons';
 import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
-<<<<<<< HEAD
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
-=======
 import {NavLink} from '@/components/NavLink/NavLink';
-
->>>>>>> b949915 (added navLink component)
 function App() {
   return (
     <>
@@ -54,7 +50,6 @@ function App() {
           +971 55 811 9024
         </LinkWithIcon>
       </Section>
-<<<<<<< HEAD
       <Section title="Button with icon Example">
         <ButtonWithIcon
           color="white"
@@ -65,10 +60,9 @@ function App() {
         >
           More filters
         </ButtonWithIcon>
-=======
+      </Section>
       <Section title="Nav Link Example">
         <NavLink to="/test">Link</NavLink>
->>>>>>> b949915 (added navLink component)
       </Section>
     </>
   );
