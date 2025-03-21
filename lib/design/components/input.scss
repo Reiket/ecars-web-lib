@@ -21,6 +21,7 @@
   }
   &:focus {
     @include inputState;
+    box-shadow: rem(0) rem(2) rem(8) rem(0) get-color($fieldsColor, "shadow");
   }
   &::placeholder {
     transition: color 0.3s linear;

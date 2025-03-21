@@ -6,12 +6,13 @@
 
 body {
   padding: 1.5rem;
+  font-size: 14px;
 }
 
 h1 {
   font-size: 2rem;
   line-height: 1.1;
   &:not(:last-child) {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 }

@@ -7,6 +7,8 @@ import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 import {NavLink} from '@/components/NavLink/NavLink';
 import {Input} from '@/components/Input/Input';
+import {Field} from '@/components/Field/constants';
+
 import {Checkbox} from '@/components/Checkbox/constants';
 function App() {
   return (
@@ -71,6 +73,26 @@ function App() {
           value="Email"
           placeholder="Your email"
         />
+      </Section>
+      <Section title="Field Example">
+        <Field
+          label="Email"
+          id="input_email"
+        >
+          <Input placeholder="Your email" />
+        </Field>
+      </Section>
+      <Section title="Field Example">
+        <Field
+          error="Some error"
+          label="Email"
+          id="input_email"
+        >
+          <Input
+            value="Email"
+            placeholder="Your email"
+          />
+        </Field>
       </Section>
       <Section title="CheckboxComponent Example">
         <Checkbox checked />
