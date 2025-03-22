@@ -7,6 +7,7 @@ import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 import {NavLink} from '@/components/NavLink/NavLink';
 import {Input} from '@/components/Input/Input';
+import {Checkbox} from '@/components/Checkbox/constants';
 function App() {
   return (
     <>
@@ -70,6 +71,9 @@ function App() {
           value="Email"
           placeholder="Your email"
         />
+      </Section>
+      <Section title="CheckboxComponent Example">
+        <Checkbox checked />
       </Section>
     </>
   );
