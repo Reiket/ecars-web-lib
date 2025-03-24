@@ -1,13 +1,15 @@
+import {Icons} from '@/services/icons';
 import {Section} from './components/Section';
 import {Button} from '@/components/Button/Button';
 import {FavButton} from '@/components/FavButton/FavButton';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
-import {Icons} from '@/services/icons';
 import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 import {NavLink} from '@/components/NavLink/NavLink';
 import {Input} from '@/components/Input/Input';
+import {Field} from '@/components/Field/constants';
 import {Checkbox} from '@/components/Checkbox/constants';
+
 function App() {
   return (
     <>
@@ -72,7 +74,27 @@ function App() {
           placeholder="Your email"
         />
       </Section>
-      <Section title="CheckboxComponent Example">
+      <Section title="Field Example">
+        <Field
+          label="Email"
+          id="input_email"
+        >
+          <Input placeholder="Your email" />
+        </Field>
+      </Section>
+      <Section title="Field Example">
+        <Field
+          error="Some error"
+          label="Email"
+          id="input_email"
+        >
+          <Input
+            value="Email"
+            placeholder="Your email"
+          />
+        </Field>
+      </Section>
+      <Section title="Checkbox Component Example">
         <Checkbox checked />
       </Section>
     </>
