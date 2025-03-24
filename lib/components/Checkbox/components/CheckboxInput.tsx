@@ -1,6 +1,6 @@
 import {type ChangeEvent, FC} from 'react';
-import {CHECKBOX_TEST_INPUT_ID, CheckboxProps} from '@/components/Checkbox/constants';
 import {cn} from '@/services/helpers';
+import {CHECKBOX_TEST_INPUT_ID, CheckboxProps} from '@/components/Checkbox/constants';
 
 export const CheckboxInput: FC<CheckboxProps> = ({
   onChange,
