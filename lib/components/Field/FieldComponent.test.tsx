@@ -14,7 +14,7 @@ describe('Field Component', () => {
         const errorStatus = error ? `with error - ${error}` : 'without error';
         const labelStatus = label ? `with label - ${label}` : 'without label';
         const idStatus = id ? `with id - ${id}` : 'without id';
-        const testName = `render field component ${errorStatus} ${labelStatus} ${idStatus}`;
+        const testName = `render field component ${errorStatus}, ${labelStatus}, ${idStatus}`;
         test(testName, () => {
           const {container} = render(
             <Field
