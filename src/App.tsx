@@ -1,15 +1,15 @@
+import {Icons} from '@/services/icons';
 import {Section} from './components/Section';
 import {Button} from '@/components/Button/Button';
 import {FavButton} from '@/components/FavButton/FavButton';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
-import {Icons} from '@/services/icons';
 import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 import {NavLink} from '@/components/NavLink/NavLink';
 import {Input} from '@/components/Input/Input';
 import {Field} from '@/components/Field/constants';
-
 import {Checkbox} from '@/components/Checkbox/constants';
+
 function App() {
   return (
     <>
@@ -94,7 +94,7 @@ function App() {
           />
         </Field>
       </Section>
-      <Section title="CheckboxComponent Example">
+      <Section title="Checkbox Component Example">
         <Checkbox checked />
       </Section>
     </>
