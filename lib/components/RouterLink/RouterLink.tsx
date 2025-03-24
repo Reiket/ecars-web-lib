@@ -41,4 +41,5 @@ export const RouterLink: FC<RouterLinkProps> = ({color, href, to, children, with
       </a>
     );
   }
+  return null;
 };
