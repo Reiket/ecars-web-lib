@@ -8,7 +8,7 @@
     font-size: rem(16);
     transform: translateY(rem(1));
   }
-  &-green {
+  &--green {
     color: get-color($linkColors, "green");
     @media (any-hover: hover) {
       &:hover {
@@ -19,7 +19,7 @@
       color: get-color($linkColors, "hover-green");
     }
   }
-  &-gray {
+  &--gray {
     color: get-color($linkColors, "gray");
     @media (any-hover: hover) {
       &:hover {
@@ -30,7 +30,7 @@
       color: get-color($linkColors, "hover-gray");
     }
   }
-  &-lightgray {
+  &--lightgray {
     color: get-color($linkColors, "lightgray");
     @media (any-hover: hover) {
       &:hover {
@@ -41,7 +41,7 @@
       color: get-color($linkColors, "hover-lightgray");
     }
   }
-  &-dark {
+  &--dark {
     color: get-color($linkColors, "dark");
     @media (any-hover: hover) {
       &:hover {
@@ -52,13 +52,7 @@
       color: get-color($linkColors, "hover-dark");
     }
   }
-  &-semibold {
-    font-weight: 600;
-  }
-  &-bold {
-    font-weight: 700;
-  }
-  &-icon {
+  &--icon {
     display: flex;
     align-items: center;
     gap: rem(4);

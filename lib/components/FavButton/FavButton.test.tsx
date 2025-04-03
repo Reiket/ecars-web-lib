@@ -19,7 +19,7 @@ describe('Fav Button component', () => {
         );
         const favButtonElement = screen.getByTestId(FAV_BUTTON_TEST_ID) as HTMLButtonElement;
         expect(favButtonElement).toBeInTheDocument();
-        expect(favButtonElement).toHaveClass(`favorite-button-${type}`);
+        expect(favButtonElement).toHaveClass(`favorite-button--${type}`);
         expect(favButtonElement.disabled).toBe(disabled);
         expect(favButtonElement).toHaveStyle('cursor: default');
         expect(container).toMatchSnapshot();

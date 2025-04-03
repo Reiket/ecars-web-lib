@@ -16,7 +16,7 @@
     cursor: auto;
     opacity: 80%;
   }
-  &-transparent {
+  &--transparent {
     svg {
       color: get-color($favButtonColors, "transparent");
       font-size: rem(20);
@@ -55,7 +55,7 @@
       }
     }
   }
-  &-circle {
+  &--circle {
     background: get-color($favButtonColors, "circle");
     border-radius: 50%;
     svg {

@@ -12,7 +12,7 @@ describe('Category component', () => {
       const {container} = render(<Category category={category} />);
       const categoryElement = screen.getByTestId(CATEGORY_TEST_ID);
       expect(categoryElement).toBeInTheDocument();
-      expect(categoryElement).toHaveClass(`category-${category}`);
+      expect(categoryElement).toHaveClass(`category--${category}`);
       expect(container).toMatchSnapshot();
     });
   });

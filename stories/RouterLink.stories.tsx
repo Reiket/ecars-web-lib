@@ -1,7 +1,7 @@
 import {ComponentProps, ComponentType} from 'react';
 import {Meta, StoryObj} from '@storybook/react';
 import {RouterLink} from '../lib/components/RouterLink/RouterLink';
-import {ROUTER_LINK_COLOR, ROUTER_LINK_SIZE} from '../lib/components/RouterLink/constants';
+import {ROUTER_LINK_COLOR} from '../lib/components/RouterLink/constants';
 import {LinkWithIcon} from '../lib/components/LinkWithIcon/LinkWithIcon';
 import {Icons} from '../lib/services/icons';
 
@@ -23,10 +23,6 @@ const meta: Meta<StoryProps> = {
       options: Object.values(ROUTER_LINK_COLOR),
       control: {type: 'select'},
     },
-    size: {
-      options: Object.values(ROUTER_LINK_SIZE),
-      control: {type: 'select'},
-    },
     withIcon: {
       table: {
         disable: true,
@@ -35,7 +31,6 @@ const meta: Meta<StoryProps> = {
   },
   args: {
     color: ROUTER_LINK_COLOR.GRAY,
-    size: ROUTER_LINK_SIZE.BOLD,
   },
 };
 

@@ -3,7 +3,7 @@
 exports[`Fav Button component handles the click event 1`] = `
 <div>
   <button
-    class="favorite-button favorite-button-circle"
+    class="favorite-button favorite-button--circle"
     data-testid="favButtonTestId"
     type="button"
   >
@@ -27,7 +27,7 @@ exports[`Fav Button component handles the click event 1`] = `
 exports[`Fav Button component renders button with type circle and disabled 1`] = `
 <div>
   <button
-    class="favorite-button favorite-button-circle"
+    class="favorite-button favorite-button--circle"
     data-testid="favButtonTestId"
     disabled=""
     type="button"
@@ -52,7 +52,7 @@ exports[`Fav Button component renders button with type circle and disabled 1`] =
 exports[`Fav Button component renders button with type circle and disabled 2`] = `
 <div>
   <button
-    class="favorite-button favorite-button-circle"
+    class="favorite-button favorite-button--circle"
     data-testid="favButtonTestId"
     type="button"
   >
@@ -76,7 +76,7 @@ exports[`Fav Button component renders button with type circle and disabled 2`] =
 exports[`Fav Button component renders button with type transparent and disabled 1`] = `
 <div>
   <button
-    class="favorite-button favorite-button-transparent"
+    class="favorite-button favorite-button--transparent"
     data-testid="favButtonTestId"
     disabled=""
     type="button"
@@ -101,7 +101,7 @@ exports[`Fav Button component renders button with type transparent and disabled 
 exports[`Fav Button component renders button with type transparent and disabled 2`] = `
 <div>
   <button
-    class="favorite-button favorite-button-transparent"
+    class="favorite-button favorite-button--transparent"
     data-testid="favButtonTestId"
     type="button"
   >
@@ -125,7 +125,7 @@ exports[`Fav Button component renders button with type transparent and disabled 
 exports[`Fav Button component the active state when has prop isFavorite 1`] = `
 <div>
   <button
-    class="favorite-button favorite-button-circle active"
+    class="favorite-button favorite-button--circle active"
     data-testid="favButtonTestId"
     disabled=""
     type="button"
@@ -150,7 +150,7 @@ exports[`Fav Button component the active state when has prop isFavorite 1`] = `
 exports[`Fav Button component the onClick event does not fire when button is disabled 1`] = `
 <div>
   <button
-    class="favorite-button favorite-button-circle"
+    class="favorite-button favorite-button--circle"
     data-testid="favButtonTestId"
     disabled=""
     type="button"

@@ -32,8 +32,8 @@ describe('Button component', () => {
             );
             const buttonElement = screen.getByTestId(BUTTON_TEST_ID) as HTMLButtonElement;
             expect(buttonElement).toBeInTheDocument();
-            expect(buttonElement).toHaveClass(`button-${color}`);
-            expect(buttonElement).toHaveClass(`button-${size}`);
+            expect(buttonElement).toHaveClass(`button--${color}`);
+            expect(buttonElement).toHaveClass(`button--${size}`);
             expect(buttonElement.disabled).toBe(disabled);
             expect(buttonElement).toHaveStyle('cursor: default');
             expect(container).toMatchSnapshot();
@@ -108,7 +108,7 @@ describe('Button component', () => {
       </Button>,
     );
     const button = screen.getByTestId(BUTTON_TEST_ID);
-    expect(button).toHaveClass('button-transparent');
+    expect(button).toHaveClass('button--transparent');
     expect(container).toMatchSnapshot();
   });
   test('button has button-icon if receive prop withIcon', () => {
@@ -121,7 +121,7 @@ describe('Button component', () => {
       </Button>,
     );
     const button = screen.getByTestId(BUTTON_TEST_ID);
-    expect(button).toHaveClass('button-icon');
+    expect(button).toHaveClass('button--icon');
     expect(container).toMatchSnapshot();
   });
 });

@@ -1,6 +1,6 @@
 import {cleanup, render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
-import {ROUTER_LINK_COLOR, ROUTER_LINK_SIZE, ROUTER_LINK_TEST_ID} from '@/components/RouterLink/constants';
+import {ROUTER_LINK_COLOR, ROUTER_LINK_TEST_ID} from '@/components/RouterLink/constants';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
 import {MemoryRouter} from 'react-router';
 
@@ -8,31 +8,25 @@ describe('Router Link component', () => {
   afterEach(cleanup);
 
   const colors = Object.values(ROUTER_LINK_COLOR);
-  const sizes = Object.values(ROUTER_LINK_SIZE);
   const props = {
     color: ROUTER_LINK_COLOR.GRAY,
-    size: ROUTER_LINK_SIZE.BOLD,
   };
   colors.forEach((color) => {
-    sizes.forEach((size) => {
-      const testName = `renders links with colors ${color} and sizes ${size}`;
-      test(testName, () => {
-        const {container} = render(
-          <RouterLink
-            href="/"
-            color={color}
-            size={size}
-          >
-            Link
-          </RouterLink>,
-        );
-        const routerLinkElement = screen.getByTestId(ROUTER_LINK_TEST_ID);
+    const testName = `renders links with ${color} color`;
+    test(testName, () => {
+      const {container} = render(
+        <RouterLink
+          href="/"
+          color={color}
+        >
+          Link
+        </RouterLink>,
+      );
+      const routerLinkElement = screen.getByTestId(ROUTER_LINK_TEST_ID);
 
-        expect(routerLinkElement).toBeInTheDocument();
-        expect(routerLinkElement).toHaveClass(`link-${color}`);
-        expect(routerLinkElement).toHaveClass(`link-${size}`);
-        expect(container).toMatchSnapshot();
-      });
+      expect(routerLinkElement).toBeInTheDocument();
+      expect(routerLinkElement).toHaveClass(`link--${color}`);
+      expect(container).toMatchSnapshot();
     });
   });
 
@@ -48,7 +42,7 @@ describe('Router Link component', () => {
     );
     const routerLinkElement = screen.getByTestId(ROUTER_LINK_TEST_ID);
 
-    expect(routerLinkElement).toHaveClass('link-icon');
+    expect(routerLinkElement).toHaveClass('link--icon');
     expect(container).toMatchSnapshot();
   });
   test('renders an external link when "href" is provided', () => {

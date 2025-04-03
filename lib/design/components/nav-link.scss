@@ -29,7 +29,7 @@
   @media (any-hover: hover) {
     @include navLinkState;
   }
-  &.link-active {
+  &._active {
     @include navLinkState;
   }
 }
