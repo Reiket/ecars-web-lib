@@ -97,3 +97,59 @@ exports[`Router Link component renders links with colors lightgray 1`] = `
   </a>
 </div>
 `;
+
+exports[`Router Link component renders links with dark color 1`] = `
+<div>
+  <a
+    class="link link--dark"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with gray color 1`] = `
+<div>
+  <a
+    class="link link--gray"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with green color 1`] = `
+<div>
+  <a
+    class="link link--green"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component renders links with lightgray color 1`] = `
+<div>
+  <a
+    class="link link--lightgray"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;

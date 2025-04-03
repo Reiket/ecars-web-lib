@@ -3,7 +3,7 @@
 exports[`ButtonWithIcon component renders LeftIcon when provided 1`] = `
 <div>
   <button
-    class="button button-big button-gray button-icon"
+    class="button button--big button--gray button--icon"
     data-testid="buttonTestId"
     type="button"
   >
@@ -33,7 +33,7 @@ exports[`ButtonWithIcon component renders LeftIcon when provided 1`] = `
 exports[`ButtonWithIcon component renders RightIcon when provided 1`] = `
 <div>
   <button
-    class="button button-big button-gray button-icon"
+    class="button button--big button--gray button--icon"
     data-testid="buttonTestId"
     type="button"
   >
@@ -63,7 +63,7 @@ exports[`ButtonWithIcon component renders RightIcon when provided 1`] = `
 exports[`ButtonWithIcon component renders both LeftIcon and RightIcon when provided 1`] = `
 <div>
   <button
-    class="button button-big button-gray button-icon"
+    class="button button--big button--gray button--icon"
     data-testid="buttonTestId"
     type="button"
   >
@@ -111,7 +111,7 @@ exports[`ButtonWithIcon component renders both LeftIcon and RightIcon when provi
 exports[`ButtonWithIcon component renders component correctly 1`] = `
 <div>
   <button
-    class="button button-big button-gray button-icon"
+    class="button button--big button--gray button--icon"
     data-testid="buttonTestId"
     type="button"
   >

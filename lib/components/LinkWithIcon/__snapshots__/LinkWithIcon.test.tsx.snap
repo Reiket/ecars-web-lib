@@ -3,7 +3,7 @@
 exports[`LinkWithIcon component renders LeftIcon when provided 1`] = `
 <div>
   <a
-    class="link link-gray link-bold link-icon"
+    class="link link--gray link--icon"
     data-testid="routerLinkTestId"
     href="/"
     rel="noopener noreferrer"
@@ -35,7 +35,7 @@ exports[`LinkWithIcon component renders LeftIcon when provided 1`] = `
 exports[`LinkWithIcon component renders RightIcon when provided 1`] = `
 <div>
   <a
-    class="link link-gray link-bold link-icon"
+    class="link link--gray link--icon"
     data-testid="routerLinkTestId"
     href="/"
     rel="noopener noreferrer"
@@ -67,7 +67,7 @@ exports[`LinkWithIcon component renders RightIcon when provided 1`] = `
 exports[`LinkWithIcon component renders both LeftIcon and RightIcon when provided 1`] = `
 <div>
   <a
-    class="link link-gray link-bold link-icon"
+    class="link link--gray link--icon"
     data-testid="routerLinkTestId"
     href="/"
     rel="noopener noreferrer"
@@ -117,7 +117,7 @@ exports[`LinkWithIcon component renders both LeftIcon and RightIcon when provide
 exports[`LinkWithIcon component renders component correctly 1`] = `
 <div>
   <a
-    class="link link-gray link-bold link-icon"
+    class="link link--gray link--icon"
     data-testid="routerLinkTestId"
     href="/"
     rel="noopener noreferrer"

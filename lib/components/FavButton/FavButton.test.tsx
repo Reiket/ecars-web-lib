@@ -1,5 +1,4 @@
 import {cleanup, fireEvent, render, screen} from '@testing-library/react';
-import '@testing-library/jest-dom';
 import {FAV_BUTTON_TEST_ID, FAV_BUTTON_TYPE} from '@/components/FavButton/constants';
 import {FavButton} from '@/components/FavButton/FavButton';
 

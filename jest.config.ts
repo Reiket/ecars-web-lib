@@ -5,9 +5,10 @@ module.exports = {
   },
   preset: 'ts-jest/presets/js-with-ts',
   modulePaths: ['<rootDir>/lib'],
-  moduleDirectories: ['node_modules', 'src'],
+  moduleDirectories: ['node_modules', 'lib'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/lib/$1',
   },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  setupFiles: ['<rootDir>/jest.setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/lib/setupTests.ts'],
 };

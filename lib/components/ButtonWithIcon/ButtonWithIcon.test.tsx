@@ -2,7 +2,6 @@ import {cleanup, render, screen} from '@testing-library/react';
 import {BUTTON_COLOR, BUTTON_SIZE} from '@/components/Button/constants';
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 import {Icons} from '@/services/icons';
-import '@testing-library/jest-dom';
 import {LEFT_ICON_BUTTON_TEST_ID, RIGHT_ICON_BUTTON_TEST_ID} from '@/components/ButtonWithIcon/constants';
 
 describe('ButtonWithIcon component', () => {

@@ -5,7 +5,6 @@ import {
   NAVIGATE_BUTTON_TEST_ID,
   SLIDER_NAVIGATE_TEST_ID,
 } from '@/components/SliderNavigate/constants';
-import '@testing-library/jest-dom';
 import {NavigateButton} from '@/components/SliderNavigate/NavigateButton';
 
 describe('Slider Navigate component', () => {
