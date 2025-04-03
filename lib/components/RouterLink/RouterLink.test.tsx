@@ -12,7 +12,7 @@ describe('Router Link component', () => {
     color: ROUTER_LINK_COLOR.GRAY,
   };
   colors.forEach((color) => {
-    const testName = `renders links with colors ${color}`;
+    const testName = `renders links with ${color} color`;
     test(testName, () => {
       const {container} = render(
         <RouterLink
