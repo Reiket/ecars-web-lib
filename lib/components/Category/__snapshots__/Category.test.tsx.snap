@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Category component renders category with guides-category 1`] = `
+<div>
+  <span
+    class="category category-guides"
+    data-testid="categoryTestId"
+  >
+    guides
+  </span>
+</div>
+`;
+
+exports[`Category component renders category with news-category 1`] = `
+<div>
+  <span
+    class="category category-news"
+    data-testid="categoryTestId"
+  >
+    news
+  </span>
+</div>
+`;
+
+exports[`Category component renders category with reviews-category 1`] = `
+<div>
+  <span
+    class="category category-reviews"
+    data-testid="categoryTestId"
+  >
+    reviews
+  </span>
+</div>
+`;

@@ -1,0 +1,22 @@
+@use "sass:math";
+@import "../settings";
+
+.category {
+  padding: rem(2) rem(6);
+  font-size: rem(12);
+  line-height: math.div(16, 12);
+  font-weight: 600;
+  border-radius: rem(4);
+  &-guides {
+    background: get-color($categoriesColor, "guides-background");
+    color: get-color($categoriesColor, "guides-color");
+  }
+  &-news {
+    background: get-color($categoriesColor, "news-background");
+    color: get-color($categoriesColor, "news-color");
+  }
+  &-reviews {
+    background: get-color($categoriesColor, "reviews-background");
+    color: get-color($categoriesColor, "reviews-color");
+  }
+}

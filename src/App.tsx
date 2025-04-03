@@ -9,6 +9,7 @@ import {NavLink} from '@/components/NavLink/NavLink';
 import {Input} from '@/components/Input/Input';
 import {Field} from '@/components/Field/constants';
 import {Checkbox} from '@/components/Checkbox/constants';
+import {Category} from '@/components/Category/Category';
 
 function App() {
   return (
@@ -96,6 +97,9 @@ function App() {
       </Section>
       <Section title="Checkbox Component Example">
         <Checkbox checked />
+      </Section>
+      <Section title="Label Example">
+        <Category category="guides" />
       </Section>
     </>
   );
