@@ -1,6 +1,5 @@
 import {cleanup, render} from '@testing-library/react';
 import {NavLink} from './NavLink';
-import '@testing-library/jest-dom';
 import {MemoryRouter, Route, Routes} from 'react-router';
 import {MOCK_ROUTE_LINK} from '@/components/NavLink/constants';
 

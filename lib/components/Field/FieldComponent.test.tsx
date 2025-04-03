@@ -2,7 +2,6 @@ import {render, screen} from '@testing-library/react';
 import {Input} from '@/components/Input/Input';
 import {Field, FIELD_LABEL_TEST_ID, FIELD_TEST_ID} from '@/components/Field/constants';
 import {INPUT_TEST_ID} from '@/components/Input/constants';
-import '@testing-library/jest-dom';
 
 describe('Field Component', () => {
   const labelOptions = ['Email', undefined];
@@ -33,10 +32,10 @@ describe('Field Component', () => {
           expect(inputElement).toBeInTheDocument();
           if (label) {
             expect(fieldLabelElement).toBeInTheDocument();
-          }
-          if (id) {
-            expect(fieldLabelElement).toHaveAttribute('htmlFor', id);
-            expect(inputElement).toHaveAttribute('id', id);
+            if (id) {
+              expect(fieldLabelElement).toHaveAttribute('for', id);
+              expect(inputElement).toHaveAttribute('id', id);
+            }
           }
           if (error) {
             expect(screen.getByText('Some error')).toBeInTheDocument();

@@ -1,7 +1,6 @@
 import {cleanup, fireEvent, render, screen} from '@testing-library/react';
 import {BUTTON_COLOR, BUTTON_SIZE, BUTTON_TEST_ID, ButtonAttributesType} from '@/components/Button/constants';
 import {Button} from '@/components/Button/Button';
-import '@testing-library/jest-dom';
 
 describe('Button component', () => {
   afterEach(cleanup);

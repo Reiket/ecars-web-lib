@@ -1,5 +1,4 @@
 import {cleanup, render, screen} from '@testing-library/react';
-import '@testing-library/jest-dom';
 import {ROUTER_LINK_COLOR, ROUTER_LINK_TEST_ID} from '@/components/RouterLink/constants';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
 import {MemoryRouter} from 'react-router';

@@ -1,7 +1,6 @@
 import {cleanup, render, screen} from '@testing-library/react';
-import '@testing-library/jest-dom';
 import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
-import {ROUTER_LINK_COLOR, ROUTER_LINK_SIZE} from '@/components/RouterLink/constants';
+import {ROUTER_LINK_COLOR} from '@/components/RouterLink/constants';
 import {Icons} from '@/services/icons';
 import {LEFT_ICON_LINK_TEST_ID, RIGHT_ICON_LINK_TEST_ID} from '@/components/LinkWithIcon/constants';
 
@@ -9,7 +8,6 @@ describe('LinkWithIcon component', () => {
   afterEach(cleanup);
   const props = {
     color: ROUTER_LINK_COLOR.GRAY,
-    size: ROUTER_LINK_SIZE.BOLD,
     href: '/',
   };
   test('renders component correctly', () => {
