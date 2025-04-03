@@ -39,7 +39,6 @@ function App() {
       <Section title="Link Example">
         <RouterLink
           href="/"
-          size="bold"
           color="dark"
         >
           Link
@@ -48,7 +47,6 @@ function App() {
       <Section title="Link with icon Example">
         <LinkWithIcon
           href="/"
-          size="bold"
           color="green"
           LeftIcon={Icons.ArrowNarrowLeft}
         >

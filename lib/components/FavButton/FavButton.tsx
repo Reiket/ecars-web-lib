@@ -12,7 +12,7 @@ interface Props extends ElementProps {
 }
 
 export const FavButton: FC<Props> = ({disabled, block, isFavorite, type, onClick}) => {
-  const classNames = cn(block, 'favorite-button', `favorite-button-${type}`, {
+  const classNames = cn(block, 'favorite-button', `favorite-button--${type}`, {
     'active': isFavorite,
   });
   return (

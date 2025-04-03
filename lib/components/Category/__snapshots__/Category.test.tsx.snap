@@ -3,7 +3,7 @@
 exports[`Category component renders category with guides-category 1`] = `
 <div>
   <span
-    class="category category-guides"
+    class="category category--guides"
     data-testid="categoryTestId"
   >
     guides
@@ -14,7 +14,7 @@ exports[`Category component renders category with guides-category 1`] = `
 exports[`Category component renders category with news-category 1`] = `
 <div>
   <span
-    class="category category-news"
+    class="category category--news"
     data-testid="categoryTestId"
   >
     news
@@ -25,7 +25,7 @@ exports[`Category component renders category with news-category 1`] = `
 exports[`Category component renders category with reviews-category 1`] = `
 <div>
   <span
-    class="category category-reviews"
+    class="category category--reviews"
     data-testid="categoryTestId"
   >
     reviews

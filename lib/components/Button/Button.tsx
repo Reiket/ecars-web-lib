@@ -25,9 +25,9 @@ export const Button: FC<ButtonProps> = ({
   withIcon = false,
   block,
 }) => {
-  const classNames = cn(block, 'button', `button-${size} button-${color}`, {
-    'button-transparent': isTransparent,
-    'button-icon': withIcon,
+  const classNames = cn(block, 'button', `button--${size} button--${color}`, {
+    'button--transparent': isTransparent,
+    'button--icon': withIcon,
   });
   return (
     <button

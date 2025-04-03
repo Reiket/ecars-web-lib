@@ -8,7 +8,7 @@ interface Props extends ElementProps {
 }
 
 export const Category: FC<Props> = ({category, block}) => {
-  const classNames = cn(block, 'category', `category-${category}`);
+  const classNames = cn(block, 'category', `category--${category}`);
   return (
     <span
       data-testid={CATEGORY_TEST_ID}

@@ -11,7 +11,7 @@ interface Props extends ElementProps {
 export const NavLink: FC<Props> = ({block, to, children}) => {
   const classNames = (isActive: boolean) =>
     cn(block, 'nav-link', {
-      'link-active': isActive,
+      '_active': isActive,
     });
   return (
     <Link
