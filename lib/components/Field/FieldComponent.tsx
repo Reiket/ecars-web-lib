@@ -1,18 +1,21 @@
 import {cloneElement, type FC, ReactElement} from 'react';
 import {Field, FIELD_TEST_ID} from '@/components/Field/constants';
+import {ElementProps} from '@/services/types';
+import {cn} from '@/services/helpers';
 
-interface Props {
+interface Props extends ElementProps {
   children: ReactElement;
   id?: string;
   label?: string;
   error?: string;
 }
 
-export const FieldComponent: FC<Props> = ({label, children, error, id = 'input'}) => {
+export const FieldComponent: FC<Props> = ({label, block, children, error, id = 'input'}) => {
+  const classNames = cn(block, 'field');
   return (
     <div
       data-testid={FIELD_TEST_ID}
-      className="field"
+      className={classNames}
     >
       {!!label && (
         <Field.Label

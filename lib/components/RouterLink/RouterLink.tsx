@@ -2,8 +2,9 @@ import type {FC, ReactNode} from 'react';
 import {Link} from 'react-router';
 import {ROUTER_LINK_TEST_ID, RouterLinkColorType, RouterLinkSizeType} from '@/components/RouterLink/constants';
 import {cn} from '@/services/helpers';
+import {ElementProps} from '@/services/types';
 
-export interface RouterLinkProps {
+export interface RouterLinkProps extends ElementProps {
   color: RouterLinkColorType;
   children: ReactNode;
   to?: string;
@@ -12,8 +13,8 @@ export interface RouterLinkProps {
   withIcon?: boolean;
 }
 
-export const RouterLink: FC<RouterLinkProps> = ({color, href, to, children, withIcon = false, size = null}) => {
-  const classNames = cn(`link link-${color} link-${size}`, {
+export const RouterLink: FC<RouterLinkProps> = ({color, block, href, to, children, withIcon = false, size = null}) => {
+  const classNames = cn(block, `link`, `link-${color} link-${size}`, {
     'link-icon': withIcon,
   });
   if (to) {

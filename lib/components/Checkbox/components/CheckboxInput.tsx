@@ -10,6 +10,9 @@ export const CheckboxInput: FC<CheckboxProps> = ({
   name = 'checkbox',
   hasError = false,
 }) => {
+  const classNames = cn('', 'checkbox__input', {
+    'error': hasError,
+  });
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (onChange) onChange(e.target.checked);
   };
@@ -18,9 +21,7 @@ export const CheckboxInput: FC<CheckboxProps> = ({
       data-testid={CHECKBOX_TEST_INPUT_ID}
       name={name}
       disabled={disabled}
-      className={cn('checkbox__input', {
-        'error': hasError,
-      })}
+      className={classNames}
       checked={checked}
       onChange={handleChange}
       id={id}
