@@ -1,20 +1,21 @@
 import {NavLink as Link} from 'react-router';
 import type {FC, ReactNode} from 'react';
 import {cn} from '@/services/helpers';
+import {ElementProps} from '@/services/types';
 
-interface Props {
+interface Props extends ElementProps {
   to: string;
   children: ReactNode;
 }
 
-export const NavLink: FC<Props> = ({to, children}) => {
+export const NavLink: FC<Props> = ({block, to, children}) => {
+  const classNames = (isActive: boolean) =>
+    cn(block, 'nav-link', {
+      'link-active': isActive,
+    });
   return (
     <Link
-      className={({isActive}) =>
-        cn('nav-link', {
-          'link-active': isActive,
-        })
-      }
+      className={({isActive}) => classNames(isActive)}
       to={to}
     >
       {children}

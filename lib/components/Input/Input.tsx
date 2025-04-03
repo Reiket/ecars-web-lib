@@ -1,8 +1,9 @@
 import {cn} from '@/services/helpers';
 import {ChangeEvent, FC, HTMLInputTypeAttribute} from 'react';
 import {INPUT_TEST_ID} from '@/components/Input/constants';
+import {ElementProps} from '@/services/types';
 
-interface Props {
+interface Props extends ElementProps {
   type?: HTMLInputTypeAttribute;
   value?: string;
   onChange?: (value: string) => void;
@@ -18,11 +19,15 @@ export const Input: FC<Props> = ({
   onChange,
   hasError,
   placeholder,
+  block,
   disabled = false,
   type = 'text',
   id = 'input',
   name = 'input',
 }) => {
+  const classNames = cn(block, 'input', {
+    'error': hasError,
+  });
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
       onChange(event.currentTarget.value);
@@ -34,9 +39,7 @@ export const Input: FC<Props> = ({
       disabled={disabled}
       autoComplete="off"
       data-testid={INPUT_TEST_ID}
-      className={cn('input', {
-        'error': hasError,
-      })}
+      className={classNames}
       id={id}
       name={name}
       placeholder={placeholder}

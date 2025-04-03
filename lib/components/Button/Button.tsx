@@ -1,8 +1,9 @@
 import type {FC, MouseEvent, ReactNode} from 'react';
 import {BUTTON_TEST_ID, ButtonAttributesType, ButtonColorType, ButtonSizeType} from '@/components/Button/constants';
 import {cn} from '@/services/helpers';
+import {ElementProps} from '@/services/types';
 
-export interface ButtonProps {
+export interface ButtonProps extends ElementProps {
   size: ButtonSizeType;
   children: ReactNode;
   color: ButtonColorType;
@@ -22,17 +23,18 @@ export const Button: FC<ButtonProps> = ({
   disabled = false,
   isTransparent = false,
   withIcon = false,
+  block,
 }) => {
-  const classNames = cn('button', `button-${size}`, `button-${color}`, {
+  const classNames = cn(block, 'button', `button-${size} button-${color}`, {
     'button-transparent': isTransparent,
     'button-icon': withIcon,
   });
   return (
     <button
       data-testid={BUTTON_TEST_ID}
-      className={classNames}
       disabled={disabled}
       type={type}
+      className={classNames}
       onClick={onClick}
     >
       {children}
