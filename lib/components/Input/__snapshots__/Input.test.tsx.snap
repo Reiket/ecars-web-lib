@@ -31,37 +31,6 @@ exports[`Input component should input is disabled has an error and input has an 
 </div>
 `;
 
-exports[`Input component should input is disabled has an error and input has an invalid class has a placeholder 1`] = `
-<div>
-  <input
-    autocomplete="off"
-    class="input error"
-    data-testid="inputTestId"
-    disabled=""
-    id="input"
-    name="input"
-    placeholder="Your email"
-    type="text"
-    value=""
-  />
-</div>
-`;
-
-exports[`Input component should input is disabled has an error and input has an invalid class has no placeholder 1`] = `
-<div>
-  <input
-    autocomplete="off"
-    class="input error"
-    data-testid="inputTestId"
-    disabled=""
-    id="input"
-    name="input"
-    type="text"
-    value=""
-  />
-</div>
-`;
-
 exports[`Input component should input is disabled has no error has a placeholder 1`] = `
 <div>
   <input
@@ -109,35 +78,6 @@ exports[`Input component should input is not disabled has an error and input has
 `;
 
 exports[`Input component should input is not disabled has an error and input has an error class has no placeholder 1`] = `
-<div>
-  <input
-    autocomplete="off"
-    class="input error"
-    data-testid="inputTestId"
-    id="input"
-    name="input"
-    type="text"
-    value=""
-  />
-</div>
-`;
-
-exports[`Input component should input is not disabled has an error and input has an invalid class has a placeholder 1`] = `
-<div>
-  <input
-    autocomplete="off"
-    class="input error"
-    data-testid="inputTestId"
-    id="input"
-    name="input"
-    placeholder="Your email"
-    type="text"
-    value=""
-  />
-</div>
-`;
-
-exports[`Input component should input is not disabled has an error and input has an invalid class has no placeholder 1`] = `
 <div>
   <input
     autocomplete="off"
