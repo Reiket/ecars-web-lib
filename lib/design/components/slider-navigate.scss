@@ -1,13 +1,13 @@
 @use "sass:math";
-@import "../settings";
+@use "../settings" as s;
 
 .slider-navigate {
-  font-size: rem(20);
+  font-size: s.rem(20);
   display: flex;
-  gap: rem(16);
+  gap: s.rem(16);
   &__button {
-    width: rem(40);
-    height: rem(40);
+    width: s.rem(40);
+    height: s.rem(40);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -15,17 +15,17 @@
     transition: all 0.3s linear;
     @media (any-hover: hover) {
       &:hover {
-        color: get-color($navigateButtonColors, "hover-color");
-        background: get-color($navigateButtonColors, "hover-background");
+        color: s.get-color(s.$navigateButtonColors, "hover-color");
+        background: s.get-color(s.$navigateButtonColors, "hover-background");
       }
     }
     @media (any-hover: none) {
-      color: get-color($navigateButtonColors, "hover-color");
-      background: get-color($navigateButtonColors, "hover-background");
+      color: s.get-color(s.$navigateButtonColors, "hover-color");
+      background: s.get-color(s.$navigateButtonColors, "hover-background");
     }
     &:active {
-      color: get-color($navigateButtonColors, "active-color");
-      background: get-color($navigateButtonColors, "active-background");
+      color: s.get-color(s.$navigateButtonColors, "active-color");
+      background: s.get-color(s.$navigateButtonColors, "active-background");
     }
   }
 }

@@ -1,16 +1,16 @@
 @use "sass:math";
-@import "../settings";
+@use "../settings" as s;
 
 @mixin inputState() {
-  border-color: get-color($fieldsColor, "state-border");
-  background: get-color($fieldsColor, "state-background");
+  border-color: s.get-color(s.$fieldsColor, "state-border");
+  background: s.get-color(s.$fieldsColor, "state-background");
 }
 
 .input {
-  padding: rem(13) rem(12);
-  border: rem(1) solid get-color($fieldsColor, "border");
-  border-radius: rem(8);
-  font-size: rem(14);
+  padding: s.rem(13) s.rem(12);
+  border: s.rem(1) solid s.get-color(s.$fieldsColor, "border");
+  border-radius: s.rem(8);
+  font-size: s.rem(14);
   line-height: math.div(20, 14);
   outline: none;
   transition: all 0.3s linear;
@@ -21,21 +21,21 @@
   }
   &:focus {
     @include inputState;
-    box-shadow: rem(0) rem(2) rem(8) rem(0) get-color($fieldsColor, "shadow");
+    box-shadow: s.rem(0) s.rem(2) s.rem(8) s.rem(0) s.get-color(s.$fieldsColor, "shadow");
   }
   &::placeholder {
     transition: color 0.3s linear;
-    color: get-color($fieldsColor, "placeholder");
+    color: s.get-color(s.$fieldsColor, "placeholder");
   }
   &:disabled {
     opacity: 40%;
     cursor: auto;
   }
   &.error {
-    color: get-color($fieldsColor, "error");
-    border-color: get-color($fieldsColor, "error");
+    color: s.$errorColor;
+    border-color: s.$errorColor;
     &::placeholder {
-      color: get-color($fieldsColor, "error");
+      color: s.$errorColor;
     }
   }
 }

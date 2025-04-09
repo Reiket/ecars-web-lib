@@ -1,7 +1,7 @@
-@import "../settings";
+@use "../settings" as s;
 
 @mixin navLinkState() {
-  color: $navLinkColor;
+  color: s.$navLinkColor;
   &:after {
     transform-origin: bottom left;
     transform: scaleX(1);
@@ -16,12 +16,12 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: rem(-5);
+    bottom: s.rem(-5);
     left: 0;
     width: 100%;
-    height: rem(3);
-    border-radius: rem(8);
-    background: $navLinkColor;
+    height: s.rem(3);
+    border-radius: s.rem(8);
+    background: s.$navLinkColor;
     transform: scaleX(0);
     transition: transform 0.3s linear;
     transform-origin: bottom right;

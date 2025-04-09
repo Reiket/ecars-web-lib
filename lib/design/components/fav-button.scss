@@ -1,8 +1,8 @@
 @use "sass:math";
-@import "../settings";
+@use "../settings" as s;
 .favorite-button {
-  width: rem(32);
-  height: rem(32);
+  width: s.rem(32);
+  height: s.rem(32);
   z-index: 10;
   position: relative;
   display: flex;
@@ -18,14 +18,14 @@
   }
   &--transparent {
     svg {
-      color: get-color($favButtonColors, "transparent");
-      font-size: rem(20);
+      color: s.get-color(s.$favButtonColors, "transparent");
+      font-size: s.rem(20);
     }
     &:not(&:disabled) {
       @media (any-hover: hover) {
         &:hover {
           svg {
-            color: get-color($favButtonColors, "transparent-hover");
+            color: s.get-color(s.$favButtonColors, "transparent-hover");
           }
         }
       }
@@ -33,43 +33,43 @@
         @media (any-hover: hover) {
           &:hover {
             svg {
-              color: get-color($favButtonColors, "transparent-hover-active");
+              color: s.get-color(s.$favButtonColors, "transparent-hover-active");
             }
           }
         }
         &:active {
           svg {
-            color: get-color($favButtonColors, "transparent-press");
+            color: s.get-color(s.$favButtonColors, "transparent-press");
           }
         }
       }
     }
     &.active {
       svg {
-        color: get-color($favButtonColors, "transparent-active");
+        color: s.get-color(s.$favButtonColors, "transparent-active");
       }
     }
     &:active {
       svg {
-        color: get-color($favButtonColors, "transparent-press");
+        color: s.get-color(s.$favButtonColors, "transparent-press");
       }
     }
   }
   &--circle {
-    background: get-color($favButtonColors, "circle");
+    background: s.get-color(s.$favButtonColors, "circle");
     border-radius: 50%;
     svg {
-      color: $color-white;
-      font-size: rem(16);
+      color: s.get-color(s.$favButtonColors, "circle-color");
+      font-size: s.rem(16);
     }
     &:not(&:disabled) {
       @media (any-hover: hover) {
         &:hover {
-          background: get-color($favButtonColors, "circle-hover");
+          background: s.get-color(s.$favButtonColors, "circle-hover");
         }
       }
       &:active {
-        background: get-color($favButtonColors, "circle-press");
+        background: s.get-color(s.$favButtonColors, "circle-press");
       }
     }
   }

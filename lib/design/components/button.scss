@@ -1,9 +1,27 @@
 @use "sass:math";
-@import "../settings";
+@use "../settings" as s;
+
+@mixin buttonSize($paddingTB, $paddingRL, $size, $lineHeight: 24) {
+  padding: s.rem($paddingTB) s.rem($paddingRL);
+  font-size: s.rem($size);
+  line-height: math.div($lineHeight, $size);
+}
+
+@mixin buttonStyle($background, $color, $hover-background, $hover-color) {
+  background: s.get-color(s.$buttonColors, $background);
+  color: s.get-color(s.$buttonColors, $color);
+  &::after {
+    background-color: s.get-color(s.$buttonColors, $hover-background);
+  }
+  &:active {
+    background-color: s.get-color(s.$buttonColors, $hover-background);
+  }
+}
+
 .button {
   font-weight: 600;
   display: inline-block;
-  border-radius: rem(8);
+  border-radius: s.rem(8);
   position: relative;
   transition: all 0.5s ease 0s;
   z-index: 1;
@@ -17,7 +35,7 @@
       top: 0;
       right: 0;
       z-index: -1;
-      border-radius: rem(8);
+      border-radius: s.rem(8);
       transition: all 0.5s ease;
     }
     @media (any-hover: hover) {
@@ -30,49 +48,24 @@
     }
   }
   &--green {
-    background: get-color($buttonColors, "green");
-    color: get-color($buttonColors, "white");
-    &::after {
-      background-color: get-color($buttonColors, "hover-green");
-    }
-    &:active {
-      background-color: get-color($buttonColors, "hover-green");
-    }
+    @include buttonStyle("green", "white", "hover-green", "green");
   }
+
   &--white {
-    background: get-color($buttonColors, "white");
-    color: get-color($buttonColors, "green");
-    &::after {
-      background-color: get-color($buttonColors, "hover-white");
-    }
-    &:active {
-      background-color: get-color($buttonColors, "hover-white");
-    }
+    @include buttonStyle("white", "green", "hover-white", "white");
   }
+
   &--gray {
-    background: get-color($buttonColors, "gray");
-    color: $main-color;
-    &::after {
-      background-color: get-color($buttonColors, "hover-gray");
-    }
-    &:active {
-      background-color: get-color($buttonColors, "hover-gray");
-    }
+    @include buttonStyle("gray", "gray-color", "hover-gray", "gray");
   }
   &--big {
-    padding: rem(12) rem(25);
-    font-size: rem(16);
-    line-height: math.div(24, 16);
+    @include buttonSize(12, 25, 16);
   }
   &--medium {
-    padding: rem(6) rem(12.8);
-    font-size: rem(14);
-    line-height: math.div(24, 14);
+    @include buttonSize(6, 12.8, 14);
   }
   &--small {
-    padding: rem(2) rem(7);
-    font-size: rem(12);
-    line-height: math.div(16, 12);
+    @include buttonSize(2, 7, 12, 16);
   }
   &:disabled {
     cursor: default;
@@ -88,7 +81,7 @@
     align-items: center;
     > svg {
       transition: transform 0.3s linear;
-      font-size: rem(20);
+      font-size: s.rem(20);
     }
     &._rotate {
       svg {
