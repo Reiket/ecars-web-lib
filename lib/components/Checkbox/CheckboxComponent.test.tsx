@@ -21,7 +21,7 @@ describe('Checkbox component', () => {
           };
           const {container} = render(<Checkbox {...props} />);
           const checkboxElement = screen.getByTestId(CHECKBOX_TEST_ID);
-          const inputElement = screen.getByTestId(CHECKBOX_TEST_INPUT_ID);
+          const inputElement: HTMLInputElement = screen.getByTestId(CHECKBOX_TEST_INPUT_ID);
 
           if (error) {
             expect(inputElement).toHaveClass('error');
@@ -40,7 +40,7 @@ describe('Checkbox component', () => {
       onChange: jest.fn(),
     };
     render(<Checkbox {...props} />);
-    const inputElement = screen.getByTestId(CHECKBOX_TEST_INPUT_ID);
+    const inputElement: HTMLInputElement = screen.getByTestId(CHECKBOX_TEST_INPUT_ID);
     expect(inputElement.checked).toBe(false);
     fireEvent.change(inputElement, {target: {checked: true}});
     expect(inputElement.checked).toBe(true);

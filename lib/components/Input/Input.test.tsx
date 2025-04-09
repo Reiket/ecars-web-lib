@@ -20,7 +20,7 @@ describe('Input component', () => {
             placeholder: placeholder,
           };
           const {container} = render(<Input {...props} />);
-          const inputElement = screen.getByTestId(INPUT_TEST_ID);
+          const inputElement: HTMLInputElement = screen.getByTestId(INPUT_TEST_ID);
           if (error) {
             expect(inputElement).toHaveClass('error');
           }
