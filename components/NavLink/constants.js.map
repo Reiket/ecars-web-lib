@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.js","sources":["../../../lib/components/NavLink/constants.ts"],"sourcesContent":["export const MOCK_ROUTE_LINK = \"/mock\""],"names":["MOCK_ROUTE_LINK"],"mappings":"AAAO,MAAMA,IAAkB;"}
