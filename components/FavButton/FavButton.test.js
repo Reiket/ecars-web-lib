@@ -1,5 +1,5 @@
 import { jsx as o } from "react/jsx-runtime";
-import { c as h, r as n, s as c, f as r } from "../../react.esm-DvVef44-.js";
+import { c as h, r as n, s as c, f as r } from "../../react.esm-CgrirGj5.js";
 import { FAV_BUTTON_TYPE as v, FAV_BUTTON_TEST_ID as s } from "./constants.js";
 import { FavButton as a } from "./FavButton.js";
 describe("Fav Button component", () => {

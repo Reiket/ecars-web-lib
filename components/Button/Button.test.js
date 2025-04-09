@@ -1,5 +1,5 @@
 import { jsx as c } from "react/jsx-runtime";
-import { c as m, r as i, s as h, f as p } from "../../react.esm-DvVef44-.js";
+import { c as m, r as i, s as h, f as p } from "../../react.esm-CgrirGj5.js";
 import { BUTTON_COLOR as d, BUTTON_SIZE as b, BUTTON_TEST_ID as l } from "./constants.js";
 import { Button as s } from "./Button.js";
 describe("Button component", () => {
