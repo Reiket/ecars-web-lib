@@ -4,6 +4,7 @@
   "version": "0.0.24",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://Reiket.github.io/ecars-web-lib",
   "type": "module",
   "exports": {
     ".": {
@@ -22,6 +23,8 @@
     "start": "bunx --bun vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
     "build:dev": "tsc && vite build --mode development",
+    "predeploy": "tsc --p ./tsconfig-build.json && vite build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
