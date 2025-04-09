@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Run ESLint
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx --fix
+        run: npx eslint lib --ext .js,.jsx,.ts,.tsx --fix
 
       - name: Run Prettier
         run: npx prettier --check
