@@ -16,7 +16,7 @@ export default defineConfig({
     visualizer(),
     codecovVitePlugin({
       enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
-      bundleName: "ecars-web-lib",
+      bundleName: "dist",
       uploadToken: process.env.CODECOV_TOKEN,
     }),
   ],
