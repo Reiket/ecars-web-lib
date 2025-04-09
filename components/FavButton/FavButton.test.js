@@ -1,5 +1,5 @@
 import { jsx as o } from "react/jsx-runtime";
-import { c as h, r as n, s as c, f as r } from "../../react.esm-CgrirGj5.js";
+import { c as h, r as n, s as c, f as r } from "../../react.esm-V8WrrwsZ.js";
 import { FAV_BUTTON_TYPE as v, FAV_BUTTON_TEST_ID as s } from "./constants.js";
 import { FavButton as a } from "./FavButton.js";
 describe("Fav Button component", () => {
@@ -13,7 +13,7 @@ describe("Fav Button component", () => {
       });
     });
   }), test("handles the click event", () => {
-    const e = jest.fn(), { container: t } = n(o(a, { type: "circle", onClick: () => e() }));
+    const e = jest.fn(), { container: t } = n(o(a, { type: "circle", onClick: e }));
     r.click(c.getByTestId(s)), expect(e).toHaveBeenCalledTimes(1), expect(t).toMatchSnapshot();
   }), test("the onClick event does not fire when button is disabled", () => {
     const e = jest.fn(), { container: t } = n(o(a, { type: "circle", disabled: !0, onClick: e }));

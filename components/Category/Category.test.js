@@ -1,5 +1,5 @@
 import { jsx as a } from "react/jsx-runtime";
-import { c as r, r as s, s as c } from "../../react.esm-CgrirGj5.js";
+import { c as r, r as s, s as c } from "../../react.esm-V8WrrwsZ.js";
 import { CATEGORIES_LIST as m, CATEGORY_TEST_ID as n } from "./constants.js";
 import { Category as p } from "./Category.js";
 describe("Category component", () => {

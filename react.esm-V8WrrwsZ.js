@@ -5159,7 +5159,9 @@ Error generating stack: ` + m.message + `
   }, Hn = bs, Ht = Vi;
   var Fr = { usingClientEntryPoint: !1, Events: [to, va, Ol, An, et, bs] }, jr = { findFiberByHostInstance: Qt, bundleType: 0, version: "18.3.1", rendererPackageName: "react-dom" }, Wa = { bundleType: jr.bundleType, version: jr.version, rendererPackageName: jr.rendererPackageName, rendererConfig: jr.rendererConfig, overrideHookState: null, overrideHookStateDeletePath: null, overrideHookStateRenamePath: null, overrideProps: null, overridePropsDeletePath: null, overridePropsRenamePath: null, setErrorHandler: null, setSuspenseHandler: null, scheduleUpdate: null, currentDispatcherRef: ne.ReactCurrentDispatcher, findHostInstanceByFiber: function(t) {
     return (t = _p(t)) === null ? null : t.stateNode;
-  }, findFiberByHostInstance: jr.findFiberByHostInstance, findHostInstancesForRefresh: null, scheduleRefresh: null, scheduleRoot: null, setRefreshHandler: null, getCurrentFiber: null, reconcilerVersion: "18.3.1-next-f1338f8080-20240426" };
+  }, findFiberByHostInstance: jr.findFiberByHostInstance || function() {
+    return null;
+  }, findHostInstancesForRefresh: null, scheduleRefresh: null, scheduleRoot: null, setRefreshHandler: null, getCurrentFiber: null, reconcilerVersion: "18.3.1-next-f1338f8080-20240426" };
   if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u") {
     var pu = __REACT_DEVTOOLS_GLOBAL_HOOK__;
     if (!pu.isDisabled && pu.supportsFiber) try {
@@ -15381,7 +15383,7 @@ function Sp(f) {
   }, Sp(f);
 }
 function rE(f, h, y) {
-  return function(_, C) {
+  return h && function(_, C) {
     for (var g = 0; g < C.length; g++) {
       var U = C[g];
       U.enumerable = U.enumerable || !1, U.configurable = !0, "value" in U && (U.writable = !0), Object.defineProperty(_, G1(U.key), U);
@@ -15393,7 +15395,7 @@ function G1(f) {
     if (Sp(y) !== "object" || y === null) return y;
     var C = y[Symbol.toPrimitive];
     if (C !== void 0) {
-      var g = C.call(y, _ || "default");
+      var g = C.call(y, _);
       if (Sp(g) !== "object") return g;
       throw new TypeError("@@toPrimitive must return a primitive value.");
     }
@@ -15656,7 +15658,7 @@ function ek(f) {
       return an !== null ? an : "Submit Query";
     }
     if (il($, ["button"])) {
-      var ce = z($, { isEmbeddedInLabel: !1, isReferenced: !1 });
+      var ce = z($, { isEmbeddedInLabel: !1 });
       if (ce !== "") return ce;
     }
     return null;
@@ -15701,11 +15703,11 @@ function ek(f) {
     }($) || ft($) && ne.isReferenced || function(Ze) {
       return C1(Ze);
     }($)) {
-      var nn = z($, { isEmbeddedInLabel: ne.isEmbeddedInLabel, isReferenced: !1 });
+      var nn = z($, { isEmbeddedInLabel: ne.isEmbeddedInLabel });
       if (nn !== "") return y.add($), nn;
     }
     if ($.nodeType === $.TEXT_NODE) return y.add($), $.textContent || "";
-    if (ne.recursion) return y.add($), z($, { isEmbeddedInLabel: ne.isEmbeddedInLabel, isReferenced: !1 });
+    if (ne.recursion) return y.add($), z($, { isEmbeddedInLabel: ne.isEmbeddedInLabel });
     var pn = function(Ze) {
       return ft(Ze) ? Y(Ze, "title") : null;
     }($);
@@ -15747,7 +15749,7 @@ function pE(f, h, y) {
       if (Ep(g) !== "object" || g === null) return g;
       var j = g[Symbol.toPrimitive];
       if (j !== void 0) {
-        var S = j.call(g, U || "default");
+        var S = j.call(g, U);
         if (Ep(S) !== "object") return S;
         throw new TypeError("@@toPrimitive must return a primitive value.");
       }
@@ -16793,4 +16795,4 @@ export {
   Ox as r,
   zx as s
 };
-//# sourceMappingURL=react.esm-CgrirGj5.js.map
+//# sourceMappingURL=react.esm-V8WrrwsZ.js.map

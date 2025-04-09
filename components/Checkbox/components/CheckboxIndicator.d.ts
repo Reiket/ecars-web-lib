@@ -1,1 +1,2 @@
-export declare const CheckboxIndicator: () => import("react/jsx-runtime").JSX.Element;
+import { FC } from 'react';
+export declare const CheckboxIndicator: FC;

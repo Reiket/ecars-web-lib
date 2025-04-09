@@ -1,8 +1,8 @@
 import { jsx as n, jsxs as l } from "react/jsx-runtime";
-import { c as x, r as o, s as r } from "../../react.esm-CgrirGj5.js";
+import { c as x, r as o, s as r } from "../../react.esm-V8WrrwsZ.js";
 import { ROUTER_LINK_COLOR as h, ROUTER_LINK_TEST_ID as c } from "./constants.js";
 import { RouterLink as s } from "./RouterLink.js";
-import { M as m } from "../../chunk-HA7DTUK3-Dm4R8_3T.js";
+import { M as m } from "../../chunk-KNED5TY2-DhCXmkLz.js";
 describe("Router Link component", () => {
   afterEach(x);
   const p = Object.values(h), a = { color: h.GRAY };

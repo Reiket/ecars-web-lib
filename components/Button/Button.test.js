@@ -1,5 +1,5 @@
 import { jsx as c } from "react/jsx-runtime";
-import { c as m, r as i, s as h, f as p } from "../../react.esm-CgrirGj5.js";
+import { c as m, r as i, s as h, f as p } from "../../react.esm-V8WrrwsZ.js";
 import { BUTTON_COLOR as d, BUTTON_SIZE as b, BUTTON_TEST_ID as l } from "./constants.js";
 import { Button as s } from "./Button.js";
 describe("Button component", () => {
@@ -9,7 +9,7 @@ describe("Button component", () => {
     x.forEach((e) => {
       T.forEach((n) => {
         f.forEach((o) => {
-          test(`renders button with color ${t}, size ${e}, type ${n || "button"} and disabled`, () => {
+          test(`renders button with color ${t}, size ${e}, type ${n ?? "button"} and disabled`, () => {
             const { container: B } = i(c(s, { color: t, size: e, type: n, disabled: o, children: "button" })), r = h.getByTestId(l);
             expect(r).toBeInTheDocument(), expect(r).toHaveClass(`button--${t}`), expect(r).toHaveClass(`button--${e}`), expect(r.disabled).toBe(o), expect(r).toHaveStyle("cursor: default"), expect(B).toMatchSnapshot();
           });
@@ -21,7 +21,7 @@ describe("Button component", () => {
     let o = e("button");
     expect(o).toBeInTheDocument(), n(c(s, { ...a, children: "Confirm" })), o = e("Confirm"), expect(o).toBeInTheDocument(), expect(t).toMatchSnapshot();
   }), test("handles the click event", () => {
-    const t = jest.fn(), { container: e, getByText: n } = i(c(s, { ...a, onClick: () => t(), children: "button" }));
+    const t = jest.fn(), { container: e, getByText: n } = i(c(s, { ...a, onClick: t, children: "button" }));
     p.click(n("button")), expect(t).toHaveBeenCalledTimes(1), expect(e).toMatchSnapshot();
   }), test("the onClick event does not fire when button is disabled", () => {
     const t = jest.fn(), { container: e, getByText: n } = i(c(s, { ...a, disabled: !0, onClick: t, children: "button" })), o = n("button");

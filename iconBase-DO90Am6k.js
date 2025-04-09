@@ -53,7 +53,7 @@ function j(r, t, e) {
     if (typeof o != "object" || !o) return o;
     var i = o[Symbol.toPrimitive];
     if (i !== void 0) {
-      var c = i.call(o, a || "default");
+      var c = i.call(o, a);
       if (typeof c != "object") return c;
       throw new TypeError("@@toPrimitive must return a primitive value.");
     }
@@ -76,4 +76,4 @@ function d(r) {
 export {
   w as G
 };
-//# sourceMappingURL=iconBase-1dWwY_61.js.map
+//# sourceMappingURL=iconBase-DO90Am6k.js.map

@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { ReactElement, FC } from 'react';
 import { ElementProps } from '../../services/types';
 interface Props extends ElementProps {
     children: ReactElement;

@@ -1,5 +1,5 @@
 import { jsx as a } from "react/jsx-runtime";
-import { r, s, f as b } from "../../react.esm-CgrirGj5.js";
+import { r, s, f as b } from "../../react.esm-V8WrrwsZ.js";
 import { C as f, a as n, b as h } from "../../constants-DIsb-mTS.js";
 describe("Checkbox component", () => {
   const d = [!0, !1], i = [!0, !1];

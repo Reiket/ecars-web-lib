@@ -1,5 +1,5 @@
 import { jsx as a } from "react/jsx-runtime";
-import { c as T, r as c, s } from "../../react.esm-CgrirGj5.js";
+import { c as T, r as c, s } from "../../react.esm-V8WrrwsZ.js";
 import { SliderNavigate as r } from "./SliderNavigate.js";
 import { SLIDER_NAVIGATE_TEST_ID as i, NAVIGATE_BUTTON_TEST_ID as n, NAVIGATE_BUTTON_PLACEMENT as p } from "./constants.js";
 import { NavigateButton as l } from "./NavigateButton.js";

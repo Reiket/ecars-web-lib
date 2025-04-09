@@ -1,7 +1,7 @@
 import { jsx as t } from "react/jsx-runtime";
-import { c as o, r as c } from "../../react.esm-CgrirGj5.js";
+import { c as o, r as c } from "../../react.esm-V8WrrwsZ.js";
 import { NavLink as s } from "./NavLink.js";
-import { M as a, R as r, a as h } from "../../chunk-HA7DTUK3-Dm4R8_3T.js";
+import { M as a, R as r, a as h } from "../../chunk-KNED5TY2-DhCXmkLz.js";
 import { MOCK_ROUTE_LINK as n } from "./constants.js";
 describe("NavLink component", () => {
   afterEach(o), test("renders correctly with given children", () => {
