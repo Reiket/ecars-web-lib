@@ -1,5 +1,5 @@
 @use "sass:math";
-@import "@/design/settings";
+@use "../settings" as s;
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +21,7 @@ a:active {
 html,
 body {
   height: 100%;
-  min-width: rem(320);
+  min-width: s.rem(320);
 }
 body {
   //text-rendering: optimizeLegibility;

@@ -1,16 +1,16 @@
 @use "sass:math";
-@import "../settings";
+@use "../settings" as s;
 
 .field {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: rem(8);
+  gap: s.rem(8);
   &__error {
     position: absolute;
-    bottom: rem(-18);
-    font-size: rem(12);
+    bottom: s.rem(-18);
+    font-size: s.rem(12);
     line-height: math.div(16, 12);
-    color: get-color($fieldsColor, "error");
+    color: s.$errorColor;
   }
 }

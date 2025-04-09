@@ -6,6 +6,7 @@ $buttonColors: (
   "white": #ffffff,
   "hover-white": #d3d3d3,
   "gray": #f0f0f0,
+  "gray-color": #1a1a1a,
   "hover-gray": #d3d3d3,
 );
 
@@ -17,6 +18,7 @@ $favButtonColors: (
   "transparent-active": #e49a49,
   "transparent-press": #af7743,
   "transparent-hover-active": #c28140,
+  "circle-color": #fff,
   "circle": #312f2f,
   "circle-hover": #1a1a1a,
   "circle-press": #000,
@@ -48,8 +50,12 @@ $fieldsColor: (
   "border": #d1d1d1,
   "state-border": #2c2926,
   "state-background": #f6f5f4,
-  "error": #c31c27,
   "shadow": #00000029,
+);
+
+$checkboxColor: (
+  "border": #d1d1d1,
+  "default": #3c7d46,
 );
 
 $categoriesColor: (
@@ -78,7 +84,7 @@ $color-black: #000;
 /*yellow*/
 $color-yellow: #e49a49;
 /*red-error*/
-$color-error: #c31c27;
+$errorColor: #c31c27;
 
 //Background colors
 $background-dark: #2c2926;

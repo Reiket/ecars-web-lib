@@ -6,13 +6,22 @@ import {libInjectCss} from 'vite-plugin-lib-inject-css';
 import {glob} from 'glob';
 import {terser} from 'rollup-plugin-terser';
 import {visualizer} from 'rollup-plugin-visualizer';
+import {codecovVitePlugin} from '@codecov/vite-plugin';
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export default defineConfig({
   plugins: [
     dts({include: ['lib']}),
     libInjectCss(),
     terser(),
-    visualizer()
+    visualizer(),
+    codecovVitePlugin({
+      enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
+      bundleName: "dist",
+      uploadToken: process.env.CODECOV_TOKEN,
+    }),
   ],
   server: {
     fs: {

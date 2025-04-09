@@ -1,22 +1,24 @@
 @use "sass:math";
-@import "../settings";
+@use "../settings" as s;
+
+@mixin categoryStyles($categoryName) {
+  background: s.get-color(s.$categoriesColor, "#{$categoryName}-background");
+  color: s.get-color(s.$categoriesColor, "#{$categoryName}-color");
+}
 
 .category {
-  padding: rem(2) rem(6);
-  font-size: rem(12);
+  padding: s.rem(2) s.rem(6);
+  font-size: s.rem(12);
   line-height: math.div(16, 12);
   font-weight: 600;
-  border-radius: rem(4);
+  border-radius: s.rem(4);
   &--guides {
-    background: get-color($categoriesColor, "guides-background");
-    color: get-color($categoriesColor, "guides-color");
+    @include categoryStyles("guides");
   }
   &--news {
-    background: get-color($categoriesColor, "news-background");
-    color: get-color($categoriesColor, "news-color");
+    @include categoryStyles("news");
   }
   &--reviews {
-    background: get-color($categoriesColor, "reviews-background");
-    color: get-color($categoriesColor, "reviews-color");
+    @include categoryStyles("reviews");
   }
 }

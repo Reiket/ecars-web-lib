@@ -1,60 +1,45 @@
 @use "sass:math";
-@import "../settings";
+@use "../settings" as s;
+
+@mixin linkColor($color, $hover-color, $active-color) {
+  color: s.get-color(s.$linkColors, $color);
+  @media (any-hover: hover) {
+    &:hover {
+      color: s.get-color(s.$linkColors, $hover-color);
+    }
+  }
+  &:active {
+    color: s.get-color(s.$linkColors, $active-color);
+  }
+}
 
 .link {
   transition: all 0.5s linear;
   font-weight: 400;
   svg {
-    font-size: rem(16);
-    transform: translateY(rem(1));
+    font-size: s.rem(16);
+    transform: translateY(s.rem(1));
   }
+
   &--green {
-    color: get-color($linkColors, "green");
-    @media (any-hover: hover) {
-      &:hover {
-        color: get-color($linkColors, "hover-green");
-      }
-    }
-    &:active {
-      color: get-color($linkColors, "hover-green");
-    }
+    @include linkColor("green", "hover-green", "hover-green");
   }
+
   &--gray {
-    color: get-color($linkColors, "gray");
-    @media (any-hover: hover) {
-      &:hover {
-        color: get-color($linkColors, "hover-gray");
-      }
-    }
-    &:active {
-      color: get-color($linkColors, "hover-gray");
-    }
+    @include linkColor("gray", "hover-gray", "hover-gray");
   }
+
   &--lightgray {
-    color: get-color($linkColors, "lightgray");
-    @media (any-hover: hover) {
-      &:hover {
-        color: get-color($linkColors, "hover-lightgray");
-      }
-    }
-    &:active {
-      color: get-color($linkColors, "hover-lightgray");
-    }
+    @include linkColor("lightgray", "hover-lightgray", "hover-lightgray");
   }
+
   &--dark {
-    color: get-color($linkColors, "dark");
-    @media (any-hover: hover) {
-      &:hover {
-        color: get-color($linkColors, "hover-dark");
-      }
-    }
-    &:active {
-      color: get-color($linkColors, "hover-dark");
-    }
+    @include linkColor("dark", "hover-dark", "hover-dark");
   }
+
   &--icon {
     display: flex;
     align-items: center;
-    gap: rem(4);
+    gap: s.rem(4);
   }
 }
