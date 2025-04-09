@@ -4,8 +4,10 @@ import {FavButton} from '@/components/FavButton/FavButton';
 
 describe('Fav Button component', () => {
   afterEach(cleanup);
+
   const types = Object.values(FAV_BUTTON_TYPE);
   const disabledOptions = [true, false];
+
   types.forEach((type) => {
     disabledOptions.forEach((disabled) => {
       const testName = `renders button with type ${type} and disabled`;
@@ -16,7 +18,7 @@ describe('Fav Button component', () => {
             disabled={disabled}
           />,
         );
-        const favButtonElement = screen.getByTestId(FAV_BUTTON_TEST_ID) as HTMLButtonElement;
+        const favButtonElement: HTMLButtonElement = screen.getByTestId(FAV_BUTTON_TEST_ID);
         expect(favButtonElement).toBeInTheDocument();
         expect(favButtonElement).toHaveClass(`favorite-button--${type}`);
         expect(favButtonElement.disabled).toBe(disabled);
@@ -25,20 +27,22 @@ describe('Fav Button component', () => {
       });
     });
   });
+
   test('handles the click event', () => {
-    const onClick = jest.fn();
+    const onClick = jest.fn(); // Explicitly typing jest.fn
     const {container} = render(
       <FavButton
         type="circle"
-        onClick={() => onClick()}
+        onClick={onClick}
       />,
     );
     fireEvent.click(screen.getByTestId(FAV_BUTTON_TEST_ID));
     expect(onClick).toHaveBeenCalledTimes(1);
     expect(container).toMatchSnapshot();
   });
+
   test('the onClick event does not fire when button is disabled', () => {
-    const onClick = jest.fn();
+    const onClick = jest.fn(); // Explicitly typing jest.fn
     const {container} = render(
       <FavButton
         type="circle"
@@ -50,8 +54,9 @@ describe('Fav Button component', () => {
     expect(onClick).not.toHaveBeenCalled();
     expect(container).toMatchSnapshot();
   });
+
   test('the active state when has prop isFavorite', () => {
-    const onClick = jest.fn();
+    const onClick = jest.fn(); // Explicitly typing jest.fn
     const {container} = render(
       <FavButton
         type="circle"
@@ -63,6 +68,7 @@ describe('Fav Button component', () => {
     expect(screen.getByTestId(FAV_BUTTON_TEST_ID)).toHaveClass('active');
     expect(container).toMatchSnapshot();
   });
+
   test('renders correct icon based on isFavorite prop', () => {
     const {rerender} = render(
       <FavButton

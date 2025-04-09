@@ -1,8 +1,9 @@
 import type {FC, ReactNode} from 'react';
 import {Link} from 'react-router';
-import {ROUTER_LINK_TEST_ID, RouterLinkColorType} from '@/components/RouterLink/constants';
+import type {RouterLinkColorType} from '@/components/RouterLink/constants';
+import {ROUTER_LINK_TEST_ID} from '@/components/RouterLink/constants';
 import {cn} from '@/services/helpers';
-import {ElementProps} from '@/services/types';
+import type {ElementProps} from '@/services/types';
 
 export interface RouterLinkProps extends ElementProps {
   color: RouterLinkColorType;

@@ -1,8 +1,9 @@
 import type {FC, MouseEvent} from 'react';
 import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai';
 import {cn} from '@/services/helpers';
-import {FAV_BUTTON_TEST_ID, FavButtonType} from '@/components/FavButton/constants';
-import {ElementProps} from '@/services/types';
+import type {FavButtonType} from '@/components/FavButton/constants';
+import {FAV_BUTTON_TEST_ID} from '@/components/FavButton/constants';
+import type {ElementProps} from '@/services/types';
 
 interface Props extends ElementProps {
   type: FavButtonType;

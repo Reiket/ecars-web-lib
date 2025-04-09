@@ -1,7 +1,8 @@
 import type {FC, MouseEvent, ReactNode} from 'react';
-import {BUTTON_TEST_ID, ButtonAttributesType, ButtonColorType, ButtonSizeType} from '@/components/Button/constants';
+import type {ButtonAttributesType, ButtonColorType, ButtonSizeType} from '@/components/Button/constants';
+import {BUTTON_TEST_ID} from '@/components/Button/constants';
 import {cn} from '@/services/helpers';
-import {ElementProps} from '@/services/types';
+import type {ElementProps} from '@/services/types';
 
 export interface ButtonProps extends ElementProps {
   size: ButtonSizeType;

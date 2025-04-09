@@ -1,6 +1,6 @@
 import type {FC, ReactNode} from 'react';
 import {CHECKBOX_TEST_ID} from '@/components/Checkbox/constants';
-import {ElementProps} from '@/services/types';
+import type {ElementProps} from '@/services/types';
 import {cn} from '@/services/helpers';
 
 interface Props extends ElementProps {

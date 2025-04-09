@@ -1,5 +1,7 @@
-import React, {FC} from 'react';
-import {NAVIGATE_BUTTON_TEST_ID, NavigateButtonPlacement} from '@/components/SliderNavigate/constants';
+import type {FC} from 'react';
+import React from 'react';
+import type {NavigateButtonPlacement} from '@/components/SliderNavigate/constants';
+import {NAVIGATE_BUTTON_TEST_ID} from '@/components/SliderNavigate/constants';
 import {Icons} from '@/services/icons';
 
 interface Props {
@@ -18,7 +20,7 @@ export const NavigateButton: FC<Props> = ({placement}) => {
       type="button"
       className="slider-navigate__button"
     >
-      {icons[placement] || null}
+      {icons[placement]}
     </button>
   );
 };

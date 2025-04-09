@@ -1,7 +1,7 @@
 import {cn} from '@/services/helpers';
-import {ChangeEvent, FC, HTMLInputTypeAttribute} from 'react';
+import type {ChangeEvent, FC, HTMLInputTypeAttribute} from 'react';
 import {INPUT_TEST_ID} from '@/components/Input/constants';
-import {ElementProps} from '@/services/types';
+import type {ElementProps} from '@/services/types';
 
 interface Props extends ElementProps {
   type?: HTMLInputTypeAttribute;

@@ -1,5 +1,6 @@
 import {cleanup, fireEvent, render, screen} from '@testing-library/react';
-import {BUTTON_COLOR, BUTTON_SIZE, BUTTON_TEST_ID, ButtonAttributesType} from '@/components/Button/constants';
+import type {ButtonAttributesType} from '@/components/Button/constants';
+import {BUTTON_COLOR, BUTTON_SIZE, BUTTON_TEST_ID} from '@/components/Button/constants';
 import {Button} from '@/components/Button/Button';
 
 describe('Button component', () => {
@@ -13,11 +14,12 @@ describe('Button component', () => {
     size: BUTTON_SIZE.BIG,
   };
   const disabledOptions = [true, false];
+
   colors.forEach((color) => {
     sizes.forEach((size) => {
       types.forEach((type) => {
         disabledOptions.forEach((disabled) => {
-          const testName = `renders button with color ${color}, size ${size}, type ${type || 'button'} and disabled`;
+          const testName = `renders button with color ${color}, size ${size}, type ${type ?? 'button'} and disabled`;
           test(testName, () => {
             const {container} = render(
               <Button
@@ -29,7 +31,7 @@ describe('Button component', () => {
                 button
               </Button>,
             );
-            const buttonElement = screen.getByTestId(BUTTON_TEST_ID) as HTMLButtonElement;
+            const buttonElement: HTMLButtonElement = screen.getByTestId(BUTTON_TEST_ID);
             expect(buttonElement).toBeInTheDocument();
             expect(buttonElement).toHaveClass(`button--${color}`);
             expect(buttonElement).toHaveClass(`button--${size}`);
@@ -41,6 +43,7 @@ describe('Button component', () => {
       });
     });
   });
+
   test('changes button text according to the children text', () => {
     const {container, getByText, rerender} = render(<Button {...props}>button</Button>);
     let button = getByText('button');
@@ -57,7 +60,7 @@ describe('Button component', () => {
     const {container, getByText} = render(
       <Button
         {...props}
-        onClick={() => onClick()}
+        onClick={onClick}
       >
         button
       </Button>,
@@ -97,6 +100,7 @@ describe('Button component', () => {
     expect(button).toHaveClass('button');
     expect(container).toMatchSnapshot();
   });
+
   test('button has button-transparent if receive prop isTransparent', () => {
     const {container} = render(
       <Button
@@ -110,6 +114,7 @@ describe('Button component', () => {
     expect(button).toHaveClass('button--transparent');
     expect(container).toMatchSnapshot();
   });
+
   test('button has button-icon if receive prop withIcon', () => {
     const {container} = render(
       <Button
