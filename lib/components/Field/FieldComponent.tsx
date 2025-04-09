@@ -1,5 +1,5 @@
 import type {ReactElement, FC} from 'react';
-import { cloneElement} from 'react';
+import {cloneElement} from 'react';
 import {Field, FIELD_TEST_ID} from '@/components/Field/constants';
 import type {ElementProps} from '@/services/types';
 import {cn} from '@/services/helpers';
