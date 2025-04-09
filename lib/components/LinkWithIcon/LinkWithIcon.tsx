@@ -1,5 +1,6 @@
 import type {ComponentType, FC, ReactNode} from 'react';
-import {RouterLink, RouterLinkProps} from '@/components/RouterLink/RouterLink';
+import type {RouterLinkProps} from '@/components/RouterLink/RouterLink';
+import {RouterLink} from '@/components/RouterLink/RouterLink';
 import {LEFT_ICON_LINK_TEST_ID, RIGHT_ICON_LINK_TEST_ID} from '@/components/LinkWithIcon/constants';
 
 interface Props extends RouterLinkProps {

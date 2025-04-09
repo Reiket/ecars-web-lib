@@ -1,5 +1,6 @@
 import type {ComponentType, FC, ReactNode} from 'react';
-import {Button, ButtonProps} from '@/components/Button/Button';
+import type {ButtonProps} from '@/components/Button/Button';
+import {Button} from '@/components/Button/Button';
 import {LEFT_ICON_BUTTON_TEST_ID, RIGHT_ICON_BUTTON_TEST_ID} from '@/components/ButtonWithIcon/constants';
 
 interface Props extends ButtonProps {

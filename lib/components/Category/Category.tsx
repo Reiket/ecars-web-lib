@@ -1,7 +1,8 @@
 import type {FC} from 'react';
-import {CategoriesListType, CATEGORY_TEST_ID} from '@/components/Category/constants';
+import type {CategoriesListType} from '@/components/Category/constants';
+import {CATEGORY_TEST_ID} from '@/components/Category/constants';
 import {cn} from '@/services/helpers';
-import {ElementProps} from '@/services/types';
+import type {ElementProps} from '@/services/types';
 
 interface Props extends ElementProps {
   category: CategoriesListType;

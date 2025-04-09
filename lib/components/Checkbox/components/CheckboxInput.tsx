@@ -1,6 +1,7 @@
-import {type ChangeEvent, FC} from 'react';
+import type {FC, type ChangeEvent} from 'react';
 import {cn} from '@/services/helpers';
-import {CHECKBOX_TEST_INPUT_ID, CheckboxProps} from '@/components/Checkbox/constants';
+import type {CheckboxProps} from '@/components/Checkbox/constants';
+import {CHECKBOX_TEST_INPUT_ID} from '@/components/Checkbox/constants';
 
 export const CheckboxInput: FC<CheckboxProps> = ({
   onChange,
@@ -14,7 +15,9 @@ export const CheckboxInput: FC<CheckboxProps> = ({
     'error': hasError,
   });
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (onChange) onChange(e.target.checked);
+    if (onChange) {
+      onChange(e.target.checked);
+    }
   };
   return (
     <input

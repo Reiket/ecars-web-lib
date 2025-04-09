@@ -14,6 +14,11 @@ jobs:
         node-version: [20.x, 22.x]
 
     steps:
+      - name: Run ESLint
+        run: npx eslint . --ext .js,.jsx,.ts,.tsx --fix
+
+      - name: Run Prettier
+        run: npx prettier --check
       - name: Checkout repository
         uses: actions/checkout@v4
 
