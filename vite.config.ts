@@ -7,6 +7,9 @@ import {glob} from 'glob';
 import {terser} from 'rollup-plugin-terser';
 import {visualizer} from 'rollup-plugin-visualizer';
 import {codecovVitePlugin} from '@codecov/vite-plugin';
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export default defineConfig({
   plugins: [
