@@ -36,8 +36,8 @@ jobs:
         run: npx jest --coverage
         continue-on-error: false
 
-      - name: Upload test results to Codecov
-        uses: codecov/test-results-action@v1
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
