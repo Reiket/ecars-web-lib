@@ -41,6 +41,12 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
+      - name: Upload test results to Codecov
+        uses: codecov/upload@v3
+        with:
+          file: ./test-results/junit.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Build project
         run: npm run build
         continue-on-error: false
