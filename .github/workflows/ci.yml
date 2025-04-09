@@ -29,7 +29,7 @@ jobs:
         run: npx eslint lib --ext .js,.jsx,.ts,.tsx --fix
 
       - name: Run Prettier
-        run: npx prettier --check
+        run: npx prettier --check '**/*.{js,jsx,ts,tsx,json,css,scss,html}'
 
       - name: Run tests
         run: npx jest --coverage
