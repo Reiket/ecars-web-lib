@@ -1,7 +1,7 @@
 import type {FC} from 'react';
 import {FIELD_LABEL_TEST_ID} from '@/components/Field/constants';
 
-interface Props {
+export interface Props {
   htmlFor?: string;
   text: string;
 }

@@ -4,8 +4,6 @@ import {fileURLToPath} from 'node:url';
 import dts from 'vite-plugin-dts';
 import {libInjectCss} from 'vite-plugin-lib-inject-css';
 import {glob} from 'glob';
-import {terser} from 'rollup-plugin-terser';
-import {visualizer} from 'rollup-plugin-visualizer';
 import {codecovVitePlugin} from '@codecov/vite-plugin';
 import dotenv from 'dotenv'
 
@@ -15,8 +13,6 @@ export default defineConfig({
   plugins: [
     dts({include: ['lib']}),
     libInjectCss(),
-    terser(),
-    visualizer(),
     codecovVitePlugin({
       enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
       bundleName: "dist",

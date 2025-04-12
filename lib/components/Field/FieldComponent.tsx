@@ -4,7 +4,7 @@ import {Field, FIELD_TEST_ID} from '@/components/Field/constants';
 import type {ElementProps} from '@/services/types';
 import {cn} from '@/services/helpers';
 
-interface Props extends ElementProps {
+export interface Props extends ElementProps {
   children: ReactElement;
   id?: string;
   label?: string;
