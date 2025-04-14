@@ -4,14 +4,17 @@ import {Button} from '@/components/Button/Button';
 import {FavButton} from '@/components/FavButton/FavButton';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
 import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
+
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 import {NavLink} from '@/components/NavLink/NavLink';
 import {Input} from '@/components/Input/Input';
 import {Field} from '@/components/Field/constants';
 import {Checkbox} from '@/components/Checkbox/constants';
 import {Category} from '@/components/Category/Category';
+import type {FC} from 'react';
 
-function App() {
+
+export const App: FC = () => {
   return (
     <>
       <Section title="Button Example">
@@ -102,5 +105,3 @@ function App() {
     </>
   );
 }
-
-export default App;
