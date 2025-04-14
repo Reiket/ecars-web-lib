@@ -3,7 +3,7 @@ import {CHECKBOX_TEST_ID} from '@/components/Checkbox/constants';
 import type {ElementProps} from '@/services/types';
 import {cn} from '@/services/helpers';
 
-interface Props extends ElementProps {
+export interface Props extends ElementProps {
   htmlFor?: string;
   children: ReactNode;
 }
