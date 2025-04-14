@@ -1,6 +1,5 @@
 import { FC } from 'react';
-interface Props {
+export interface Props {
     errorText: string;
 }
 export declare const FieldError: FC<Props>;
-export {};

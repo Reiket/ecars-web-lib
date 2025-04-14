@@ -1,13 +1,39 @@
-import { jsx as d } from "react/jsx-runtime";
-import { cn as m } from "../../services/helpers.js";
-import { INPUT_TEST_ID as c } from "./constants.js";
-const b = ({ value: t, onChange: e, hasError: a, placeholder: r, block: o, disabled: n = !1, type: p = "text", id: s = "input", name: i = "input" }) => {
-  const l = m(o, "input", { error: a });
-  return d("input", { onChange: (u) => {
-    e && e(u.currentTarget.value);
-  }, disabled: n, autoComplete: "off", "data-testid": c, className: l, id: s, name: i, placeholder: r, value: t, type: p });
+import { jsx as c } from "react/jsx-runtime";
+import { cn as f } from "../../services/helpers.js";
+import { INPUT_TEST_ID as l } from "./constants.js";
+const x = ({
+  value: e,
+  onChange: t,
+  hasError: n,
+  placeholder: r,
+  block: a,
+  disabled: o = !1,
+  type: s = "text",
+  id: p = "input",
+  name: i = "input"
+}) => {
+  const m = f(a, "input", {
+    error: n
+  });
+  return /* @__PURE__ */ c(
+    "input",
+    {
+      onChange: (u) => {
+        t && t(u.currentTarget.value);
+      },
+      disabled: o,
+      autoComplete: "off",
+      "data-testid": l,
+      className: m,
+      id: p,
+      name: i,
+      placeholder: r,
+      value: e,
+      type: s
+    }
+  );
 };
 export {
-  b as Input
+  x as Input
 };
 //# sourceMappingURL=Input.js.map

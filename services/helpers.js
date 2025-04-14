@@ -1,17 +1,21 @@
-function s(r) {
-  var t, o, n = "";
-  if (typeof r == "string" || typeof r == "number") n += r;
+function f(r) {
+  var n, o, t = "";
+  if (typeof r == "string" || typeof r == "number") t += r;
   else if (typeof r == "object") if (Array.isArray(r)) {
-    var f = r.length;
-    for (t = 0; t < f; t++) r[t] && (o = s(r[t])) && (n && (n += " "), n += o);
-  } else for (o in r) r[o] && (n && (n += " "), n += o);
-  return n;
+    var s = r.length;
+    for (n = 0; n < s; n++) r[n] && (o = f(r[n])) && (t && (t += " "), t += o);
+  } else for (o in r) r[o] && (t && (t += " "), t += o);
+  return t;
 }
-const e = (r = "", t, ...o) => function() {
-  for (var n, f, i = 0, a = "", u = arguments.length; i < u; i++) (n = arguments[i]) && (f = s(n)) && (a && (a += " "), a += f);
-  return a;
-}(r ? `${r}__${t} ${t}` : t, o);
+function i() {
+  for (var r, n, o = 0, t = "", s = arguments.length; o < s; o++) (r = arguments[o]) && (n = f(r)) && (t && (t += " "), t += n);
+  return t;
+}
+const u = (r = "", n, ...o) => {
+  const t = r ? `${r}__${n} ${n}` : n;
+  return i(t, o);
+};
 export {
-  e as cn
+  u as cn
 };
 //# sourceMappingURL=helpers.js.map

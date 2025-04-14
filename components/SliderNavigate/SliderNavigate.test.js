@@ -1,22 +1,23 @@
-import { jsx as a } from "react/jsx-runtime";
-import { c as T, r as c, s } from "../../react.esm-V8WrrwsZ.js";
-import { SliderNavigate as r } from "./SliderNavigate.js";
-import { SLIDER_NAVIGATE_TEST_ID as i, NAVIGATE_BUTTON_TEST_ID as n, NAVIGATE_BUTTON_PLACEMENT as p } from "./constants.js";
-import { NavigateButton as l } from "./NavigateButton.js";
+import { jsx as s } from "react/jsx-runtime";
+import { c as i, r, s as n } from "../../react.esm-OOgUt-k1.js";
+import { SliderNavigate as l } from "./SliderNavigate.js";
+import { SLIDER_NAVIGATE_TEST_ID as m, NAVIGATE_BUTTON_TEST_ID as a, NAVIGATE_BUTTON_PLACEMENT as p } from "./constants.js";
+import { NavigateButton as T } from "./NavigateButton.js";
 describe("Slider Navigate component", () => {
-  afterEach(T), test("renders correctly", () => {
-    const { container: e } = c(a(r, {})), t = s.getByTestId(i), o = s.getAllByTestId(n);
-    expect(o.length).toBe(Object.values(p).length), expect(t).toBeInTheDocument(), expect(e).toMatchSnapshot();
+  afterEach(i), test("renders correctly", () => {
+    const { container: t } = r(/* @__PURE__ */ s(l, {})), e = n.getByTestId(m), o = n.getAllByTestId(a);
+    expect(o.length).toBe(Object.values(p).length), expect(e).toBeInTheDocument(), expect(t).toMatchSnapshot();
   }), test("renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty", () => {
     jest.spyOn(Object, "values").mockReturnValue([]);
-    const { container: e } = c(a(r, {})), t = s.queryAllByTestId(n);
-    expect(t.length).toBe(0), expect(e).toMatchSnapshot();
+    const { container: t } = r(/* @__PURE__ */ s(l, {})), e = n.queryAllByTestId(a);
+    expect(e.length).toBe(0), expect(t).toMatchSnapshot();
   });
-}), describe("Navigate Button component", () => {
+});
+describe("Navigate Button component", () => {
   Object.values(p).forEach((e) => {
     test(`renders correctly with ${e} placement`, () => {
-      const { container: t } = c(a(l, { placement: e })), o = s.getByTestId(n);
-      expect(o).toBeInTheDocument(), expect(o).toHaveClass("slider-navigate__button"), expect(o.querySelector("svg")).toBeInTheDocument(), expect(t).toMatchSnapshot();
+      const { container: o } = r(/* @__PURE__ */ s(T, { placement: e })), c = n.getByTestId(a);
+      expect(c).toBeInTheDocument(), expect(c).toHaveClass("slider-navigate__button"), expect(c.querySelector("svg")).toBeInTheDocument(), expect(o).toMatchSnapshot();
     });
   });
 });

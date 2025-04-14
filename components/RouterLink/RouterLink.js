@@ -1,12 +1,32 @@
-import { jsx as n } from "react/jsx-runtime";
-import { L as c } from "../../chunk-KNED5TY2-DhCXmkLz.js";
-import { ROUTER_LINK_TEST_ID as a } from "./constants.js";
-import { cn as m } from "../../services/helpers.js";
-const p = ({ color: i, block: s, href: r, to: o, children: t, withIcon: l = !1 }) => {
-  const e = m(s, "link", `link--${i}`, { "link--icon": l });
-  return o ? n(c, { "data-testid": a, to: o, className: e, children: t }) : r ? n("a", { href: r, "data-testid": a, className: e, target: "_blank", rel: "noopener noreferrer", children: t }) : null;
+import { jsx as a } from "react/jsx-runtime";
+import { L as l } from "../../chunk-KNED5TY2-9zjBD6gF.js";
+import { ROUTER_LINK_TEST_ID as o } from "./constants.js";
+import { cn as f } from "../../services/helpers.js";
+const L = ({ color: s, block: i, href: r, to: t, children: e, withIcon: m = !1 }) => {
+  const n = f(i, "link", `link--${s}`, {
+    "link--icon": m
+  });
+  return t ? /* @__PURE__ */ a(
+    l,
+    {
+      "data-testid": o,
+      to: t,
+      className: n,
+      children: e
+    }
+  ) : r ? /* @__PURE__ */ a(
+    "a",
+    {
+      href: r,
+      "data-testid": o,
+      className: n,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: e
+    }
+  ) : null;
 };
 export {
-  p as RouterLink
+  L as RouterLink
 };
 //# sourceMappingURL=RouterLink.js.map

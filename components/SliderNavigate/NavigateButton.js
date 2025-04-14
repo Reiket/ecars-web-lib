@@ -1,7 +1,18 @@
 import { jsx as t } from "react/jsx-runtime";
-import { NAVIGATE_BUTTON_TEST_ID as a } from "./constants.js";
+import { NAVIGATE_BUTTON_TEST_ID as e } from "./constants.js";
 import { Icons as r } from "../../services/icons.js";
-const e = { left: t(r.ArrowNarrowLeft, {}), right: t(r.ArrowNarrowRight, {}) }, m = ({ placement: o }) => t("button", { "data-testid": a, type: "button", className: "slider-navigate__button", children: e[o] });
+const i = {
+  left: /* @__PURE__ */ t(r.ArrowNarrowLeft, {}),
+  right: /* @__PURE__ */ t(r.ArrowNarrowRight, {})
+}, m = ({ placement: o }) => /* @__PURE__ */ t(
+  "button",
+  {
+    "data-testid": e,
+    type: "button",
+    className: "slider-navigate__button",
+    children: i[o]
+  }
+);
 export {
   m as NavigateButton
 };

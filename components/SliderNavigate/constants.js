@@ -1,7 +1,10 @@
-const T = Object.freeze({ LEFT: "left", RIGHT: "right" }), e = "sliderNavigateTestId", t = "navigateButtonTestId";
+const T = Object.freeze({
+  LEFT: "left",
+  RIGHT: "right"
+}), t = "sliderNavigateTestId", e = "navigateButtonTestId";
 export {
   T as NAVIGATE_BUTTON_PLACEMENT,
-  t as NAVIGATE_BUTTON_TEST_ID,
-  e as SLIDER_NAVIGATE_TEST_ID
+  e as NAVIGATE_BUTTON_TEST_ID,
+  t as SLIDER_NAVIGATE_TEST_ID
 };
 //# sourceMappingURL=constants.js.map

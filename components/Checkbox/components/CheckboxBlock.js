@@ -1,5 +1,5 @@
 import "react/jsx-runtime";
-import { d as t } from "../../../constants-DIsb-mTS.js";
+import { d as t } from "../../../constants-BviPqHVq.js";
 import "../../../services/helpers.js";
 export {
   t as CheckboxBlock

@@ -1,7 +1,15 @@
-const e = Object.freeze({ BIG: "big", MEDIUM: "medium", SMALL: "small" }), T = Object.freeze({ GREEN: "green", WHITE: "white", GRAY: "gray" }), t = "buttonTestId";
+const e = Object.freeze({
+  BIG: "big",
+  MEDIUM: "medium",
+  SMALL: "small"
+}), t = Object.freeze({
+  GREEN: "green",
+  WHITE: "white",
+  GRAY: "gray"
+}), T = "buttonTestId";
 export {
-  T as BUTTON_COLOR,
+  t as BUTTON_COLOR,
   e as BUTTON_SIZE,
-  t as BUTTON_TEST_ID
+  T as BUTTON_TEST_ID
 };
 //# sourceMappingURL=constants.js.map

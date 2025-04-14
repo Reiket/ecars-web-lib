@@ -1,7 +1,19 @@
-import { jsx as t } from "react/jsx-runtime";
-import { N as c } from "../../chunk-KNED5TY2-DhCXmkLz.js";
-import { cn as e } from "../../services/helpers.js";
-const p = ({ block: o, to: i, children: r }) => t(c, { className: ({ isActive: a }) => ((s) => e(o, "nav-link", { _active: s }))(a), to: i, children: r });
+import { jsx as n } from "react/jsx-runtime";
+import { N as t } from "../../chunk-KNED5TY2-9zjBD6gF.js";
+import { cn as i } from "../../services/helpers.js";
+const p = ({ block: o, to: r, children: s }) => {
+  const m = (a) => i(o, "nav-link", {
+    _active: a
+  });
+  return /* @__PURE__ */ n(
+    t,
+    {
+      className: ({ isActive: a }) => m(a),
+      to: r,
+      children: s
+    }
+  );
+};
 export {
   p as NavLink
 };

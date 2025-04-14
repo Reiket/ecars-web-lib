@@ -1,7 +1,7 @@
-import { jsx as c } from "react/jsx-runtime";
-import { Icons as o } from "../../../services/icons.js";
-const a = () => c("span", { className: "checkbox__indicator", children: c(o.Check, {}) });
+import { jsx as o } from "react/jsx-runtime";
+import { Icons as c } from "../../../services/icons.js";
+const n = () => /* @__PURE__ */ o("span", { className: "checkbox__indicator", children: /* @__PURE__ */ o(c.Check, {}) });
 export {
-  a as CheckboxIndicator
+  n as CheckboxIndicator
 };
 //# sourceMappingURL=CheckboxIndicator.js.map
