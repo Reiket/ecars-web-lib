@@ -13,6 +13,10 @@ const defaultProps = {
   isOpen: true,
 };
 
+const selectOption = selectOptionsMock[0];
+const optionSelector = '.select__option';
+const notFoundOptionSelector = '.select__option_empty';
+
 describe('Select Component', () => {
   const disabledOptions = [true, false];
   const placeholderOptions = ['Select', undefined];
@@ -51,8 +55,8 @@ describe('Select Component', () => {
       />,
     );
     const input = screen.getByTestId(INPUT_TEST_ID);
-    fireEvent.change(input, {target: {value: 'Option'}});
-    expect(defaultProps.onChange).toHaveBeenCalledWith('Option');
+    fireEvent.change(input, {target: {value: selectOption}});
+    expect(defaultProps.onChange).toHaveBeenCalledWith(selectOption);
     expect(defaultProps.handleSelect).toHaveBeenCalledWith(true);
     expect(container).toMatchSnapshot();
   });
@@ -72,12 +76,12 @@ describe('Select Component', () => {
       <Select
         {...defaultProps}
         hasSearch
-        value="Another"
+        value="Opt"
       />,
     );
-    const options = screen.getByTestId(SELECT_TEST_ID).querySelectorAll('.select__option');
+    const options = screen.getByTestId(SELECT_TEST_ID).querySelectorAll(optionSelector);
     expect(options.length).toBe(1);
-    expect(options[0].textContent).toBe('Another Option');
+    expect(options[0].textContent).toBe(selectOption);
   });
   test('does not render list if search yields no match', () => {
     const {container} = render(
@@ -87,8 +91,8 @@ describe('Select Component', () => {
         value="nonexistent"
       />,
     );
-    const options = screen.getByTestId(SELECT_TEST_ID).querySelectorAll('.select__option');
-    const nullOptionsFound = screen.getByTestId(SELECT_TEST_ID).querySelector('.select__option_empty');
+    const options = screen.getByTestId(SELECT_TEST_ID).querySelectorAll(optionSelector);
+    const nullOptionsFound = screen.getByTestId(SELECT_TEST_ID).querySelector(notFoundOptionSelector);
 
     expect(options.length).toBe(1);
     expect(nullOptionsFound).toBeInTheDocument();
@@ -100,17 +104,16 @@ describe('Select Component', () => {
     expect(defaultProps.handleSelect).toHaveBeenCalled();
   });
   test('displays the provided value in the input and highlights the corresponding option', () => {
-    const value = 'Option 1';
     const {container} = render(
       <Select
         {...defaultProps}
-        value="Option 1"
+        value={selectOption}
       />,
     );
     const input = screen.getByTestId(INPUT_TEST_ID);
-    const options = Array.from(screen.getByTestId(SELECT_TEST_ID).querySelectorAll('.select__option'));
-    const activeOption = options.find((option) => option.textContent === value);
-    expect(input).toHaveValue('Option 1');
+    const options = Array.from(screen.getByTestId(SELECT_TEST_ID).querySelectorAll(optionSelector));
+    const activeOption = options.find((option) => option.textContent === selectOption);
+    expect(input).toHaveValue(selectOption);
     expect(activeOption).toHaveClass('_selected');
     expect(container).toMatchSnapshot();
   });
@@ -123,7 +126,7 @@ describe('Select Component', () => {
     );
     const input = screen.getByTestId(INPUT_TEST_ID);
 
-    fireEvent.change(input, {target: {value: 'Option'}});
+    fireEvent.change(input, {target: {value: selectOption}});
     expect(defaultProps.isOpen).toBe(true);
     expect(container).toMatchSnapshot();
   });

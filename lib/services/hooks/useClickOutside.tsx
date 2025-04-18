@@ -2,8 +2,9 @@ import type {MutableRefObject} from 'react';
 import {useEffect, useRef} from 'react';
 
 type OutsideElementType = HTMLDivElement | null;
+type CallbackFunction = (b: boolean) => void;
 
-export const useClickOutside = (callback: (b: boolean) => void): MutableRefObject<OutsideElementType> => {
+export const useClickOutside = (callback: CallbackFunction): MutableRefObject<OutsideElementType> => {
   const ref = useRef<OutsideElementType>(null);
 
   useEffect(() => {

@@ -33,7 +33,7 @@
   }
   &__options {
     position: absolute;
-    background: #ffffff;
+    background: s.get-color(s.$selectColor, "select-menu");
     box-shadow: s.rem(0) s.rem(2) s.rem(8) s.rem(0) s.get-color(s.$selectColor, "shadow");
     border: s.rem(1) solid s.get-color(s.$selectColor, "border");
     border-radius: s.rem(4);

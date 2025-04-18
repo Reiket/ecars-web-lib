@@ -6,13 +6,11 @@ interface Props extends InputProps {
   hasSearch: boolean;
 }
 
-export const SelectInput: FC<Props> = ({onChange, hasSearch, ...props}) => {
-  return (
-    <Input
-      isReadOnly={!hasSearch}
-      isTransparent
-      onChange={onChange}
-      {...props}
-    />
-  );
-};
+export const SelectInput: FC<Props> = ({onChange, hasSearch, ...props}) => (
+  <Input
+    isReadOnly={!hasSearch}
+    isTransparent
+    onChange={onChange}
+    {...props}
+  />
+);

@@ -14,6 +14,14 @@ interface Props extends InputProps {
   hasSearch?: boolean;
 }
 
+const getFilteredOptions = (options: string[], value: string, hasSearch: boolean): string[] | null => {
+  if (!hasSearch || !value.trim()) {
+    return options;
+  }
+  const filtered = options.filter((option) => option.toLowerCase().includes(value.toLowerCase()));
+  return filtered.length > 0 ? filtered : null;
+};
+
 export const SelectComponent: FC<Props> = ({
   options,
   onClick,
@@ -29,13 +37,7 @@ export const SelectComponent: FC<Props> = ({
   hasSearch = false,
   ...props
 }) => {
-  const filteredOptions = useMemo(() => {
-    if (!hasSearch || !value.trim()) {
-      return options;
-    }
-    const filtered = options.filter((option) => option.toLowerCase().includes(value.toLowerCase()));
-    return filtered.length > 0 ? filtered : null;
-  }, [options, value, hasSearch]);
+  const filteredOptions = useMemo(() => getFilteredOptions(options, value, hasSearch), [options, value, hasSearch]);
   const handleSelectChange = (value: string) => {
     onChange(value);
     handleSelect(hasSearch);

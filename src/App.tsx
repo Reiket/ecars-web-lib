@@ -81,7 +81,10 @@ export const App: FC = () => {
           label="Email"
           id="input_email"
         >
-          <Input disabled placeholder="Your email" />
+          <Input
+            disabled
+            placeholder="Your email"
+          />
         </Field>
       </Section>
       <Section title="Field Example">
@@ -104,24 +107,6 @@ export const App: FC = () => {
       </Section>
       <Section title="SelectComponent Example">
         <SelectExample />
-      </Section>
-      <Section title="Field Example">
-        <Field
-          error="Some error"
-          label="Email"
-          id="input_email"
-        >
-          <Input
-            value="Email"
-            placeholder="Your email"
-          />
-        </Field>
-      </Section>
-      <Section title="Checkbox Component Example">
-        <Checkbox checked />
-      </Section>
-      <Section title="Label Example">
-        <Category category="guides" />
       </Section>
     </>
   );

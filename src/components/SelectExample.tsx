@@ -8,7 +8,7 @@ export const SelectExample: FC = () => {
   const {selectedValue, handleChange, onClickToOptions, handleOutside, isOpen, toggleOpen} = useSelect();
   return (
     <Select
-      hasSearch={true}
+      hasSearch
       placeholder="Select"
       onChange={handleChange}
       value={selectedValue}
