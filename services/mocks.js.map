@@ -1,0 +1,1 @@
+{"version":3,"file":"mocks.js","sources":["../../lib/services/mocks.ts"],"sourcesContent":["export const selectOptionsMock = ['Option 1', 'Option 2', 'Another Option'];\n"],"names":["selectOptionsMock"],"mappings":"AAAO,MAAMA,IAAoB,CAAC,YAAY,YAAY,gBAAgB;"}

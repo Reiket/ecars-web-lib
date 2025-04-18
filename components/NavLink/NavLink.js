@@ -1,5 +1,5 @@
 import { jsx as n } from "react/jsx-runtime";
-import { N as t } from "../../chunk-KNED5TY2-9zjBD6gF.js";
+import { N as t } from "../../chunk-LSOULM7L-ClSY6kIn.js";
 import { cn as i } from "../../services/helpers.js";
 const p = ({ block: o, to: r, children: s }) => {
   const m = (a) => i(o, "nav-link", {

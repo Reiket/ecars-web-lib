@@ -1,6 +1,6 @@
 import { FC, HTMLInputTypeAttribute } from 'react';
 import { ElementProps } from '../../services/types';
-interface Props extends ElementProps {
+export interface InputProps extends ElementProps {
     type?: HTMLInputTypeAttribute;
     value?: string;
     onChange?: (value: string) => void;
@@ -9,6 +9,7 @@ interface Props extends ElementProps {
     id?: string;
     disabled?: boolean;
     hasError?: boolean;
+    isReadOnly?: boolean;
+    isTransparent?: boolean;
 }
-export declare const Input: FC<Props>;
-export {};
+export declare const Input: FC<InputProps>;
