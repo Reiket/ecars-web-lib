@@ -81,7 +81,7 @@ describe('Select Component', () => {
     );
     const options = screen.getByTestId(SELECT_TEST_ID).querySelectorAll(optionSelector);
     expect(options.length).toBe(1);
-    expect(options[0].textContent).toBe("Another Option");
+    expect(options[0].textContent).toBe('Another Option');
   });
   test('does not render list if search yields no match', () => {
     const {container} = render(
