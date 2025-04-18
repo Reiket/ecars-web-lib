@@ -58,22 +58,22 @@ $checkboxColor: (
   "default": #3c7d46,
 );
 
-$categoriesColor: (
-  "guides-background": #e6f4ff,
-  "guides-color": #0394fc,
-  "news-background": #fff1e8,
-  "news-color": #dd7437,
-  "reviews-background": #eeeafe,
-  "reviews-color": #603fe2,
-);
-
 $selectColor: (
-  "border": #d1d1d1,
-  "hover-option": #f6f5f4,
-  "hover-active": #e1dfdf,
-  "shadow": #00000029,
+        "border": #d1d1d1,
+        "hover-option": #f6f5f4,
+        "hover-active": #e1dfdf,
+        "shadow": #00000029,
         "select-menu": #ffffff,
 );
+$categoriesColor: (
+        "guides-background": #e6f4ff,
+        "guides-color": #0394fc,
+        "news-background": #fff1e8,
+        "news-color": #dd7437,
+        "reviews-background": #eeeafe,
+        "reviews-color": #603fe2,
+);
+
 
 //Colors that are used many times
 /*white*/
