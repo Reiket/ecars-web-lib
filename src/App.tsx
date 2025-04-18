@@ -12,7 +12,7 @@ import {Field} from '@/components/Field/constants';
 import {Checkbox} from '@/components/Checkbox/constants';
 import {Category} from '@/components/Category/Category';
 import type {FC} from 'react';
-
+import {SelectExample} from './components/SelectExample';
 
 export const App: FC = () => {
   return (
@@ -81,7 +81,10 @@ export const App: FC = () => {
           label="Email"
           id="input_email"
         >
-          <Input placeholder="Your email" />
+          <Input
+            disabled
+            placeholder="Your email"
+          />
         </Field>
       </Section>
       <Section title="Field Example">
@@ -102,6 +105,9 @@ export const App: FC = () => {
       <Section title="Label Example">
         <Category category="guides" />
       </Section>
+      <Section title="SelectComponent Example">
+        <SelectExample />
+      </Section>
     </>
   );
-}
+};

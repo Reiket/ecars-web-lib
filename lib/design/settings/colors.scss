@@ -1,5 +1,6 @@
 //Default color
 $main-color: #1a1a1a;
+
 $buttonColors: (
   "green": #3c7d46,
   "hover-green": #244d29,
@@ -58,6 +59,14 @@ $checkboxColor: (
   "default": #3c7d46,
 );
 
+$selectColor: (
+  "border": #d1d1d1,
+  "hover-option": #f6f5f4,
+  "hover-active": #e1dfdf,
+  "shadow": #00000029,
+  "select-menu": #ffffff,
+);
+
 $categoriesColor: (
   "guides-background": #e6f4ff,
   "guides-color": #0394fc,
@@ -66,6 +75,7 @@ $categoriesColor: (
   "reviews-background": #eeeafe,
   "reviews-color": #603fe2,
 );
+
 //Colors that are used many times
 /*white*/
 $color-white: #ffffff;
@@ -104,7 +114,7 @@ $shadow: #1c1e2214;
 //Colors that use one or two components
 /*Find*/
 
-$color-find-scroll: #555;
+$scrollColor: #d5d3d3;
 $color-find-premium: #f2ac29;
 /*Authorize*/
 $background-authorize: #fafafa;

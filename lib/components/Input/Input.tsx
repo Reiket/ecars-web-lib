@@ -3,7 +3,7 @@ import type {ChangeEvent, FC, HTMLInputTypeAttribute} from 'react';
 import {INPUT_TEST_ID} from '@/components/Input/constants';
 import type {ElementProps} from '@/services/types';
 
-interface Props extends ElementProps {
+export interface InputProps extends ElementProps {
   type?: HTMLInputTypeAttribute;
   value?: string;
   onChange?: (value: string) => void;
@@ -12,9 +12,11 @@ interface Props extends ElementProps {
   id?: string;
   disabled?: boolean;
   hasError?: boolean;
+  isReadOnly?: boolean;
+  isTransparent?: boolean;
 }
 
-export const Input: FC<Props> = ({
+export const Input: FC<InputProps> = ({
   value,
   onChange,
   hasError,
@@ -24,9 +26,12 @@ export const Input: FC<Props> = ({
   type = 'text',
   id = 'input',
   name = 'input',
+  isReadOnly = false,
+  isTransparent = false,
 }) => {
   const classNames = cn(block, 'input', {
     'error': hasError,
+    'transparent': isTransparent,
   });
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
@@ -35,6 +40,7 @@ export const Input: FC<Props> = ({
   };
   return (
     <input
+      readOnly={isReadOnly}
       onChange={handleChange}
       disabled={disabled}
       autoComplete="off"

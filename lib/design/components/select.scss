@@ -1,0 +1,96 @@
+@use "sass:math";
+@use "../settings" as s;
+
+.select {
+  position: relative;
+  &:not(&.disabled) {
+    .select__block {
+      @media (any-hover: hover) {
+        &:hover {
+          @include s.inputState;
+        }
+      }
+    }
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: s.rem(8);
+    @include s.inputStyles;
+  }
+
+  &__input {
+    &:read-only {
+      cursor: pointer;
+    }
+  }
+
+  &__arrow {
+    margin-right: s.rem(10);
+    font-size: s.rem(20);
+    transition: transform 0.4s linear;
+  }
+  &__options {
+    position: absolute;
+    background: s.get-color(s.$selectColor, "select-menu");
+    box-shadow: s.rem(0) s.rem(2) s.rem(8) s.rem(0) s.get-color(s.$selectColor, "shadow");
+    border: s.rem(1) solid s.get-color(s.$selectColor, "border");
+    border-radius: s.rem(4);
+    min-width: 100%;
+    top: s.rem(52);
+    left: 0;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(s.rem(-8));
+    transition: all 0.4s linear;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: s.rem(200);
+    @include s.customScroll;
+  }
+  &__option {
+    padding: s.rem(4) s.rem(8);
+    transition: all 0.4s linear;
+    &:not(&_empty) {
+      @media (any-hover: hover) {
+        &:hover {
+          cursor: pointer;
+          background: s.get-color(s.$selectColor, "hover-option");
+        }
+      }
+    }
+    &_empty {
+      cursor: auto;
+      font-weight: 600;
+      text-align: center;
+    }
+    &._selected {
+      background: s.get-color(s.$selectColor, "hover-active");
+    }
+  }
+  &._open {
+    .select {
+      &__options {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      &__arrow {
+        transform: scale(1, -1);
+      }
+    }
+  }
+  &.disabled {
+    .select {
+      &__block,
+      &__arrow {
+        opacity: 40%;
+        cursor: auto;
+      }
+    }
+  }
+}
