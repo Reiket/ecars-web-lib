@@ -1,4 +1,4 @@
-import type {FC, ChangeEvent} from 'react';
+import type {ChangeEvent, FC} from 'react';
 import {cn} from '@/services/helpers';
 import type {CheckboxProps} from '@/components/Checkbox/constants';
 import {CHECKBOX_TEST_INPUT_ID} from '@/components/Checkbox/constants';
