@@ -76,12 +76,12 @@ describe('Select Component', () => {
       <Select
         {...defaultProps}
         hasSearch
-        value="Opt"
+        value="Another"
       />,
     );
     const options = screen.getByTestId(SELECT_TEST_ID).querySelectorAll(optionSelector);
     expect(options.length).toBe(1);
-    expect(options[0].textContent).toBe(selectOption);
+    expect(options[0].textContent).toBe("Another Option");
   });
   test('does not render list if search yields no match', () => {
     const {container} = render(
