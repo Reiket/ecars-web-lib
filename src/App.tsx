@@ -13,6 +13,8 @@ import {Checkbox} from '@/components/Checkbox/constants';
 import {Category} from '@/components/Category/Category';
 import type {FC} from 'react';
 import {SelectExample} from './components/SelectExample';
+import {AccordionExample} from './components/AccordionExample';
+import {accordionContentMock} from '@src/services/mocks';
 
 export const App: FC = () => {
   return (
@@ -107,6 +109,9 @@ export const App: FC = () => {
       </Section>
       <Section title="SelectComponent Example">
         <SelectExample />
+      </Section>
+      <Section title="AccordionComponent Example">
+        <AccordionExample items={accordionContentMock} />
       </Section>
     </>
   );

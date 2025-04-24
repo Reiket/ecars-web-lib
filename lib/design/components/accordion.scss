@@ -1,0 +1,61 @@
+@use "sass:math";
+@use "../settings" as s;
+
+.accordion {
+  border-radius: s.rem(8);
+  background: s.get-color(s.$accordionColors, "background");
+  &__button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__title {
+    font-size: s.rem(18);
+    font-weight: 600;
+    flex: 1 1 auto;
+    text-align: left;
+    line-height: math.div(21.6, 18);
+    padding: s.rem(19.2) s.rem(16);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  &__arrow {
+    margin-right: s.rem(10);
+    font-size: s.rem(20);
+    transition: transform 0.4s linear;
+  }
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: s.rem(1);
+      width: 100%;
+      background: s.get-color(s.$accordionColors, "border");
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s linear;
+    }
+  }
+  &__text {
+    padding: s.rem(16);
+  }
+  &._active {
+    .accordion {
+      &__content {
+        height: auto;
+        &::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &__arrow {
+        transform: scale(1, -1);
+      }
+    }
+  }
+}

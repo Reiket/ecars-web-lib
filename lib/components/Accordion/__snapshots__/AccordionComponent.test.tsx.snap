@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Component renders the accordion component and title, text correctly 1`] = `
+<div>
+  <div
+    class="accordion"
+    data-testid="accordionTestId"
+  >
+    <button
+      class="accordion__button"
+      type="button"
+    >
+      <h3
+        class="accordion__title"
+      >
+        Test title
+      </h3>
+      <svg
+        class="accordion__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </button>
+    <div
+      class="accordion__content"
+      style="height: 0px;"
+    >
+      <p
+        class="accordion__text"
+      >
+        Test content
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Component should close the content 1`] = `
+<div>
+  <div
+    class="accordion"
+    data-testid="accordionTestId"
+  >
+    <button
+      class="accordion__button"
+      type="button"
+    >
+      <h3
+        class="accordion__title"
+      >
+        Test title
+      </h3>
+      <svg
+        class="accordion__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </button>
+    <div
+      class="accordion__content"
+      style="height: 0px;"
+    >
+      <p
+        class="accordion__text"
+      >
+        Test content
+      </p>
+    </div>
+  </div>
+</div>
+`;
