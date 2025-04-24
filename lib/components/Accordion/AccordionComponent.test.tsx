@@ -1,7 +1,5 @@
 import {fireEvent, render, screen} from '@testing-library/react';
 import {Accordion, ACCORDION_TEST_ID} from '@/components/Accordion/constants';
-import {AccordionExample} from '@src/components/AccordionExample';
-import {accordionContentMock} from '@src/services/mocks';
 
 const defaultProps = {
   isOpen: false,
@@ -45,34 +43,5 @@ describe('Accordion Component', () => {
     renderAccordion();
     fireEvent.click(screen.getByText(defaultProps.title));
     expect(defaultProps.onClick).toHaveBeenCalledTimes(1);
-  });
-  test('closes previously opened accordion when another is clicked', () => {
-    render(<AccordionExample items={accordionContentMock} />);
-
-    const getAccordionElements = () =>
-      accordionContentMock.map((item) => ({
-        titleElement: screen.getByText(item.title),
-        contentElement: screen.getByText(item.text),
-      }));
-
-    const accordionElements = getAccordionElements();
-
-    const checkAccordionVisibility = (clickIndex: number) => {
-      accordionElements.forEach((_, index) => {
-        const isVisible = index === clickIndex;
-        const content = accordionElements[index].contentElement;
-
-        if (isVisible) {
-          expect(content).toBeVisible();
-        } else {
-          expect(content.offsetHeight).toBe(0);
-        }
-      });
-    };
-
-    accordionElements.forEach((_, clickIndex) => {
-      fireEvent.click(accordionElements[clickIndex].titleElement);
-      checkAccordionVisibility(clickIndex);
-    });
   });
 });

@@ -2,7 +2,7 @@ import type {ComponentType, FC, ReactElement} from 'react';
 import React, {cloneElement} from 'react';
 import IntrinsicElements = React.JSX.IntrinsicElements;
 
-interface WithBlockProps {
+export interface WithBlockProps {
   block: string;
   children: ReactElement | ReactElement[];
 }

@@ -2,7 +2,7 @@ import type {FC} from 'react';
 import {Accordion} from '@/components/Accordion/constants';
 import type {ElementProps} from '@/services/types';
 
-interface Props extends ElementProps {
+export interface Props extends ElementProps {
   isOpen: boolean;
   textContent: string;
   title: string;

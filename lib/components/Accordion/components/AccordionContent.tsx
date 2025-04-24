@@ -1,7 +1,7 @@
 import type {FC} from 'react';
 import {useRef} from 'react';
 
-interface Props {
+export interface Props {
   isOpen: boolean;
   children: string;
 }

@@ -2,7 +2,7 @@ import type {FC} from 'react';
 import {Accordion} from '../constants';
 import type {AccordionTitleProps} from '@/components/Accordion/components/AccordionTitle';
 
-interface Props extends AccordionTitleProps {
+export interface Props extends AccordionTitleProps {
   onClick: () => void;
 }
 

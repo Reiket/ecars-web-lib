@@ -2,7 +2,7 @@ import type {FC} from 'react';
 import type {InputProps} from '@/components/Input/Input';
 import {Input} from '@/components/Input/Input';
 
-interface Props extends InputProps {
+export interface Props extends InputProps {
   hasSearch: boolean;
 }
 
