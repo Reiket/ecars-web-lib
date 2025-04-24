@@ -3,4 +3,4 @@ export interface Props {
     children: ReactNode;
     onClick: () => void;
 }
-export declare const SelectBlock: FC<Props>;
+export declare const AccordionButton: FC<Props>;
