@@ -30,11 +30,13 @@ describe('Accordion Component', () => {
     test(isOpenString, () => {
       const {container} = renderAccordion({isOpen});
       const content = screen.getByText(defaultProps.textContent);
-
+      const accordionElement = screen.getByTestId(ACCORDION_TEST_ID);
       if (isOpen) {
         expect(content).toBeVisible();
+        expect(accordionElement).toHaveClass('_active');
       } else {
         expect(content.offsetHeight).toBe(0);
+        expect(accordionElement).not.toHaveClass('_active');
         expect(container).toMatchSnapshot();
       }
     });
