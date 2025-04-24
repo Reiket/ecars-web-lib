@@ -3,7 +3,7 @@ import type {FC} from 'react';
 import {useMemo} from 'react';
 import type {InputProps} from '@/components/Input/Input';
 
-interface Props extends InputProps {
+export interface Props extends InputProps {
   isOpen: boolean;
   options: string[];
   onClick: () => void;

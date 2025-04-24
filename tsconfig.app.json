@@ -21,7 +21,8 @@
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@/*": ["lib/*"]
+      "@/*": ["lib/*"],
+      "@src/*": ["src/*"],
     }
   },
   "include": ["src"]

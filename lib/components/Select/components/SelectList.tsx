@@ -1,7 +1,7 @@
 import type {FC} from 'react';
 import {Select} from '@/components/Select/constants';
 
-interface Props {
+export interface Props {
   options: string[] | null;
   onClick: (value: string) => void;
   value: string;

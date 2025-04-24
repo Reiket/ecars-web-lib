@@ -4,7 +4,7 @@ import {cn} from '@/services/helpers';
 import {useClickOutside} from '@/services/hooks/useClickOutside';
 import type {ElementProps} from '@/services/types';
 
-interface Props extends ElementProps {
+export interface Props extends ElementProps {
   children: ReactNode;
   onClickOutside: (isOpen: boolean) => void;
   isOpen: boolean;

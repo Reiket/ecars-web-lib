@@ -5,11 +5,12 @@ export interface Props {
   onClick: () => void;
 }
 
-export const SelectBlock: FC<Props> = ({children, onClick}) => (
-  <div
+export const AccordionButton: FC<Props> = ({onClick, children}) => (
+  <button
     onClick={onClick}
-    className={'select__block'}
+    type="button"
+    className="accordion__button"
   >
     {children}
-  </div>
+  </button>
 );
