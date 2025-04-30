@@ -27,8 +27,10 @@
 }
 
 @mixin inputState() {
-  border-color: get-color($fieldsColor, "state-border");
   background: get-color($fieldsColor, "state-background");
+  &:not(&.error) {
+    border-color: get-color($fieldsColor, "state-border");
+  }
 }
 
 @mixin customScroll() {
