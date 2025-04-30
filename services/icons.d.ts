@@ -3,4 +3,5 @@ export declare const Icons: {
     ArrowNarrowLeft: import('react-icons').IconType;
     ArrowNarrowDown: import('react-icons').IconType;
     Check: import('react-icons').IconType;
+    Close: import('react-icons').IconType;
 };

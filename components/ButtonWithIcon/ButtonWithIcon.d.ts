@@ -1,9 +1,13 @@
 import { ComponentType, FC, ReactNode } from 'react';
 import { ButtonProps } from '../Button/Button';
-interface Props extends ButtonProps {
-    children: ReactNode;
-    RightIcon?: ComponentType;
-    LeftIcon?: ComponentType;
+interface IconProps {
+    className?: string;
 }
-export declare const ButtonWithIcon: FC<Props>;
+export interface ButtonIconProps<T> extends ButtonProps {
+    children: ReactNode;
+    RightIcon?: ComponentType<T>;
+    LeftIcon?: ComponentType<T>;
+    className?: string;
+}
+export declare const ButtonWithIcon: FC<ButtonIconProps<IconProps>>;
 export {};

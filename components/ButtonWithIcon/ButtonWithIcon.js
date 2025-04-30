@@ -1,19 +1,37 @@
-import { jsxs as i, jsx as o } from "react/jsx-runtime";
+import { jsxs as d, jsx as T } from "react/jsx-runtime";
 import { Button as m } from "../Button/Button.js";
-import { LEFT_ICON_BUTTON_TEST_ID as s, RIGHT_ICON_BUTTON_TEST_ID as d } from "./constants.js";
-const a = ({ RightIcon: t, LeftIcon: r, children: T, ..._ }) => /* @__PURE__ */ i(
+import { LEFT_ICON_BUTTON_TEST_ID as n, RIGHT_ICON_BUTTON_TEST_ID as I } from "./constants.js";
+const u = ({
+  RightIcon: t,
+  LeftIcon: r,
+  children: _,
+  className: o,
+  ...i
+}) => /* @__PURE__ */ d(
   m,
   {
     withIcon: !0,
-    ..._,
+    ...i,
     children: [
-      !!r && /* @__PURE__ */ o(r, { "data-testid": s }),
-      T,
-      !!t && /* @__PURE__ */ o(t, { "data-testid": d })
+      !!r && /* @__PURE__ */ T(
+        r,
+        {
+          className: o,
+          "data-testid": n
+        }
+      ),
+      _,
+      !!t && /* @__PURE__ */ T(
+        t,
+        {
+          className: o,
+          "data-testid": I
+        }
+      )
     ]
   }
 );
 export {
-  a as ButtonWithIcon
+  u as ButtonWithIcon
 };
 //# sourceMappingURL=ButtonWithIcon.js.map
