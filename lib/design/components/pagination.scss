@@ -1,0 +1,40 @@
+@use "../settings" as s;
+
+.pagination {
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: s.rem(4);
+  }
+  &__button {
+    flex: 0 0 s.rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: s.get-color(s.$paginationColor, "color");
+    height: s.rem(32);
+    border: s.rem(1) solid s.get-color(s.$paginationColor, "border");
+    border-radius: s.rem(8);
+    transition: all 0.4s linear;
+    &:disabled {
+      pointer-events: none;
+      opacity: 40%;
+    }
+    &._current-page {
+      background: s.get-color(s.$paginationColor, "active-background");
+      color: s.get-color(s.$paginationColor, "active-color");
+    }
+    &:not(&._current-page) {
+      @media (any-hover: hover) {
+        &:hover {
+          background: s.get-color(s.$paginationColor, "hover-background");
+        }
+      }
+    }
+  }
+  &__arrow {
+    color: inherit;
+    font-size: s.rem(20);
+  }
+}
