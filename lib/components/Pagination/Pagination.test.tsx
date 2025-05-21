@@ -99,4 +99,32 @@ describe('Pagination component', () => {
       expect(props.onNextClick).toHaveBeenCalled();
     }
   });
+  test('disables all buttons and arrows when loading', () => {
+    render(
+      <Pagination
+        {...props}
+        isLoading={true}
+      />,
+    );
+
+    const leftArrow = screen.getByTestId(PAGINATION_ARROW_LEFT_TEST_ID).parentElement;
+    const rightArrow = screen.getByTestId(PAGINATION_ARROW_RIGHT_TEST_ID).parentElement;
+    expect(leftArrow).toBeDisabled();
+    expect(rightArrow).toBeDisabled();
+
+    props.pages.forEach((page) => {
+      expect(screen.getByText(String(page))).toBeDisabled();
+    });
+
+    fireEvent.click(screen.getByText('1'));
+    if (leftArrow) {
+      fireEvent.click(leftArrow);
+    }
+    if (rightArrow) {
+      fireEvent.click(rightArrow);
+    }
+    expect(props.onPageClick).not.toHaveBeenCalled();
+    expect(props.onPrevClick).not.toHaveBeenCalled();
+    expect(props.onNextClick).not.toHaveBeenCalled();
+  });
 });
