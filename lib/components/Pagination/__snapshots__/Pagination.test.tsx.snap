@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PaginationBody disables prev arrow on first page 1`] = `
+exports[`Pagination component disables prev arrow on first page 1`] = `
 <div>
   <div
     class="pagination"
@@ -78,7 +78,7 @@ exports[`PaginationBody disables prev arrow on first page 1`] = `
 </div>
 `;
 
-exports[`PaginationBody renders component with all page buttons and arrows 1`] = `
+exports[`Pagination component renders component with all page buttons and arrows 1`] = `
 <div>
   <div
     class="pagination"
