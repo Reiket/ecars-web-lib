@@ -11,7 +11,7 @@ export const PaginationBody: FC<PaginationProps> = ({
   isLoading = false,
 }) => {
   const isFirstPage = currentPage === 1 || isLoading;
-  const isLastPage = currentPage === pages[pages.length - 1] || isLoading;
+  const isLastPage = currentPage === pages.at(-1) || isLoading;
 
   const renderPages = () =>
     pages.map((page) => {

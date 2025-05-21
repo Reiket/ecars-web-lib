@@ -16,7 +16,7 @@ const props = {
   isLoading: false,
 };
 
-describe('PaginationBody', () => {
+describe('Pagination component', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
