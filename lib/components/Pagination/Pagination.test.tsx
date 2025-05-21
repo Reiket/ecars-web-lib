@@ -13,7 +13,6 @@ const props = {
   onPageClick: jest.fn(),
   onNextClick: jest.fn(),
   onPrevClick: jest.fn(),
-  isLoading: false,
 };
 
 describe('Pagination component', () => {
@@ -103,7 +102,7 @@ describe('Pagination component', () => {
     render(
       <Pagination
         {...props}
-        isLoading={true}
+        isLoading
       />,
     );
 
