@@ -16,6 +16,8 @@ import {SelectExample} from './components/SelectExample';
 import {AccordionExample} from './components/AccordionExample';
 import {accordionContentMock} from '@src/services/mocks';
 import {FilterButton} from '@/components/FilterButton/FilterButton';
+import {Gallery} from '@/components/Gallery/Gallery';
+import {imagesMock} from '@/services/mocks';
 
 export const App: FC = () => {
   return (
@@ -116,6 +118,9 @@ export const App: FC = () => {
       </Section>
       <Section title="FilterButton Example">
         <FilterButton>Cross</FilterButton>
+      </Section>
+      <Section title="Gallery Example">
+        <Gallery images={imagesMock} />
       </Section>
     </>
   );
