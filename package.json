@@ -34,7 +34,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "clsx": "^2.1.1"
+    "@types/react-image-gallery": "^1.2.4",
+    "clsx": "^2.1.1",
+    "react-image-gallery": "^1.4.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.2",
@@ -94,7 +96,6 @@
     "vite-plugin-lib-inject-css": "^2.2.1",
     "ajv": "^8.17.1",
     "ajv-draft-04": "^1.0.0"
-
   },
   "peerDependencies": {
     "react": "^18.3.1",
