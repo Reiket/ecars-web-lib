@@ -1,0 +1,226 @@
+@use "sass:math";
+@use "../settings" as s;
+
+$ig-small-screen: s.rem(768);
+
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ("-webkit-", "-moz-", "-ms-", "-o-", "") {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+.image-gallery {
+  max-width: s.rem(808);
+}
+
+.image-gallery-icon {
+  color: s.get-color(s.$galleryColors, "arrow-color");
+  transition: all 0.3s ease-out;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  background: transparent;
+  z-index: 4;
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    position: absolute;
+    content: "";
+    width: s.rem(60);
+    height: s.rem(60);
+    background: s.get-color(s.$galleryColors, "arrow-background");
+    opacity: 40%;
+    border-radius: 50%;
+    transition: opacity 0.3s linear;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      &::before {
+        opacity: 100%;
+      }
+    }
+  }
+  .image-gallery-svg {
+    position: relative;
+    width: s.rem(30);
+    height: s.rem(30);
+    z-index: 9;
+    > polyline {
+      transform: translateX(s.rem(2));
+    }
+  }
+  &[disabled] {
+    cursor: none;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+.image-gallery-right-nav {
+  right: 5%;
+  .image-gallery-svg {
+    > polyline {
+      transform: translateX(s.rem(2.5));
+    }
+  }
+}
+.image-gallery-left-nav {
+  left: 5%;
+  .image-gallery-svg {
+    > polyline {
+      transform: translateX(s.rem(-2.5));
+    }
+  }
+}
+.image-gallery {
+  @include vendor-prefix("user-select", none);
+  position: relative;
+}
+.image-gallery-content {
+  position: relative;
+  line-height: 0;
+  top: 0;
+  &.image-gallery-thumbnails-left,
+  &.image-gallery-thumbnails-right {
+    .image-gallery-slide .image-gallery-image {
+      max-height: 100vh;
+    }
+  }
+}
+.image-gallery-slide-wrapper {
+  position: relative;
+  display: flex;
+  &.image-gallery-thumbnails-left,
+  &.image-gallery-thumbnails-right {
+    display: inline-block;
+    width: calc(100% - 110px);
+    @media (max-width: $ig-small-screen) {
+      width: calc(100% - 87px);
+    }
+  }
+}
+.image-gallery-slides {
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+}
+.image-gallery-slide {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  &.image-gallery-center {
+    position: relative;
+  }
+  .image-gallery-image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+.image-gallery-thumbnails-wrapper {
+  position: relative;
+  &.thumbnails-swipe-horizontal {
+    touch-action: pan-y;
+  }
+  &.thumbnails-swipe-vertical {
+    touch-action: pan-x;
+  }
+  &.thumbnails-wrapper-rtl {
+    direction: rtl;
+  }
+  &.image-gallery-thumbnails-left,
+  &.image-gallery-thumbnails-right {
+    display: inline-block;
+    vertical-align: top;
+    width: s.rem(100);
+    @media (max-width: $ig-small-screen) {
+      width: s.rem(81);
+    }
+    .image-gallery-thumbnails {
+      height: 100%;
+      width: 100%;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      .image-gallery-thumbnail {
+        display: block;
+        margin-right: 0;
+        padding: 0;
+        + .image-gallery-thumbnail {
+          margin-left: 0;
+          margin-top: s.rem(2);
+        }
+      }
+    }
+  }
+  &.image-gallery-thumbnails-left,
+  &.image-gallery-thumbnails-right {
+    margin: 0 s.rem(5);
+    @media (max-width: $ig-small-screen) {
+      margin: 0 s.rem(3);
+    }
+  }
+}
+.image-gallery-thumbnails {
+  overflow: hidden;
+  padding: s.rem(5) 0;
+  @media (max-width: $ig-small-screen) {
+    padding: s.rem(3) 0;
+  }
+  .image-gallery-thumbnails-container {
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+.image-gallery-thumbnail {
+  display: inline-block;
+  border: s.rem(4) solid transparent;
+  transition: border 0.3s ease-out;
+  width: s.rem(100);
+  background: transparent;
+  padding: 0;
+  @media (max-width: $ig-small-screen) {
+    border: s.rem(3) solid transparent;
+    width: s.rem(81);
+  }
+  + .image-gallery-thumbnail {
+    margin-left: s.rem(2);
+  }
+  .image-gallery-thumbnail-inner {
+    display: block;
+    position: relative;
+  }
+  .image-gallery-thumbnail-image {
+    vertical-align: middle;
+    width: 100%;
+    line-height: 0;
+    opacity: 50%;
+  }
+  &.active,
+  &:focus {
+    .image-gallery-thumbnail-image {
+      opacity: 1;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      outline: none;
+    }
+  }
+}
+
+.image-gallery-swipe {
+  flex: 1 1 auto;
+}
