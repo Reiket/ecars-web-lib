@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Component calls handleOpen when block is clicked 1`] = `
+<div>
+  <div
+    class="dropdown-menu _dropdown-active"
+    data-testid="dropdownTestId"
+  >
+    <div
+      class="dropdown-menu__block"
+    >
+      <button
+        class="dropdown-menu__category"
+      >
+        1
+        <svg
+          class="dropdown-menu__arrow"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+          />
+        </svg>
+      </button>
+    </div>
+    <ul
+      class="dropdown-menu__list"
+    >
+      <li
+        class="dropdown-menu__option _selected-option"
+      >
+         
+        1
+      </li>
+      <li
+        class="dropdown-menu__option"
+      >
+         
+        2
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Dropdown Component highlights the selected option correctly 1`] = `
+<div>
+  <div
+    class="dropdown-menu _dropdown-active"
+    data-testid="dropdownTestId"
+  >
+    <div
+      class="dropdown-menu__block"
+    >
+      <button
+        class="dropdown-menu__category"
+      >
+        1
+        <svg
+          class="dropdown-menu__arrow"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+          />
+        </svg>
+      </button>
+    </div>
+    <ul
+      class="dropdown-menu__list"
+    >
+      <li
+        class="dropdown-menu__option _selected-option"
+      >
+         
+        1
+      </li>
+      <li
+        class="dropdown-menu__option"
+      >
+         
+        2
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Dropdown Component renders the dropdown component correctly 1`] = `
+<div>
+  <div
+    class="dropdown-menu"
+    data-testid="dropdownTestId"
+  >
+    <div
+      class="dropdown-menu__block"
+    >
+      <button
+        class="dropdown-menu__category"
+      >
+        1
+        <svg
+          class="dropdown-menu__arrow"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+          />
+        </svg>
+      </button>
+    </div>
+    <ul
+      class="dropdown-menu__list"
+    >
+      <li
+        class="dropdown-menu__option _selected-option"
+      >
+         
+        1
+      </li>
+      <li
+        class="dropdown-menu__option"
+      >
+         
+        2
+      </li>
+    </ul>
+  </div>
+</div>
+`;

@@ -6,3 +6,12 @@ export const imagesMock = Array.from({length: 6}, (_) => ({
   original: 'src/assets/react.svg',
   thumbnail: 'src/assets/react.svg',
 }));
+
+export const dropdownOptionsMock = [
+  {
+    value: '1',
+  },
+  {
+    value: '2',
+  },
+];

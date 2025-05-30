@@ -1,0 +1,96 @@
+@use "sass:math";
+@use "../settings" as s;
+
+@mixin dropdownActive() {
+  .dropdown-menu {
+    &__category {
+      background: s.get-color(s.$dropdownColors, "active-category");
+    }
+    &__arrow {
+      transform: scale(1, -1);
+    }
+    &__list {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+}
+
+.dropdown-menu {
+  position: relative;
+  @media (any-hover: hover) {
+    &:hover {
+      @include dropdownActive;
+    }
+  }
+  @media (any-hover: none) {
+    &._dropdown-active {
+      @include dropdownActive;
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: s.rem(6);
+  }
+  &__category {
+    display: flex;
+    align-items: center;
+    gap: s.rem(4);
+    border-radius: s.rem(4);
+    padding: s.rem(3);
+  }
+  &__arrow {
+    color: inherit;
+    font-size: s.rem(20);
+  }
+  &__category,
+  &__arrow,
+  &__list {
+    transition: all 0.4s linear;
+  }
+  &__list {
+    padding-top: s.rem(15);
+    position: absolute;
+    top: s.rem(15);
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  &__option {
+    padding: s.rem(10);
+    display: flex;
+    align-items: center;
+    gap: s.rem(5);
+    background: s.get-color(s.$dropdownColors, "option-background");
+    cursor: pointer;
+    transition: background 0.3s linear;
+    > img {
+      width: s.rem(20);
+      height: s.rem(20);
+      border-radius: s.rem(5);
+    }
+    &:first-child {
+      border-radius: s.rem(8) s.rem(8) 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 s.rem(8) s.rem(8);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background: s.get-color(s.$dropdownColors, "option-hover");
+      }
+    }
+    &._selected-option {
+      background: s.get-color(s.$dropdownColors, "option-selected");
+      cursor: default;
+    }
+  }
+}
