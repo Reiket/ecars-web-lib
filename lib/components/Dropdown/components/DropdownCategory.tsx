@@ -7,15 +7,13 @@ interface Props {
   handleOpen: () => void;
 }
 
-export const DropdownCategory: FC<Props> = ({item, handleOpen}) => {
-  return (
-    <button
-      onClick={handleOpen}
-      className="dropdown-menu__category"
-    >
-      {item?.label}
-      {item?.value}
-      <Icons.ArrowNarrowDown className="dropdown-menu__arrow" />
-    </button>
-  );
-};
+export const DropdownCategory: FC<Props> = ({item, handleOpen}) => (
+  <button
+    onClick={handleOpen}
+    className="dropdown-menu__category"
+  >
+    {item?.label}
+    {item?.value}
+    <Icons.ArrowNarrowDown className="dropdown-menu__arrow" />
+  </button>
+);
