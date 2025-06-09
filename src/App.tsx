@@ -19,6 +19,7 @@ import {FilterButton} from '@/components/FilterButton/FilterButton';
 import {Gallery} from '@/components/Gallery/Gallery';
 import {imagesMock} from '@/services/mocks';
 import {DropdownExample} from '@src/components/DropdownExample';
+import {RangeSliderExample} from '@src/components/RangeSliderExample';
 
 export const App: FC = () => {
   return (
@@ -128,6 +129,9 @@ export const App: FC = () => {
       </Section>
       <Section title="Gallery Example">
         <Gallery images={imagesMock} />
+      </Section>
+      <Section title="Range Slider Example">
+        <RangeSliderExample />
       </Section>
     </>
   );

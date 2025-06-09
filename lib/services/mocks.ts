@@ -15,3 +15,5 @@ export const dropdownOptionsMock = [
     value: '2',
   },
 ];
+
+export const rangeSliderArrayMock = [10, 500];
