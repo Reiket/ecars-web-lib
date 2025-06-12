@@ -1,0 +1,65 @@
+@use "sass:math";
+@use "../settings" as s;
+
+.rc-slider {
+  position: relative;
+  width: 100%;
+  height: s.rem(14);
+  padding: s.rem(5) 0;
+  border-radius: s.rem(6);
+  touch-action: none;
+}
+
+.rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  height: s.rem(3);
+  background-color: s.get-color(s.$rangeSliderColor, "border-line");
+  border-radius: s.rem(2);
+}
+
+.rc-slider-track {
+  position: absolute;
+  height: s.rem(4);
+  background-color: s.get-color(s.$rangeSliderColor, "color");
+  border-radius: s.rem(6);
+}
+
+.rc-slider-handle {
+  position: absolute;
+  z-index: 1;
+  width: s.rem(15);
+  height: s.rem(15);
+  margin-top: s.rem(-5);
+  background-color: s.get-color(s.$rangeSliderColor, "color-circle");
+  border: s.rem(3) solid s.get-color(s.$rangeSliderColor, "color");
+  border-radius: 50%;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
+  touch-action: pan-x;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:focus-visible {
+    border-color: s.get-color(s.$rangeSliderColor, "color");
+    box-shadow: 0 0 0 s.rem(5) s.get-color(s.$rangeSliderColor, "color");
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: s.get-color(s.$rangeSliderColor, "hover-circle");
+    }
+  }
+  &:active {
+    border-color: s.get-color(s.$rangeSliderColor, "color");
+    box-shadow: 0 0 0 s.rem(5) s.get-color(s.$rangeSliderColor, "color");
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+}
+
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+  border-color: s.get-color(s.$rangeSliderColor, "color");
+  box-shadow: 0 0 0 s.rem(2) s.get-color(s.$rangeSliderColor, "color");
+}
