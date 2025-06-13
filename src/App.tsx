@@ -20,6 +20,7 @@ import {Gallery} from '@/components/Gallery/Gallery';
 import {imagesMock} from '@/services/mocks';
 import {DropdownExample} from '@src/components/DropdownExample';
 import {RangeSliderExample} from '@src/components/RangeSliderExample';
+import {SliderExample} from '@src/components/SliderExample';
 
 export const App: FC = () => {
   return (
@@ -132,6 +133,9 @@ export const App: FC = () => {
       </Section>
       <Section title="Range Slider Example">
         <RangeSliderExample />
+      </Section>
+      <Section title="Slider Example">
+        <SliderExample />
       </Section>
     </>
   );

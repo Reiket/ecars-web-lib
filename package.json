@@ -37,7 +37,8 @@
     "@types/react-image-gallery": "^1.2.4",
     "clsx": "^2.1.1",
     "rc-slider": "^11.1.8",
-    "react-image-gallery": "^1.4.0"
+    "react-image-gallery": "^1.4.0",
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.2",
