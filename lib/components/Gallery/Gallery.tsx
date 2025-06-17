@@ -7,13 +7,11 @@ interface Props extends ElementProps {
   images: ReactImageGalleryItem[];
 }
 
-export const Gallery: FC<Props> = ({images, block}) => {
-  return (
-    <ImageGallery
-      items={images}
-      additionalClass={block}
-      showFullscreenButton={false}
-      showPlayButton={false}
-    />
-  );
-};
+export const Gallery: FC<Props> = ({images, block}) => (
+  <ImageGallery
+    items={images}
+    additionalClass={block}
+    showFullscreenButton={false}
+    showPlayButton={false}
+  />
+);

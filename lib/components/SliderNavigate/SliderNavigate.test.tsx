@@ -5,7 +5,7 @@ import {
   NAVIGATE_BUTTON_TEST_ID,
   SLIDER_NAVIGATE_TEST_ID,
 } from '@/components/SliderNavigate/constants';
-import {NavigateButton} from '@/components/SliderNavigate/NavigateButton';
+import {NavigateButton} from '@/components/SliderNavigate/components/NavigateButton';
 
 describe('Slider Navigate component', () => {
   afterEach(cleanup);

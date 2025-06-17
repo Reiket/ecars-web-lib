@@ -6,13 +6,11 @@ import {cn} from '@/services/helpers';
 
 interface Props extends PaginationProps, ElementProps {}
 
-export const PaginationComponent: FC<Props> = ({block, ...props}) => {
-  return (
-    <div
-      data-testid={PAGINATION_TEST_ID}
-      className={cn(block, 'pagination')}
-    >
-      <Pagination.Body {...props} />
-    </div>
-  );
-};
+export const PaginationComponent: FC<Props> = ({block, ...props}) => (
+  <div
+    data-testid={PAGINATION_TEST_ID}
+    className={cn(block, 'pagination')}
+  >
+    <Pagination.Body {...props} />
+  </div>
+);

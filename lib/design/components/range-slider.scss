@@ -31,7 +31,7 @@
   width: s.rem(15);
   height: s.rem(15);
   margin-top: s.rem(-5);
-  background-color: s.get-color(s.$rangeSliderColor, "color-circle");
+  background-color: s.get-color(s.$rangeSliderColor, "circle-color");
   border: s.rem(3) solid s.get-color(s.$rangeSliderColor, "color");
   border-radius: 50%;
   cursor: pointer;

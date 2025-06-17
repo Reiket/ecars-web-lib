@@ -20,25 +20,23 @@ export const ButtonWithIcon: FC<ButtonIconProps<IconProps>> = ({
   children,
   className,
   ...props
-}) => {
-  return (
-    <Button
-      withIcon
-      {...props}
-    >
-      {!!LeftIcon && (
-        <LeftIcon
-          className={className}
-          data-testid={LEFT_ICON_BUTTON_TEST_ID}
-        />
-      )}
-      {children}
-      {!!RightIcon && (
-        <RightIcon
-          className={className}
-          data-testid={RIGHT_ICON_BUTTON_TEST_ID}
-        />
-      )}
-    </Button>
-  );
-};
+}) => (
+  <Button
+    withIcon
+    {...props}
+  >
+    {!!LeftIcon && (
+      <LeftIcon
+        className={className}
+        data-testid={LEFT_ICON_BUTTON_TEST_ID}
+      />
+    )}
+    {children}
+    {!!RightIcon && (
+      <RightIcon
+        className={className}
+        data-testid={RIGHT_ICON_BUTTON_TEST_ID}
+      />
+    )}
+  </Button>
+);

@@ -10,15 +10,9 @@ type StoryProps = ComponentProps<typeof Select>;
 const meta: Meta<StoryProps> = {
   component: Select,
   tags: ['autodocs'],
-  argTypes: {
-    onClick: { action: 'onClick' },
-    onChange: { action: 'onChange' },
-    handleSelect: { action: 'handleSelect' },
-    onClickToOptions: { action: 'onClickToOptions' },
-  },
   args: {
     options: selectOptionsMock,
-    placeholder: "Select",
+    placeholder: 'Select',
     hasSearch: false,
     disabled: false,
   },
@@ -29,16 +23,18 @@ export default meta;
 type Story = StoryObj<StoryProps>;
 
 export const Primary: Story = {
-  render: (args: StoryProps) => {
+  render: ({...args}) => {
     const {isOpen, selectedValue, onClickToOptions, toggleOpen, handleOutside, handleChange} = useSelect();
-    return <Select
-      {...args}
-      onChange={handleChange}
-      value={selectedValue}
-      onClickToOptions={onClickToOptions}
-      handleSelect={handleOutside}
-      onClick={toggleOpen}
-      isOpen={isOpen}
-    />
+    return (
+      <Select
+        {...args}
+        onChange={handleChange}
+        value={selectedValue}
+        onClickToOptions={onClickToOptions}
+        handleSelect={handleOutside}
+        onClick={toggleOpen}
+        isOpen={isOpen}
+      />
+    );
   },
 };

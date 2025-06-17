@@ -16,14 +16,14 @@ $navLinkColor: #3c7d46;
 
 $favButtonColors: (
   "transparent": #a3a3a3,
-  "transparent-hover": #e49a49,
-  "transparent-active": #e49a49,
+  "hover-transparent": #e49a49,
+  "active-transparent": #e49a49,
   "transparent-press": #af7743,
-  "transparent-hover-active": #c28140,
+  "hover-active-transparent": #c28140,
   "circle-color": #fff,
   "circle": #312f2f,
-  "circle-hover": #1a1a1a,
-  "circle-press": #000,
+  "hover-circle": #1a1a1a,
+  "press-circle": #000,
 );
 
 $navigateButtonColors: (
@@ -31,9 +31,9 @@ $navigateButtonColors: (
   "hover-color": #ffffff,
   "active-background": #1f3b23,
   "active-color": #ffffff,
-  "transparent-hover-active": #c28140,
+  "hover-active-transparent": #c28140,
   "circle": #312f2f,
-  "circle-hover": #000,
+  "hover-circle": #000,
 );
 
 $paginationColor: (
@@ -56,8 +56,8 @@ $galleryColors: (
 $dropdownColors: (
   "active-category": #c0bfbf,
   "option-background": #e6e6e6,
-  "option-hover": #d3d3d3,
-  "option-selected": #c0bfbf,
+  "hover-option": #d3d3d3,
+  "selected-option": #c0bfbf,
 );
 
 $linkColors: (
@@ -103,7 +103,7 @@ $categoriesColor: (
 
 $rangeSliderColor: (
   "color": #3c7d46,
-  "color-circle": #ffffff,
+  "circle-color": #ffffff,
   "hover-circle": #1f3b23,
   "border-line": #d1d1d1,
 );
@@ -118,7 +118,7 @@ $color-dark-green: #1f3b23;
 $color-page-green: #9fc299;
 $color-pale-green: #d7ecda;
 /*gray*/
-$color-gray: #484848;
+$gray-color: #484848;
 $color-light-gray: #767676;
 $color-pale-gray: #a3a3a3;
 /*black*/

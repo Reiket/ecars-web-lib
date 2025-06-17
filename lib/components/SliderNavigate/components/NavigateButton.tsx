@@ -13,14 +13,12 @@ const icons = {
   right: <Icons.ArrowNarrowRight />,
 };
 
-export const NavigateButton: FC<Props> = ({placement}) => {
-  return (
-    <button
-      data-testid={NAVIGATE_BUTTON_TEST_ID}
-      type="button"
-      className="slider-navigate__button"
-    >
-      {icons[placement]}
-    </button>
-  );
-};
+export const NavigateButton: FC<Props> = ({placement}) => (
+  <button
+    data-testid={NAVIGATE_BUTTON_TEST_ID}
+    type="button"
+    className="slider-navigate__button"
+  >
+    {icons[placement]}
+  </button>
+);
