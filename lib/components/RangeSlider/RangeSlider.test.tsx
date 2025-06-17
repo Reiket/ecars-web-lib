@@ -1,11 +1,10 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
 import {RangeSlider} from './RangeSlider';
-import '@testing-library/jest-dom';
 import {rangeSliderArrayMock} from '@/services/mocks';
 
 describe('RangeSlider Component', () => {
-  test('renders without crashing', () => {
+  test('renders Range Slider component correctly', () => {
     const {container} = render(<RangeSlider defaultValue={rangeSliderArrayMock} />);
     const sliderContainer = container.querySelector('.rc-slider');
     expect(sliderContainer).toBeInTheDocument();

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RangeSlider Component renders without crashing 1`] = `
+exports[`RangeSlider Component renders Range Slider component correctly 1`] = `
 <div>
   <div
-    class="rc-slider rc-slider-horizontal"
+    class="rc-slider range-slider rc-slider-horizontal"
   >
     <div
       class="rc-slider-rail"
