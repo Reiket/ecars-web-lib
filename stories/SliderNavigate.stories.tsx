@@ -1,7 +1,7 @@
 import {ComponentProps} from 'react';
 import {Meta, StoryObj} from '@storybook/react';
 import {SliderNavigate} from '../lib/components/SliderNavigate/SliderNavigate';
-import {NavigateButton} from '../lib/components/SliderNavigate/NavigateButton';
+import {NavigateButton} from '../lib/components/SliderNavigate/components/NavigateButton';
 import {NAVIGATE_BUTTON_PLACEMENT} from '../lib/components/SliderNavigate/constants';
 
 type StoryProps = ComponentProps<typeof SliderNavigate>;

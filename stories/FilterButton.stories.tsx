@@ -9,9 +9,6 @@ type StoryProps = ComponentProps<typeof FilterButton> & {
 const meta: Meta<StoryProps> = {
   component: FilterButton,
   tags: ['autodocs'],
-  argTypes: {
-    onClick: {action: 'onClick'},
-  },
 };
 
 export default meta;

@@ -9,17 +9,15 @@ export interface Props extends ElementProps {
   onClick: () => void;
 }
 
-export const AccordionComponent: FC<Props> = ({block, isOpen, textContent, title, onClick}) => {
-  return (
-    <Accordion.Layout
-      isOpen={isOpen}
-      block={block}
-    >
-      <Accordion.Block
-        title={title}
-        onClick={onClick}
-      />
-      <Accordion.Content isOpen={isOpen}>{textContent}</Accordion.Content>
-    </Accordion.Layout>
-  );
-};
+export const AccordionComponent: FC<Props> = ({block, isOpen, textContent, title, onClick}) => (
+  <Accordion.Layout
+    isOpen={isOpen}
+    block={block}
+  >
+    <Accordion.Block
+      title={title}
+      onClick={onClick}
+    />
+    <Accordion.Content isOpen={isOpen}>{textContent}</Accordion.Content>
+  </Accordion.Layout>
+);

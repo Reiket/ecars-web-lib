@@ -85,11 +85,11 @@
     }
     @media (any-hover: hover) {
       &:hover {
-        background: s.get-color(s.$dropdownColors, "option-hover");
+        background: s.get-color(s.$dropdownColors, "hover-option");
       }
     }
     &._selected-option {
-      background: s.get-color(s.$dropdownColors, "option-selected");
+      background: s.get-color(s.$dropdownColors, "selected-option");
       cursor: default;
     }
   }

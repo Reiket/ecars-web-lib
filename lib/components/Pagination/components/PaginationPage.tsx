@@ -8,16 +8,14 @@ interface Props {
   onClick?: () => void;
 }
 
-export const PaginationPage: FC<Props> = ({onClick, isSelected, page, disabled = false}) => {
-  return (
-    <button
-      disabled={disabled}
-      onClick={onClick}
-      className={cn('', 'pagination__button', {
-        '_current-page': isSelected,
-      })}
-    >
-      {page}
-    </button>
-  );
-};
+export const PaginationPage: FC<Props> = ({onClick, isSelected, page, disabled = false}) => (
+  <button
+    disabled={disabled}
+    onClick={onClick}
+    className={cn('', 'pagination__button', {
+      '_current-page': isSelected,
+    })}
+  >
+    {page}
+  </button>
+);

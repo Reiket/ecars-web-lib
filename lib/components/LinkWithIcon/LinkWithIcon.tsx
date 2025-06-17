@@ -9,15 +9,13 @@ interface Props extends RouterLinkProps {
   LeftIcon?: ComponentType;
 }
 
-export const LinkWithIcon: FC<Props> = ({RightIcon, LeftIcon, children, ...props}) => {
-  return (
-    <RouterLink
-      withIcon
-      {...props}
-    >
-      {!!LeftIcon && <LeftIcon data-testid={LEFT_ICON_LINK_TEST_ID} />}
-      {children}
-      {!!RightIcon && <RightIcon data-testid={RIGHT_ICON_LINK_TEST_ID} />}
-    </RouterLink>
-  );
-};
+export const LinkWithIcon: FC<Props> = ({RightIcon, LeftIcon, children, ...props}) => (
+  <RouterLink
+    withIcon
+    {...props}
+  >
+    {!!LeftIcon && <LeftIcon data-testid={LEFT_ICON_LINK_TEST_ID} />}
+    {children}
+    {!!RightIcon && <RightIcon data-testid={RIGHT_ICON_LINK_TEST_ID} />}
+  </RouterLink>
+);
