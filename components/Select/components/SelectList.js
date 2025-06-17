@@ -1,5 +1,5 @@
 import "react/jsx-runtime";
-import { c as r } from "../../../constants-DNQ9bsvo.js";
+import { b as r } from "../../../SelectComponent-BTwBiVSD.js";
 export {
   r as SelectList
 };

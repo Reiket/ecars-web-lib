@@ -1,8 +1,8 @@
 import { jsx as s } from "react/jsx-runtime";
-import { c as i, r, s as n } from "../../react.esm-OOgUt-k1.js";
+import { c as i, r, s as n } from "../../react.esm-DeOc63_l.js";
 import { SliderNavigate as l } from "./SliderNavigate.js";
 import { SLIDER_NAVIGATE_TEST_ID as m, NAVIGATE_BUTTON_TEST_ID as a, NAVIGATE_BUTTON_PLACEMENT as p } from "./constants.js";
-import { NavigateButton as T } from "./NavigateButton.js";
+import { NavigateButton as T } from "./components/NavigateButton.js";
 describe("Slider Navigate component", () => {
   afterEach(i), test("renders correctly", () => {
     const { container: t } = r(/* @__PURE__ */ s(l, {})), e = n.getByTestId(m), o = n.getAllByTestId(a);

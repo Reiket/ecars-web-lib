@@ -1,5 +1,6 @@
 import { FC } from 'react';
-interface Props {
+import { ElementProps } from '../../services/types';
+interface Props extends ElementProps {
     children: string;
     onClick?: () => void;
 }

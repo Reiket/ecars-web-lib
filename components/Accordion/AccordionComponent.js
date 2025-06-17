@@ -1,5 +1,5 @@
 import "react/jsx-runtime";
-import { b as n } from "../../constants-RDWPSVyj.js";
+import { b as n } from "../../constants-8e3nZ3aI.js";
 export {
   n as AccordionComponent
 };

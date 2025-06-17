@@ -1,5 +1,5 @@
 import { jsx as n } from "react/jsx-runtime";
-import { c as I, r, s as t } from "../../react.esm-OOgUt-k1.js";
+import { c as I, r, s as t } from "../../react.esm-DeOc63_l.js";
 import { LinkWithIcon as c } from "./LinkWithIcon.js";
 import { ROUTER_LINK_COLOR as p } from "../RouterLink/constants.js";
 import { Icons as i } from "../../services/icons.js";

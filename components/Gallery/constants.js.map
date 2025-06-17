@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.js","sources":["../../../lib/components/Gallery/constants.ts"],"sourcesContent":["export const GALLERY_TEST_ID = 'galleryTestId';\n"],"names":["GALLERY_TEST_ID"],"mappings":"AAAO,MAAMA,IAAkB;"}

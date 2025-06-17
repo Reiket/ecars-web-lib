@@ -1,19 +1,20 @@
-import { jsx as r } from "react/jsx-runtime";
-import { ButtonWithIcon as n } from "../ButtonWithIcon/ButtonWithIcon.js";
-import { Icons as s } from "../../services/icons.js";
-const i = ({ children: o, onClick: t }) => /* @__PURE__ */ r(
-  n,
+import { jsx as s } from "react/jsx-runtime";
+import { ButtonWithIcon as m } from "../ButtonWithIcon/ButtonWithIcon.js";
+import { Icons as n } from "../../services/icons.js";
+const l = ({ children: o, onClick: t, block: r }) => /* @__PURE__ */ s(
+  m,
   {
     type: "button",
+    block: r,
     onClick: t,
     className: "button__close",
-    RightIcon: s.Close,
+    RightIcon: n.Close,
     size: "small",
     color: "gray",
     children: o
   }
 );
 export {
-  i as FilterButton
+  l as FilterButton
 };
 //# sourceMappingURL=FilterButton.js.map

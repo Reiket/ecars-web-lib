@@ -1,13 +1,13 @@
-import { jsx as r } from "react/jsx-runtime";
-import { NavigateButton as a } from "./NavigateButton.js";
-import { SLIDER_NAVIGATE_TEST_ID as i, NAVIGATE_BUTTON_PLACEMENT as e } from "./constants.js";
-const N = () => /* @__PURE__ */ r(
+import { jsx as a } from "react/jsx-runtime";
+import { NavigateButton as i } from "./components/NavigateButton.js";
+import { SLIDER_NAVIGATE_TEST_ID as r, NAVIGATE_BUTTON_PLACEMENT as e } from "./constants.js";
+const N = () => /* @__PURE__ */ a(
   "div",
   {
-    "data-testid": i,
+    "data-testid": r,
     className: "slider-navigate",
-    children: Object.values(e).map((t) => /* @__PURE__ */ r(
-      a,
+    children: Object.values(e).map((t) => /* @__PURE__ */ a(
+      i,
       {
         placement: t
       },
