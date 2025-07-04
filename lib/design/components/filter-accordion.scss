@@ -1,0 +1,53 @@
+@use "sass:math";
+@use "../settings" as s;
+
+.filter-accordion {
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: s.rem(12);
+  }
+  &__title {
+    font-weight: 600;
+    flex: 1 1 auto;
+  }
+  &__button {
+    font-weight: 400;
+  }
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border-radius: 50%;
+    width: s.rem(18);
+    height: s.rem(18);
+    transition: background-color 0.3s linear;
+    > svg {
+      transition: transform .3s linear;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background: s.get-color(s.$filterAccordionColor, "hover-button");
+      }
+    }
+  }
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    position: relative;
+  }
+  &__body {
+    padding-top: s.rem(12);
+  }
+  &._active-accordion {
+    .filter-accordion {
+      &__arrow {
+        > svg {
+          transform: scale(1, -1);
+        }
+      }
+    }
+  }
+}
