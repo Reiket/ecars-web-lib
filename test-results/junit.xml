@@ -1,17 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="158" failures="0" errors="0" time="7.965">
-  <testsuite name="Input component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:27" time="2.908" tests="11">
-    <testcase classname="Input component should input is disabled has an error and input has an error class has a placeholder" name="Input component should input is disabled has an error and input has an error class has a placeholder" time="0.092">
+<testsuites name="jest tests" tests="158" failures="0" errors="0" time="6.093">
+  <testsuite name="Fav Button component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:02" time="2.19" tests="8">
+    <testcase classname="Fav Button component renders button with type transparent and disabled" name="Fav Button component renders button with type transparent and disabled" time="0.134">
     </testcase>
-    <testcase classname="Input component should input is disabled has an error and input has an error class has no placeholder" name="Input component should input is disabled has an error and input has an error class has no placeholder" time="0.128">
+    <testcase classname="Fav Button component renders button with type transparent and disabled" name="Fav Button component renders button with type transparent and disabled" time="0.037">
     </testcase>
-    <testcase classname="Input component should input is disabled has no error has a placeholder" name="Input component should input is disabled has no error has a placeholder" time="0.011">
+    <testcase classname="Fav Button component renders button with type circle and disabled" name="Fav Button component renders button with type circle and disabled" time="0.017">
+    </testcase>
+    <testcase classname="Fav Button component renders button with type circle and disabled" name="Fav Button component renders button with type circle and disabled" time="0.012">
+    </testcase>
+    <testcase classname="Fav Button component handles the click event" name="Fav Button component handles the click event" time="0.022">
+    </testcase>
+    <testcase classname="Fav Button component the onClick event does not fire when button is disabled" name="Fav Button component the onClick event does not fire when button is disabled" time="0.01">
+    </testcase>
+    <testcase classname="Fav Button component the active state when has prop isFavorite" name="Fav Button component the active state when has prop isFavorite" time="0.005">
+    </testcase>
+    <testcase classname="Fav Button component renders correct icon based on isFavorite prop" name="Fav Button component renders correct icon based on isFavorite prop" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Checkbox component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:02" time="2.368" tests="9">
+    <testcase classname="Checkbox component renders checkbox is disabled, is checked, has an error and input has an error class" name="Checkbox component renders checkbox is disabled, is checked, has an error and input has an error class" time="0.111">
+    </testcase>
+    <testcase classname="Checkbox component renders checkbox is disabled, is checked, has no error" name="Checkbox component renders checkbox is disabled, is checked, has no error" time="0.016">
+    </testcase>
+    <testcase classname="Checkbox component renders checkbox is disabled, is not checked, has an error and input has an error class" name="Checkbox component renders checkbox is disabled, is not checked, has an error and input has an error class" time="0.01">
+    </testcase>
+    <testcase classname="Checkbox component renders checkbox is disabled, is not checked, has no error" name="Checkbox component renders checkbox is disabled, is not checked, has no error" time="0.006">
+    </testcase>
+    <testcase classname="Checkbox component renders checkbox is not disabled, is checked, has an error and input has an error class" name="Checkbox component renders checkbox is not disabled, is checked, has an error and input has an error class" time="0.01">
+    </testcase>
+    <testcase classname="Checkbox component renders checkbox is not disabled, is checked, has no error" name="Checkbox component renders checkbox is not disabled, is checked, has no error" time="0.007">
+    </testcase>
+    <testcase classname="Checkbox component renders checkbox is not disabled, is not checked, has an error and input has an error class" name="Checkbox component renders checkbox is not disabled, is not checked, has an error and input has an error class" time="0.007">
+    </testcase>
+    <testcase classname="Checkbox component renders checkbox is not disabled, is not checked, has no error" name="Checkbox component renders checkbox is not disabled, is not checked, has no error" time="0.008">
+    </testcase>
+    <testcase classname="Checkbox component onChange event changed checked when user clicks on checkbox" name="Checkbox component onChange event changed checked when user clicks on checkbox" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="Button component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:02" time="2.474" tests="60">
+    <testcase classname="Button component renders button with color green, size big, type submit and disabled" name="Button component renders button with color green, size big, type submit and disabled" time="0.144">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size big, type submit and disabled" name="Button component renders button with color green, size big, type submit and disabled" time="0.023">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size big, type reset and disabled" name="Button component renders button with color green, size big, type reset and disabled" time="0.016">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size big, type reset and disabled" name="Button component renders button with color green, size big, type reset and disabled" time="0.014">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size big, type button and disabled" name="Button component renders button with color green, size big, type button and disabled" time="0.01">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size big, type button and disabled" name="Button component renders button with color green, size big, type button and disabled" time="0.026">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size medium, type submit and disabled" name="Button component renders button with color green, size medium, type submit and disabled" time="0.007">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size medium, type submit and disabled" name="Button component renders button with color green, size medium, type submit and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size medium, type reset and disabled" name="Button component renders button with color green, size medium, type reset and disabled" time="0.008">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size medium, type reset and disabled" name="Button component renders button with color green, size medium, type reset and disabled" time="0.012">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size medium, type button and disabled" name="Button component renders button with color green, size medium, type button and disabled" time="0.01">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size medium, type button and disabled" name="Button component renders button with color green, size medium, type button and disabled" time="0.007">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size small, type submit and disabled" name="Button component renders button with color green, size small, type submit and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size small, type submit and disabled" name="Button component renders button with color green, size small, type submit and disabled" time="0.004">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size small, type reset and disabled" name="Button component renders button with color green, size small, type reset and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size small, type reset and disabled" name="Button component renders button with color green, size small, type reset and disabled" time="0.011">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size small, type button and disabled" name="Button component renders button with color green, size small, type button and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color green, size small, type button and disabled" name="Button component renders button with color green, size small, type button and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size big, type submit and disabled" name="Button component renders button with color white, size big, type submit and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size big, type submit and disabled" name="Button component renders button with color white, size big, type submit and disabled" time="0.009">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size big, type reset and disabled" name="Button component renders button with color white, size big, type reset and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size big, type reset and disabled" name="Button component renders button with color white, size big, type reset and disabled" time="0.008">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size big, type button and disabled" name="Button component renders button with color white, size big, type button and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size big, type button and disabled" name="Button component renders button with color white, size big, type button and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size medium, type submit and disabled" name="Button component renders button with color white, size medium, type submit and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size medium, type submit and disabled" name="Button component renders button with color white, size medium, type submit and disabled" time="0.007">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size medium, type reset and disabled" name="Button component renders button with color white, size medium, type reset and disabled" time="0.007">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size medium, type reset and disabled" name="Button component renders button with color white, size medium, type reset and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size medium, type button and disabled" name="Button component renders button with color white, size medium, type button and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size medium, type button and disabled" name="Button component renders button with color white, size medium, type button and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size small, type submit and disabled" name="Button component renders button with color white, size small, type submit and disabled" time="0.007">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size small, type submit and disabled" name="Button component renders button with color white, size small, type submit and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size small, type reset and disabled" name="Button component renders button with color white, size small, type reset and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size small, type reset and disabled" name="Button component renders button with color white, size small, type reset and disabled" time="0.004">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size small, type button and disabled" name="Button component renders button with color white, size small, type button and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color white, size small, type button and disabled" name="Button component renders button with color white, size small, type button and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size big, type submit and disabled" name="Button component renders button with color gray, size big, type submit and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size big, type submit and disabled" name="Button component renders button with color gray, size big, type submit and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size big, type reset and disabled" name="Button component renders button with color gray, size big, type reset and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size big, type reset and disabled" name="Button component renders button with color gray, size big, type reset and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size big, type button and disabled" name="Button component renders button with color gray, size big, type button and disabled" time="0.004">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size big, type button and disabled" name="Button component renders button with color gray, size big, type button and disabled" time="0.004">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size medium, type submit and disabled" name="Button component renders button with color gray, size medium, type submit and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size medium, type submit and disabled" name="Button component renders button with color gray, size medium, type submit and disabled" time="0.004">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size medium, type reset and disabled" name="Button component renders button with color gray, size medium, type reset and disabled" time="0.01">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size medium, type reset and disabled" name="Button component renders button with color gray, size medium, type reset and disabled" time="0.009">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size medium, type button and disabled" name="Button component renders button with color gray, size medium, type button and disabled" time="0.007">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size medium, type button and disabled" name="Button component renders button with color gray, size medium, type button and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size small, type submit and disabled" name="Button component renders button with color gray, size small, type submit and disabled" time="0.006">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size small, type submit and disabled" name="Button component renders button with color gray, size small, type submit and disabled" time="0.013">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size small, type reset and disabled" name="Button component renders button with color gray, size small, type reset and disabled" time="0.012">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size small, type reset and disabled" name="Button component renders button with color gray, size small, type reset and disabled" time="0.004">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size small, type button and disabled" name="Button component renders button with color gray, size small, type button and disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component renders button with color gray, size small, type button and disabled" name="Button component renders button with color gray, size small, type button and disabled" time="0.004">
+    </testcase>
+    <testcase classname="Button component changes button text according to the children text" name="Button component changes button text according to the children text" time="0.014">
+    </testcase>
+    <testcase classname="Button component handles the click event" name="Button component handles the click event" time="0.016">
+    </testcase>
+    <testcase classname="Button component the onClick event does not fire when button is disabled" name="Button component the onClick event does not fire when button is disabled" time="0.007">
+    </testcase>
+    <testcase classname="Button component additional classes are not applied if the button is disabled" name="Button component additional classes are not applied if the button is disabled" time="0.005">
+    </testcase>
+    <testcase classname="Button component button has button-transparent if receive prop isTransparent" name="Button component button has button-transparent if receive prop isTransparent" time="0.006">
+    </testcase>
+    <testcase classname="Button component button has button-icon if receive prop withIcon" name="Button component button has button-icon if receive prop withIcon" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Pagination component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:02" time="2.461" tests="6">
+    <testcase classname="Pagination component renders component with all page buttons and arrows" name="Pagination component renders component with all page buttons and arrows" time="0.106">
+    </testcase>
+    <testcase classname="Pagination component disables prev arrow on first page" name="Pagination component disables prev arrow on first page" time="0.051">
+    </testcase>
+    <testcase classname="Pagination component calls onPageClick when page button is clicked" name="Pagination component calls onPageClick when page button is clicked" time="0.025">
+    </testcase>
+    <testcase classname="Pagination component marks the current page as selected" name="Pagination component marks the current page as selected" time="0.009">
+    </testcase>
+    <testcase classname="Pagination component calls onPrevClick and onNextClick" name="Pagination component calls onPrevClick and onNextClick" time="0.026">
+    </testcase>
+    <testcase classname="Pagination component disables all buttons and arrows when loading" name="Pagination component disables all buttons and arrows when loading" time="0.023">
+    </testcase>
+  </testsuite>
+  <testsuite name="Accordion Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:02" time="2.508" tests="4">
+    <testcase classname="Accordion Component renders the accordion component and title, text correctly" name="Accordion Component renders the accordion component and title, text correctly" time="0.123">
+    </testcase>
+    <testcase classname="Accordion Component should open the content" name="Accordion Component should open the content" time="0.103">
+    </testcase>
+    <testcase classname="Accordion Component should close the content" name="Accordion Component should close the content" time="0.013">
+    </testcase>
+    <testcase classname="Accordion Component triggers onClick handler when title is clicked" name="Accordion Component triggers onClick handler when title is clicked" time="0.042">
+    </testcase>
+  </testsuite>
+  <testsuite name="Filter Accordion Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:02" time="2.542" tests="4">
+    <testcase classname="Filter Accordion Component renders the filter accordion component and title, text correctly" name="Filter Accordion Component renders the filter accordion component and title, text correctly" time="0.142">
+    </testcase>
+    <testcase classname="Filter Accordion Component should open the content" name="Filter Accordion Component should open the content" time="0.136">
+    </testcase>
+    <testcase classname="Filter Accordion Component should close the content" name="Filter Accordion Component should close the content" time="0.017">
+    </testcase>
+    <testcase classname="Filter Accordion Component triggers onClick handler when arrow is clicked" name="Filter Accordion Component triggers onClick handler when arrow is clicked" time="0.037">
+    </testcase>
+  </testsuite>
+  <testsuite name="Select Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:02" time="2.722" tests="11">
+    <testcase classname="Select Component should input is disabled has a placeholder" name="Select Component should input is disabled has a placeholder" time="0.135">
+    </testcase>
+    <testcase classname="Select Component should input is disabled has no placeholder" name="Select Component should input is disabled has no placeholder" time="0.054">
+    </testcase>
+    <testcase classname="Select Component should input is not disabled has a placeholder" name="Select Component should input is not disabled has a placeholder" time="0.017">
+    </testcase>
+    <testcase classname="Select Component should input is not disabled has no placeholder" name="Select Component should input is not disabled has no placeholder" time="0.013">
+    </testcase>
+    <testcase classname="Select Component calls onChange and handleSelect when input changes" name="Select Component calls onChange and handleSelect when input changes" time="0.03">
+    </testcase>
+    <testcase classname="Select Component calls onClick when block is clicked" name="Select Component calls onClick when block is clicked" time="0.059">
+    </testcase>
+    <testcase classname="Select Component filters options when hasSearch is true and value is typed" name="Select Component filters options when hasSearch is true and value is typed" time="0.013">
+    </testcase>
+    <testcase classname="Select Component does not render list if search yields no match" name="Select Component does not render list if search yields no match" time="0.019">
+    </testcase>
+    <testcase classname="Select Component closes list on outside click" name="Select Component closes list on outside click" time="0.014">
+    </testcase>
+    <testcase classname="Select Component displays the provided value in the input and highlights the corresponding option" name="Select Component displays the provided value in the input and highlights the corresponding option" time="0.011">
+    </testcase>
+    <testcase classname="Select Component opens the select when typing in the input" name="Select Component opens the select when typing in the input" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="RangeSlider Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:04" time="0.801" tests="2">
+    <testcase classname="RangeSlider Component renders Range Slider component correctly" name="RangeSlider Component renders Range Slider component correctly" time="0.052">
+    </testcase>
+    <testcase classname="RangeSlider Component renders with correct default range" name="RangeSlider Component renders with correct default range" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="ButtonWithIcon component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:05" time="0.683" tests="4">
+    <testcase classname="ButtonWithIcon component renders component correctly" name="ButtonWithIcon component renders component correctly" time="0.019">
+    </testcase>
+    <testcase classname="ButtonWithIcon component renders LeftIcon when provided" name="ButtonWithIcon component renders LeftIcon when provided" time="0.009">
+    </testcase>
+    <testcase classname="ButtonWithIcon component renders RightIcon when provided" name="ButtonWithIcon component renders RightIcon when provided" time="0.007">
+    </testcase>
+    <testcase classname="ButtonWithIcon component renders both LeftIcon and RightIcon when provided" name="ButtonWithIcon component renders both LeftIcon and RightIcon when provided" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="LinkWithIcon component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:04" time="0.935" tests="4">
+    <testcase classname="LinkWithIcon component renders component correctly" name="LinkWithIcon component renders component correctly" time="0.029">
+    </testcase>
+    <testcase classname="LinkWithIcon component renders LeftIcon when provided" name="LinkWithIcon component renders LeftIcon when provided" time="0.009">
+    </testcase>
+    <testcase classname="LinkWithIcon component renders RightIcon when provided" name="LinkWithIcon component renders RightIcon when provided" time="0.008">
+    </testcase>
+    <testcase classname="LinkWithIcon component renders both LeftIcon and RightIcon when provided" name="LinkWithIcon component renders both LeftIcon and RightIcon when provided" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Field Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:04" time="0.899" tests="8">
+    <testcase classname="Field Component render field component with error - Some error, with label - Email, with id - email" name="Field Component render field component with error - Some error, with label - Email, with id - email" time="0.022">
+    </testcase>
+    <testcase classname="Field Component render field component with error - Some error, with label - Email, without id" name="Field Component render field component with error - Some error, with label - Email, without id" time="0.01">
+    </testcase>
+    <testcase classname="Field Component render field component without error, with label - Email, with id - email" name="Field Component render field component without error, with label - Email, with id - email" time="0.007">
+    </testcase>
+    <testcase classname="Field Component render field component without error, with label - Email, without id" name="Field Component render field component without error, with label - Email, without id" time="0.006">
+    </testcase>
+    <testcase classname="Field Component render field component with error - Some error, without label, with id - email" name="Field Component render field component with error - Some error, without label, with id - email" time="0.006">
+    </testcase>
+    <testcase classname="Field Component render field component with error - Some error, without label, without id" name="Field Component render field component with error - Some error, without label, without id" time="0.011">
+    </testcase>
+    <testcase classname="Field Component render field component without error, without label, with id - email" name="Field Component render field component without error, without label, with id - email" time="0.023">
+    </testcase>
+    <testcase classname="Field Component render field component without error, without label, without id" name="Field Component render field component without error, without label, without id" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="Router Link component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:05" time="0.768" tests="7">
+    <testcase classname="Router Link component renders links with green color" name="Router Link component renders links with green color" time="0.016">
+    </testcase>
+    <testcase classname="Router Link component renders links with gray color" name="Router Link component renders links with gray color" time="0.005">
+    </testcase>
+    <testcase classname="Router Link component renders links with dark color" name="Router Link component renders links with dark color" time="0.007">
+    </testcase>
+    <testcase classname="Router Link component renders links with lightgray color" name="Router Link component renders links with lightgray color" time="0.017">
+    </testcase>
+    <testcase classname="Router Link component applies &quot;link-icon&quot; class when withIcon is true" name="Router Link component applies &quot;link-icon&quot; class when withIcon is true" time="0.006">
+    </testcase>
+    <testcase classname="Router Link component renders an external link when &quot;href&quot; is provided" name="Router Link component renders an external link when &quot;href&quot; is provided" time="0.005">
+    </testcase>
+    <testcase classname="Router Link component renders an internal link when &quot;to&quot; is provided" name="Router Link component renders an internal link when &quot;to&quot; is provided" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="NavLink component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:05" time="0.75" tests="3">
+    <testcase classname="NavLink component renders correctly with given children" name="NavLink component renders correctly with given children" time="0.036">
+    </testcase>
+    <testcase classname="NavLink component applies &apos;link-active&apos; class when the link is active" name="NavLink component applies &apos;link-active&apos; class when the link is active" time="0.016">
+    </testcase>
+    <testcase classname="NavLink component does not apply &apos;link-active&apos; class when the link is not active" name="NavLink component does not apply &apos;link-active&apos; class when the link is not active" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="Dropdown Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:04" time="1.136" tests="5">
+    <testcase classname="Dropdown Component renders the dropdown component correctly" name="Dropdown Component renders the dropdown component correctly" time="0.039">
+    </testcase>
+    <testcase classname="Dropdown Component calls handleOpen when block is clicked" name="Dropdown Component calls handleOpen when block is clicked" time="0.012">
+    </testcase>
+    <testcase classname="Dropdown Component closes list on outside click" name="Dropdown Component closes list on outside click" time="0.009">
+    </testcase>
+    <testcase classname="Dropdown Component highlights the selected option correctly" name="Dropdown Component highlights the selected option correctly" time="0.012">
+    </testcase>
+    <testcase classname="Dropdown Component calls onSelect when an option is clicked" name="Dropdown Component calls onSelect when an option is clicked" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="Input component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:05" time="0.605" tests="11">
+    <testcase classname="Input component should input is disabled has an error and input has an error class has a placeholder" name="Input component should input is disabled has an error and input has an error class has a placeholder" time="0.013">
+    </testcase>
+    <testcase classname="Input component should input is disabled has an error and input has an error class has no placeholder" name="Input component should input is disabled has an error and input has an error class has no placeholder" time="0.006">
+    </testcase>
+    <testcase classname="Input component should input is disabled has no error has a placeholder" name="Input component should input is disabled has no error has a placeholder" time="0.007">
     </testcase>
     <testcase classname="Input component should input is disabled has no error has no placeholder" name="Input component should input is disabled has no error has no placeholder" time="0.005">
     </testcase>
-    <testcase classname="Input component should input is not disabled has an error and input has an error class has a placeholder" name="Input component should input is not disabled has an error and input has an error class has a placeholder" time="0.048">
+    <testcase classname="Input component should input is not disabled has an error and input has an error class has a placeholder" name="Input component should input is not disabled has an error and input has an error class has a placeholder" time="0.006">
     </testcase>
-    <testcase classname="Input component should input is not disabled has an error and input has an error class has no placeholder" name="Input component should input is not disabled has an error and input has an error class has no placeholder" time="0.032">
+    <testcase classname="Input component should input is not disabled has an error and input has an error class has no placeholder" name="Input component should input is not disabled has an error and input has an error class has no placeholder" time="0.005">
     </testcase>
     <testcase classname="Input component should input is not disabled has no error has a placeholder" name="Input component should input is not disabled has no error has a placeholder" time="0.005">
     </testcase>
@@ -19,339 +317,41 @@
     </testcase>
     <testcase classname="Input component should input has a value which got in props" name="Input component should input has a value which got in props" time="0.006">
     </testcase>
-    <testcase classname="Input component should onChange event updates value correctly" name="Input component should onChange event updates value correctly" time="0.014">
+    <testcase classname="Input component should onChange event updates value correctly" name="Input component should onChange event updates value correctly" time="0.007">
     </testcase>
-    <testcase classname="Input component onChange event updates input value correctly when typing" name="Input component onChange event updates input value correctly when typing" time="0.031">
-    </testcase>
-  </testsuite>
-  <testsuite name="Fav Button component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:28" time="3.031" tests="8">
-    <testcase classname="Fav Button component renders button with type transparent and disabled" name="Fav Button component renders button with type transparent and disabled" time="0.153">
-    </testcase>
-    <testcase classname="Fav Button component renders button with type transparent and disabled" name="Fav Button component renders button with type transparent and disabled" time="0.029">
-    </testcase>
-    <testcase classname="Fav Button component renders button with type circle and disabled" name="Fav Button component renders button with type circle and disabled" time="0.02">
-    </testcase>
-    <testcase classname="Fav Button component renders button with type circle and disabled" name="Fav Button component renders button with type circle and disabled" time="0.017">
-    </testcase>
-    <testcase classname="Fav Button component handles the click event" name="Fav Button component handles the click event" time="0.023">
-    </testcase>
-    <testcase classname="Fav Button component the onClick event does not fire when button is disabled" name="Fav Button component the onClick event does not fire when button is disabled" time="0.013">
-    </testcase>
-    <testcase classname="Fav Button component the active state when has prop isFavorite" name="Fav Button component the active state when has prop isFavorite" time="0.008">
-    </testcase>
-    <testcase classname="Fav Button component renders correct icon based on isFavorite prop" name="Fav Button component renders correct icon based on isFavorite prop" time="0.031">
+    <testcase classname="Input component onChange event updates input value correctly when typing" name="Input component onChange event updates input value correctly when typing" time="0.009">
     </testcase>
   </testsuite>
-  <testsuite name="Router Link component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:29" time="2.083" tests="7">
-    <testcase classname="Router Link component renders links with green color" name="Router Link component renders links with green color" time="0.099">
+  <testsuite name="Slider Navigate component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:05" time="0.528" tests="4">
+    <testcase classname="Slider Navigate component renders correctly" name="Slider Navigate component renders correctly" time="0.016">
     </testcase>
-    <testcase classname="Router Link component renders links with gray color" name="Router Link component renders links with gray color" time="0.014">
+    <testcase classname="Slider Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" name="Slider Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" time="0.006">
     </testcase>
-    <testcase classname="Router Link component renders links with dark color" name="Router Link component renders links with dark color" time="0.008">
+    <testcase classname="Navigate Button component renders correctly with left placement" name="Navigate Button component renders correctly with left placement" time="0.007">
     </testcase>
-    <testcase classname="Router Link component renders links with lightgray color" name="Router Link component renders links with lightgray color" time="0.005">
-    </testcase>
-    <testcase classname="Router Link component applies &quot;link-icon&quot; class when withIcon is true" name="Router Link component applies &quot;link-icon&quot; class when withIcon is true" time="0.007">
-    </testcase>
-    <testcase classname="Router Link component renders an external link when &quot;href&quot; is provided" name="Router Link component renders an external link when &quot;href&quot; is provided" time="0.021">
-    </testcase>
-    <testcase classname="Router Link component renders an internal link when &quot;to&quot; is provided" name="Router Link component renders an internal link when &quot;to&quot; is provided" time="0.014">
+    <testcase classname="Navigate Button component renders correctly with right placement" name="Navigate Button component renders correctly with right placement" time="0.005">
     </testcase>
   </testsuite>
-  <testsuite name="Button component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:27" time="3.364" tests="60">
-    <testcase classname="Button component renders button with color green, size big, type submit and disabled" name="Button component renders button with color green, size big, type submit and disabled" time="0.203">
+  <testsuite name="Category component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:06" time="0.441" tests="3">
+    <testcase classname="Category component renders category with guides-category" name="Category component renders category with guides-category" time="0.01">
     </testcase>
-    <testcase classname="Button component renders button with color green, size big, type submit and disabled" name="Button component renders button with color green, size big, type submit and disabled" time="0.034">
+    <testcase classname="Category component renders category with reviews-category" name="Category component renders category with reviews-category" time="0.004">
     </testcase>
-    <testcase classname="Button component renders button with color green, size big, type reset and disabled" name="Button component renders button with color green, size big, type reset and disabled" time="0.013">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size big, type reset and disabled" name="Button component renders button with color green, size big, type reset and disabled" time="0.032">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size big, type button and disabled" name="Button component renders button with color green, size big, type button and disabled" time="0.018">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size big, type button and disabled" name="Button component renders button with color green, size big, type button and disabled" time="0.019">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size medium, type submit and disabled" name="Button component renders button with color green, size medium, type submit and disabled" time="0.011">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size medium, type submit and disabled" name="Button component renders button with color green, size medium, type submit and disabled" time="0.008">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size medium, type reset and disabled" name="Button component renders button with color green, size medium, type reset and disabled" time="0.019">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size medium, type reset and disabled" name="Button component renders button with color green, size medium, type reset and disabled" time="0.01">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size medium, type button and disabled" name="Button component renders button with color green, size medium, type button and disabled" time="0.012">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size medium, type button and disabled" name="Button component renders button with color green, size medium, type button and disabled" time="0.013">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size small, type submit and disabled" name="Button component renders button with color green, size small, type submit and disabled" time="0.013">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size small, type submit and disabled" name="Button component renders button with color green, size small, type submit and disabled" time="0.006">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size small, type reset and disabled" name="Button component renders button with color green, size small, type reset and disabled" time="0.01">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size small, type reset and disabled" name="Button component renders button with color green, size small, type reset and disabled" time="0.013">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size small, type button and disabled" name="Button component renders button with color green, size small, type button and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color green, size small, type button and disabled" name="Button component renders button with color green, size small, type button and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size big, type submit and disabled" name="Button component renders button with color white, size big, type submit and disabled" time="0.009">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size big, type submit and disabled" name="Button component renders button with color white, size big, type submit and disabled" time="0.008">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size big, type reset and disabled" name="Button component renders button with color white, size big, type reset and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size big, type reset and disabled" name="Button component renders button with color white, size big, type reset and disabled" time="0.006">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size big, type button and disabled" name="Button component renders button with color white, size big, type button and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size big, type button and disabled" name="Button component renders button with color white, size big, type button and disabled" time="0.016">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size medium, type submit and disabled" name="Button component renders button with color white, size medium, type submit and disabled" time="0.006">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size medium, type submit and disabled" name="Button component renders button with color white, size medium, type submit and disabled" time="0.028">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size medium, type reset and disabled" name="Button component renders button with color white, size medium, type reset and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size medium, type reset and disabled" name="Button component renders button with color white, size medium, type reset and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size medium, type button and disabled" name="Button component renders button with color white, size medium, type button and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size medium, type button and disabled" name="Button component renders button with color white, size medium, type button and disabled" time="0.006">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size small, type submit and disabled" name="Button component renders button with color white, size small, type submit and disabled" time="0.011">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size small, type submit and disabled" name="Button component renders button with color white, size small, type submit and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size small, type reset and disabled" name="Button component renders button with color white, size small, type reset and disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size small, type reset and disabled" name="Button component renders button with color white, size small, type reset and disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size small, type button and disabled" name="Button component renders button with color white, size small, type button and disabled" time="0.006">
-    </testcase>
-    <testcase classname="Button component renders button with color white, size small, type button and disabled" name="Button component renders button with color white, size small, type button and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size big, type submit and disabled" name="Button component renders button with color gray, size big, type submit and disabled" time="0.008">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size big, type submit and disabled" name="Button component renders button with color gray, size big, type submit and disabled" time="0.006">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size big, type reset and disabled" name="Button component renders button with color gray, size big, type reset and disabled" time="0.032">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size big, type reset and disabled" name="Button component renders button with color gray, size big, type reset and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size big, type button and disabled" name="Button component renders button with color gray, size big, type button and disabled" time="0.009">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size big, type button and disabled" name="Button component renders button with color gray, size big, type button and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size medium, type submit and disabled" name="Button component renders button with color gray, size medium, type submit and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size medium, type submit and disabled" name="Button component renders button with color gray, size medium, type submit and disabled" time="0.016">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size medium, type reset and disabled" name="Button component renders button with color gray, size medium, type reset and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size medium, type reset and disabled" name="Button component renders button with color gray, size medium, type reset and disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size medium, type button and disabled" name="Button component renders button with color gray, size medium, type button and disabled" time="0.01">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size medium, type button and disabled" name="Button component renders button with color gray, size medium, type button and disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size small, type submit and disabled" name="Button component renders button with color gray, size small, type submit and disabled" time="0.006">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size small, type submit and disabled" name="Button component renders button with color gray, size small, type submit and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size small, type reset and disabled" name="Button component renders button with color gray, size small, type reset and disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size small, type reset and disabled" name="Button component renders button with color gray, size small, type reset and disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size small, type button and disabled" name="Button component renders button with color gray, size small, type button and disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component renders button with color gray, size small, type button and disabled" name="Button component renders button with color gray, size small, type button and disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component changes button text according to the children text" name="Button component changes button text according to the children text" time="0.007">
-    </testcase>
-    <testcase classname="Button component handles the click event" name="Button component handles the click event" time="0.011">
-    </testcase>
-    <testcase classname="Button component the onClick event does not fire when button is disabled" name="Button component the onClick event does not fire when button is disabled" time="0.004">
-    </testcase>
-    <testcase classname="Button component additional classes are not applied if the button is disabled" name="Button component additional classes are not applied if the button is disabled" time="0.005">
-    </testcase>
-    <testcase classname="Button component button has button-transparent if receive prop isTransparent" name="Button component button has button-transparent if receive prop isTransparent" time="0.002">
-    </testcase>
-    <testcase classname="Button component button has button-icon if receive prop withIcon" name="Button component button has button-icon if receive prop withIcon" time="0.002">
+    <testcase classname="Category component renders category with news-category" name="Category component renders category with news-category" time="0.004">
     </testcase>
   </testsuite>
-  <testsuite name="Select Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:27" time="3.731" tests="11">
-    <testcase classname="Select Component should input is disabled has a placeholder" name="Select Component should input is disabled has a placeholder" time="0.133">
+  <testsuite name="Gallery component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:05" time="0.524" tests="2">
+    <testcase classname="Gallery component renders Gallery component" name="Gallery component renders Gallery component" time="0.016">
     </testcase>
-    <testcase classname="Select Component should input is disabled has no placeholder" name="Select Component should input is disabled has no placeholder" time="0.012">
-    </testcase>
-    <testcase classname="Select Component should input is not disabled has a placeholder" name="Select Component should input is not disabled has a placeholder" time="0.026">
-    </testcase>
-    <testcase classname="Select Component should input is not disabled has no placeholder" name="Select Component should input is not disabled has no placeholder" time="0.026">
-    </testcase>
-    <testcase classname="Select Component calls onChange and handleSelect when input changes" name="Select Component calls onChange and handleSelect when input changes" time="0.053">
-    </testcase>
-    <testcase classname="Select Component calls onClick when block is clicked" name="Select Component calls onClick when block is clicked" time="0.032">
-    </testcase>
-    <testcase classname="Select Component filters options when hasSearch is true and value is typed" name="Select Component filters options when hasSearch is true and value is typed" time="0.013">
-    </testcase>
-    <testcase classname="Select Component does not render list if search yields no match" name="Select Component does not render list if search yields no match" time="0.011">
-    </testcase>
-    <testcase classname="Select Component closes list on outside click" name="Select Component closes list on outside click" time="0.009">
-    </testcase>
-    <testcase classname="Select Component displays the provided value in the input and highlights the corresponding option" name="Select Component displays the provided value in the input and highlights the corresponding option" time="0.056">
-    </testcase>
-    <testcase classname="Select Component opens the select when typing in the input" name="Select Component opens the select when typing in the input" time="0.015">
+    <testcase classname="Gallery component renders all mock images" name="Gallery component renders all mock images" time="0.078">
     </testcase>
   </testsuite>
-  <testsuite name="ButtonWithIcon component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:30" time="0.896" tests="4">
-    <testcase classname="ButtonWithIcon component renders component correctly" name="ButtonWithIcon component renders component correctly" time="0.017">
-    </testcase>
-    <testcase classname="ButtonWithIcon component renders LeftIcon when provided" name="ButtonWithIcon component renders LeftIcon when provided" time="0.04">
-    </testcase>
-    <testcase classname="ButtonWithIcon component renders RightIcon when provided" name="ButtonWithIcon component renders RightIcon when provided" time="0.01">
-    </testcase>
-    <testcase classname="ButtonWithIcon component renders both LeftIcon and RightIcon when provided" name="ButtonWithIcon component renders both LeftIcon and RightIcon when provided" time="0.013">
-    </testcase>
-  </testsuite>
-  <testsuite name="Field Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:30" time="1.985" tests="8">
-    <testcase classname="Field Component render field component with error - Some error, with label - Email, with id - email" name="Field Component render field component with error - Some error, with label - Email, with id - email" time="0.187">
-    </testcase>
-    <testcase classname="Field Component render field component with error - Some error, with label - Email, without id" name="Field Component render field component with error - Some error, with label - Email, without id" time="0.014">
-    </testcase>
-    <testcase classname="Field Component render field component without error, with label - Email, with id - email" name="Field Component render field component without error, with label - Email, with id - email" time="0.056">
-    </testcase>
-    <testcase classname="Field Component render field component without error, with label - Email, without id" name="Field Component render field component without error, with label - Email, without id" time="0.01">
-    </testcase>
-    <testcase classname="Field Component render field component with error - Some error, without label, with id - email" name="Field Component render field component with error - Some error, without label, with id - email" time="0.02">
-    </testcase>
-    <testcase classname="Field Component render field component with error - Some error, without label, without id" name="Field Component render field component with error - Some error, without label, without id" time="0.008">
-    </testcase>
-    <testcase classname="Field Component render field component without error, without label, with id - email" name="Field Component render field component without error, without label, with id - email" time="0.016">
-    </testcase>
-    <testcase classname="Field Component render field component without error, without label, without id" name="Field Component render field component without error, without label, without id" time="0.007">
-    </testcase>
-  </testsuite>
-  <testsuite name="LinkWithIcon component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:31" time="1.105" tests="4">
-    <testcase classname="LinkWithIcon component renders component correctly" name="LinkWithIcon component renders component correctly" time="0.021">
-    </testcase>
-    <testcase classname="LinkWithIcon component renders LeftIcon when provided" name="LinkWithIcon component renders LeftIcon when provided" time="0.019">
-    </testcase>
-    <testcase classname="LinkWithIcon component renders RightIcon when provided" name="LinkWithIcon component renders RightIcon when provided" time="0.02">
-    </testcase>
-    <testcase classname="LinkWithIcon component renders both LeftIcon and RightIcon when provided" name="LinkWithIcon component renders both LeftIcon and RightIcon when provided" time="0.007">
-    </testcase>
-  </testsuite>
-  <testsuite name="Checkbox component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:29" time="2.493" tests="9">
-    <testcase classname="Checkbox component renders checkbox is disabled, is checked, has an error and input has an error class" name="Checkbox component renders checkbox is disabled, is checked, has an error and input has an error class" time="0.116">
-    </testcase>
-    <testcase classname="Checkbox component renders checkbox is disabled, is checked, has no error" name="Checkbox component renders checkbox is disabled, is checked, has no error" time="0.047">
-    </testcase>
-    <testcase classname="Checkbox component renders checkbox is disabled, is not checked, has an error and input has an error class" name="Checkbox component renders checkbox is disabled, is not checked, has an error and input has an error class" time="0.02">
-    </testcase>
-    <testcase classname="Checkbox component renders checkbox is disabled, is not checked, has no error" name="Checkbox component renders checkbox is disabled, is not checked, has no error" time="0.011">
-    </testcase>
-    <testcase classname="Checkbox component renders checkbox is not disabled, is checked, has an error and input has an error class" name="Checkbox component renders checkbox is not disabled, is checked, has an error and input has an error class" time="0.021">
-    </testcase>
-    <testcase classname="Checkbox component renders checkbox is not disabled, is checked, has no error" name="Checkbox component renders checkbox is not disabled, is checked, has no error" time="0.011">
-    </testcase>
-    <testcase classname="Checkbox component renders checkbox is not disabled, is not checked, has an error and input has an error class" name="Checkbox component renders checkbox is not disabled, is not checked, has an error and input has an error class" time="0.006">
-    </testcase>
-    <testcase classname="Checkbox component renders checkbox is not disabled, is not checked, has no error" name="Checkbox component renders checkbox is not disabled, is not checked, has no error" time="0.034">
-    </testcase>
-    <testcase classname="Checkbox component onChange event changed checked when user clicks on checkbox" name="Checkbox component onChange event changed checked when user clicks on checkbox" time="0.022">
-    </testcase>
-  </testsuite>
-  <testsuite name="Accordion Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:31" time="1.579" tests="4">
-    <testcase classname="Accordion Component renders the accordion component and title, text correctly" name="Accordion Component renders the accordion component and title, text correctly" time="0.052">
-    </testcase>
-    <testcase classname="Accordion Component should open the content" name="Accordion Component should open the content" time="0.073">
-    </testcase>
-    <testcase classname="Accordion Component should close the content" name="Accordion Component should close the content" time="0.086">
-    </testcase>
-    <testcase classname="Accordion Component triggers onClick handler when title is clicked" name="Accordion Component triggers onClick handler when title is clicked" time="0.007">
-    </testcase>
-  </testsuite>
-  <testsuite name="NavLink component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:32" time="0.941" tests="3">
-    <testcase classname="NavLink component renders correctly with given children" name="NavLink component renders correctly with given children" time="0.015">
-    </testcase>
-    <testcase classname="NavLink component applies &apos;link-active&apos; class when the link is active" name="NavLink component applies &apos;link-active&apos; class when the link is active" time="0.009">
-    </testcase>
-    <testcase classname="NavLink component does not apply &apos;link-active&apos; class when the link is not active" name="NavLink component does not apply &apos;link-active&apos; class when the link is not active" time="0.027">
-    </testcase>
-  </testsuite>
-  <testsuite name="Category component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:32" time="0.815" tests="3">
-    <testcase classname="Category component renders category with guides-category" name="Category component renders category with guides-category" time="0.023">
-    </testcase>
-    <testcase classname="Category component renders category with reviews-category" name="Category component renders category with reviews-category" time="0.006">
-    </testcase>
-    <testcase classname="Category component renders category with news-category" name="Category component renders category with news-category" time="0.006">
-    </testcase>
-  </testsuite>
-  <testsuite name="FilterButton component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:32" time="0.719" tests="3">
-    <testcase classname="FilterButton component renders the filter component correctly" name="FilterButton component renders the filter component correctly" time="0.022">
+  <testsuite name="FilterButton component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:57:05" time="0.806" tests="3">
+    <testcase classname="FilterButton component renders the filter component correctly" name="FilterButton component renders the filter component correctly" time="0.016">
     </testcase>
     <testcase classname="FilterButton component renders RightIcon component" name="FilterButton component renders RightIcon component" time="0.005">
     </testcase>
-    <testcase classname="FilterButton component calls onClick when clicked" name="FilterButton component calls onClick when clicked" time="0.135">
-    </testcase>
-  </testsuite>
-  <testsuite name="Gallery component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:32" time="0.736" tests="2">
-    <testcase classname="Gallery component renders Gallery component" name="Gallery component renders Gallery component" time="0.033">
-    </testcase>
-    <testcase classname="Gallery component renders all mock images" name="Gallery component renders all mock images" time="0.098">
-    </testcase>
-  </testsuite>
-  <testsuite name="RangeSlider Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:33" time="0.714" tests="2">
-    <testcase classname="RangeSlider Component renders Range Slider component correctly" name="RangeSlider Component renders Range Slider component correctly" time="0.025">
-    </testcase>
-    <testcase classname="RangeSlider Component renders with correct default range" name="RangeSlider Component renders with correct default range" time="0.006">
-    </testcase>
-  </testsuite>
-  <testsuite name="Filter Accordion Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:32" time="1.205" tests="4">
-    <testcase classname="Filter Accordion Component renders the filter accordion component and title, text correctly" name="Filter Accordion Component renders the filter accordion component and title, text correctly" time="0.035">
-    </testcase>
-    <testcase classname="Filter Accordion Component should open the content" name="Filter Accordion Component should open the content" time="0.109">
-    </testcase>
-    <testcase classname="Filter Accordion Component should close the content" name="Filter Accordion Component should close the content" time="0.008">
-    </testcase>
-    <testcase classname="Filter Accordion Component triggers onClick handler when arrow is clicked" name="Filter Accordion Component triggers onClick handler when arrow is clicked" time="0.026">
-    </testcase>
-  </testsuite>
-  <testsuite name="Slider Navigate component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:33" time="0.875" tests="4">
-    <testcase classname="Slider Navigate component renders correctly" name="Slider Navigate component renders correctly" time="0.017">
-    </testcase>
-    <testcase classname="Slider Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" name="Slider Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" time="0.003">
-    </testcase>
-    <testcase classname="Navigate Button component renders correctly with left placement" name="Navigate Button component renders correctly with left placement" time="0.004">
-    </testcase>
-    <testcase classname="Navigate Button component renders correctly with right placement" name="Navigate Button component renders correctly with right placement" time="0.002">
-    </testcase>
-  </testsuite>
-  <testsuite name="Dropdown Component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:33" time="0.969" tests="5">
-    <testcase classname="Dropdown Component renders the dropdown component correctly" name="Dropdown Component renders the dropdown component correctly" time="0.014">
-    </testcase>
-    <testcase classname="Dropdown Component calls handleOpen when block is clicked" name="Dropdown Component calls handleOpen when block is clicked" time="0.009">
-    </testcase>
-    <testcase classname="Dropdown Component closes list on outside click" name="Dropdown Component closes list on outside click" time="0.01">
-    </testcase>
-    <testcase classname="Dropdown Component highlights the selected option correctly" name="Dropdown Component highlights the selected option correctly" time="0.006">
-    </testcase>
-    <testcase classname="Dropdown Component calls onSelect when an option is clicked" name="Dropdown Component calls onSelect when an option is clicked" time="0.01">
-    </testcase>
-  </testsuite>
-  <testsuite name="Pagination component" errors="0" failures="0" skipped="0" timestamp="2025-07-09T12:22:33" time="0.712" tests="6">
-    <testcase classname="Pagination component renders component with all page buttons and arrows" name="Pagination component renders component with all page buttons and arrows" time="0.014">
-    </testcase>
-    <testcase classname="Pagination component disables prev arrow on first page" name="Pagination component disables prev arrow on first page" time="0.005">
-    </testcase>
-    <testcase classname="Pagination component calls onPageClick when page button is clicked" name="Pagination component calls onPageClick when page button is clicked" time="0.003">
-    </testcase>
-    <testcase classname="Pagination component marks the current page as selected" name="Pagination component marks the current page as selected" time="0.003">
-    </testcase>
-    <testcase classname="Pagination component calls onPrevClick and onNextClick" name="Pagination component calls onPrevClick and onNextClick" time="0.004">
-    </testcase>
-    <testcase classname="Pagination component disables all buttons and arrows when loading" name="Pagination component disables all buttons and arrows when loading" time="0.006">
+    <testcase classname="FilterButton component calls onClick when clicked" name="FilterButton component calls onClick when clicked" time="0.043">
     </testcase>
   </testsuite>
 </testsuites>

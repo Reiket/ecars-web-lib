@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import {Dropdown} from '@/components/Dropdown/constants';
+import {Dropdown} from '@/components/Dropdown';
 import {dropdownOptionsMock} from '@/services/mocks';
 import {useDropdown} from '@src/services/hooks/useDropdown';
 

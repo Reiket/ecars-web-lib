@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import {Accordion} from '@/components/Accordion/constants';
+import {Accordion} from '@/components/Accordion';
 import {useAccordion} from '../services/hooks/useAccordion';
 import type {AccordionItem} from '@/services/types';
 
