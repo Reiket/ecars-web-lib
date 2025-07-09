@@ -9,15 +9,13 @@ export interface Props extends ElementProps {
   children: ReactNode;
 }
 
-export const FilterAccordionComponent: FC<Props> = ({onClick, title, isOpen, children}) => {
-  return (
-    <FilterAccordion.Layout isOpen={isOpen}>
-      <FilterAccordion.Block block={FILTER_ACCORDION_BLOCK_CLASS}>
-        <h2 className="filter-accordion__title">{title}</h2>
-        <FilterAccordion.Reset />
-        <FilterAccordion.Arrow onClick={onClick} />
-      </FilterAccordion.Block>
-      <FilterAccordion.Content isOpen={isOpen}>{children}</FilterAccordion.Content>
-    </FilterAccordion.Layout>
-  );
-};
+export const FilterAccordionComponent: FC<Props> = ({onClick, title, isOpen, children}) => (
+  <FilterAccordion.Layout isOpen={isOpen}>
+    <FilterAccordion.Block block={FILTER_ACCORDION_BLOCK_CLASS}>
+      <h2 className="filter-accordion__title">{title}</h2>
+      <FilterAccordion.Reset />
+      <FilterAccordion.Arrow onClick={onClick} />
+    </FilterAccordion.Block>
+    <FilterAccordion.Content isOpen={isOpen}>{children}</FilterAccordion.Content>
+  </FilterAccordion.Layout>
+);
