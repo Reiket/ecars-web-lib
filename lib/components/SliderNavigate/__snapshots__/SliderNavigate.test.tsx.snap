@@ -1,5 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Navigate Button component renders correctly with left placement 1`] = `
+<div>
+  <button
+    class="slider-navigate__button"
+    data-testid="navigateButtonTestId"
+    type="button"
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Navigate Button component renders correctly with right placement 1`] = `
+<div>
+  <button
+    class="slider-navigate__button"
+    data-testid="navigateButtonTestId"
+    type="button"
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
 exports[`Slider Navigate component renders correctly 1`] = `
 <div>
   <div
