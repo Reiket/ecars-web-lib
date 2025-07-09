@@ -1,7 +1,8 @@
 import {fireEvent, render, screen} from '@testing-library/react';
-import {Select, SELECT_TEST_ID} from '@/components/Select/constants';
+import {SELECT_TEST_ID} from '@/components/Select/constants';
 import {INPUT_TEST_ID} from '@/components/Input/constants';
 import {selectOptionsMock} from '@/services/mocks';
+import {Select} from '@/components/Select';
 
 const defaultProps = {
   options: selectOptionsMock,

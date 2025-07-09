@@ -1,7 +1,8 @@
 import {render, screen} from '@testing-library/react';
 import {Input} from '@/components/Input/Input';
-import {Field, FIELD_LABEL_TEST_ID, FIELD_TEST_ID} from '@/components/Field/constants';
+import {FIELD_LABEL_TEST_ID, FIELD_TEST_ID} from '@/components/Field/constants';
 import {INPUT_TEST_ID} from '@/components/Input/constants';
+import {Field} from '@/components/Field';
 
 describe('Field Component', () => {
   const labelOptions = ['Email', undefined];

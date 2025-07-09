@@ -1,6 +1,6 @@
 import type {FC} from 'react';
 import type {PaginationProps} from '@/components/Pagination/constants';
-import {Pagination} from '@/components/Pagination/constants';
+import {Pagination} from '@/components/Pagination';
 
 export const PaginationBody: FC<PaginationProps> = ({
   pages,

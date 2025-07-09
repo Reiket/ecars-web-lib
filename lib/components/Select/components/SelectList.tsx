@@ -1,12 +1,11 @@
 import type {FC} from 'react';
-import {Select} from '@/components/Select/constants';
+import {Select} from '@/components/Select';
 
 export interface Props {
   options: string[] | null;
   onClick: (value: string) => void;
   value: string;
 }
-
 export const SelectList: FC<Props> = ({options, onClick, value}) => {
   if (!options) {
     return (

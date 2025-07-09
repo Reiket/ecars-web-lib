@@ -3,7 +3,7 @@ import {cn} from '@/services/helpers';
 import type {ElementProps} from '@/services/types';
 import {FILTER_ACCORDION_TEST_ID} from '@/components/FilterAccordion/constants';
 
-interface Props extends ElementProps {
+export interface Props extends ElementProps {
   isOpen: boolean;
   children: ReactNode;
 }

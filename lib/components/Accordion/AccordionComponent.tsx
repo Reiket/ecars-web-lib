@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import {Accordion} from '@/components/Accordion/constants';
+import {Accordion} from '@/components/Accordion';
 import type {ElementProps} from '@/services/types';
 
 export interface Props extends ElementProps {

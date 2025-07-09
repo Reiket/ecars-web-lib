@@ -1,6 +1,7 @@
 import {fireEvent, render, screen} from '@testing-library/react';
 import React from 'react';
-import {Checkbox, CHECKBOX_TEST_ID, CHECKBOX_TEST_INPUT_ID} from '@/components/Checkbox/constants';
+import {CHECKBOX_TEST_ID, CHECKBOX_TEST_INPUT_ID} from '@/components/Checkbox/constants';
+import {Checkbox} from '@/components/Checkbox';
 
 describe('Checkbox component', () => {
   const disabledOptions = [true, false];

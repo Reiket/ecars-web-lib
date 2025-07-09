@@ -132,10 +132,10 @@ export const App: FC = () => {
       <Section title="Gallery Example">
         <Gallery images={imagesMock} />
       </Section>
-      <Section title="Range Slider Example">
+      <Section title="Range SliderComponent Example">
         <RangeSliderExample />
       </Section>
-      <Section title="Slider Example">
+      <Section title="SliderComponent Example">
         <SliderExample />
       </Section>
       <Section title="Filter Accordion Example">

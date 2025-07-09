@@ -56,7 +56,7 @@ exports[`Navigate Button component renders correctly with right placement 1`] = 
 </div>
 `;
 
-exports[`Slider Navigate component renders correctly 1`] = `
+exports[`SliderComponent Navigate component renders correctly 1`] = `
 <div>
   <div
     class="slider-navigate"
@@ -112,7 +112,7 @@ exports[`Slider Navigate component renders correctly 1`] = `
 </div>
 `;
 
-exports[`Slider Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty 1`] = `
+exports[`SliderComponent Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty 1`] = `
 <div>
   <div
     class="slider-navigate"

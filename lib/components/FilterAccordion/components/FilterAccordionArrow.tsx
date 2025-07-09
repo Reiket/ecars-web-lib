@@ -1,7 +1,7 @@
 import type {FC} from 'react';
 import {Icons} from '@/services/icons';
 
-interface Props {
+export interface Props {
   onClick: () => void;
 }
 

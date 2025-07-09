@@ -1,7 +1,7 @@
 import type {FC, ReactNode} from 'react';
 import {cn} from '@/services/helpers';
 
-interface Props {
+export interface Props {
   isSelected: boolean;
   value: string;
   label?: ReactNode;

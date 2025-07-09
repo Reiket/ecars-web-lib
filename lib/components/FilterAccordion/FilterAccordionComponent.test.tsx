@@ -1,5 +1,6 @@
 import {fireEvent, render, screen} from '@testing-library/react';
-import {FILTER_ACCORDION_TEST_ID, FilterAccordion} from '@/components/FilterAccordion/constants';
+import {FILTER_ACCORDION_TEST_ID} from '@/components/FilterAccordion/constants';
+import {FilterAccordion} from '@/components/FilterAccordion';
 
 const defaultProps = {
   isOpen: false,

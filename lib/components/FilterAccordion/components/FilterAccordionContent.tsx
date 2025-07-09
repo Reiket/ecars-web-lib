@@ -1,7 +1,7 @@
 import type {FC, ReactNode} from 'react';
 import {useAccordionHeight} from '@/services/hooks/useAccordionHeight';
 
-interface Props {
+export interface Props {
   isOpen: boolean;
   children: ReactNode;
 }

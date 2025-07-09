@@ -11,7 +11,7 @@ interface BreakpointSettings {
   spaceBetween: number;
 }
 
-interface Props extends ElementProps {
+export interface Props extends ElementProps {
   children: ReactNode;
   spaceBetween?: number;
   slidesPerView?: number;

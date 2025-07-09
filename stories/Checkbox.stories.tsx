@@ -1,6 +1,6 @@
 import {ComponentProps} from 'react';
 import {Meta, StoryObj} from '@storybook/react';
-import {Checkbox} from '../lib/components/Checkbox/constants';
+import {Checkbox} from '../lib/components/Checkbox';
 
 type StoryProps = ComponentProps<typeof Checkbox>;
 

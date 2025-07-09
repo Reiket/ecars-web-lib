@@ -2,7 +2,7 @@ import type {FC} from 'react';
 import {Icons} from '@/services/icons';
 import type {DropdownOption} from '@/components/Dropdown/constants';
 
-interface Props {
+export interface Props {
   item?: DropdownOption;
   handleOpen: () => void;
 }

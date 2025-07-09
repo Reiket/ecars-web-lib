@@ -238,10 +238,10 @@
     <testcase classname="LinkWithIcon component renders both LeftIcon and RightIcon when provided" name="LinkWithIcon component renders both LeftIcon and RightIcon when provided" time="0.009">
     </testcase>
   </testsuite>
-  <testsuite name="Slider Navigate component" errors="0" failures="0" skipped="0" timestamp="2025-04-18T15:14:19" time="0.176" tests="4">
-    <testcase classname="Slider Navigate component renders correctly" name="Slider Navigate component renders correctly" time="0.01">
+  <testsuite name="SliderComponent Navigate component" errors="0" failures="0" skipped="0" timestamp="2025-04-18T15:14:19" time="0.176" tests="4">
+    <testcase classname="SliderComponent Navigate component renders correctly" name="SliderComponent Navigate component renders correctly" time="0.01">
     </testcase>
-    <testcase classname="Slider Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" name="Slider Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" time="0.002">
+    <testcase classname="SliderComponent Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" name="SliderComponent Navigate component renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" time="0.002">
     </testcase>
     <testcase classname="Navigate Button component renders correctly with left placement" name="Navigate Button component renders correctly with left placement" time="0.002">
     </testcase>

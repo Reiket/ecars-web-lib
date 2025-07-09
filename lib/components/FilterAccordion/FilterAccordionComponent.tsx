@@ -1,6 +1,7 @@
 import type {FC, ReactNode} from 'react';
 import type {ElementProps} from '@/services/types';
-import {FILTER_ACCORDION_BLOCK_CLASS, FilterAccordion} from '@/components/FilterAccordion/constants';
+import {FILTER_ACCORDION_BLOCK_CLASS} from '@/components/FilterAccordion/constants';
+import {FilterAccordion} from '@/components/FilterAccordion';
 
 export interface Props extends ElementProps {
   isOpen: boolean;

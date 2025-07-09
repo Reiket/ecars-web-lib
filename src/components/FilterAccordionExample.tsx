@@ -2,7 +2,7 @@ import type {FC} from 'react';
 import type {AccordionItem} from '@/services/types';
 
 import {useFilterAccordion} from '@src/services/hooks/useFilterAccordion';
-import {FilterAccordion} from '@/components/FilterAccordion/constants';
+import {FilterAccordion} from '@/components/FilterAccordion';
 
 interface Props {
   items: AccordionItem[];

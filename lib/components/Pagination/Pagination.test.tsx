@@ -1,11 +1,11 @@
 import React from 'react';
 import {fireEvent, render, screen} from '@testing-library/react';
 import {
-  Pagination,
   PAGINATION_ARROW_LEFT_TEST_ID,
   PAGINATION_ARROW_RIGHT_TEST_ID,
   PAGINATION_TEST_ID,
 } from '@/components/Pagination/constants';
+import {Pagination} from '@/components/Pagination';
 
 const props = {
   pages: [1, 2, 3],
