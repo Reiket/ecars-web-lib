@@ -7,7 +7,7 @@ import {
   PAGINATION_ARROW_RIGHT_TEST_ID,
 } from '@/components/Pagination/constants';
 
-interface Props {
+export interface Props {
   direction: PaginationArrowDirection;
   disabled?: boolean;
   onClick: () => void;

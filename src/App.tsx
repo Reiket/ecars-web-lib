@@ -8,8 +8,8 @@ import {LinkWithIcon} from '@/components/LinkWithIcon/LinkWithIcon';
 import {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 import {NavLink} from '@/components/NavLink/NavLink';
 import {Input} from '@/components/Input/Input';
-import {Field} from '@/components/Field/constants';
-import {Checkbox} from '@/components/Checkbox/constants';
+import {Field} from '@/components/Field';
+import {Checkbox} from '@/components/Checkbox';
 import {Category} from '@/components/Category/Category';
 import type {FC} from 'react';
 import {SelectExample} from './components/SelectExample';
@@ -21,6 +21,7 @@ import {imagesMock} from '@/services/mocks';
 import {DropdownExample} from '@src/components/DropdownExample';
 import {RangeSliderExample} from '@src/components/RangeSliderExample';
 import {SliderExample} from '@src/components/SliderExample';
+import {FilterAccordionExample} from '@src/components/FilterAccordionExample';
 
 export const App: FC = () => {
   return (
@@ -131,11 +132,14 @@ export const App: FC = () => {
       <Section title="Gallery Example">
         <Gallery images={imagesMock} />
       </Section>
-      <Section title="Range Slider Example">
+      <Section title="Range SliderComponent Example">
         <RangeSliderExample />
       </Section>
-      <Section title="Slider Example">
+      <Section title="SliderComponent Example">
         <SliderExample />
+      </Section>
+      <Section title="Filter Accordion Example">
+        <FilterAccordionExample items={accordionContentMock} />
       </Section>
     </>
   );

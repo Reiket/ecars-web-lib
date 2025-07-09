@@ -1,6 +1,6 @@
 import type {FC} from 'react';
 import type {CheckboxProps} from '@/components/Checkbox/constants';
-import {Checkbox} from '@/components/Checkbox/constants';
+import {Checkbox} from '@/components/Checkbox';
 
 export const CheckboxComponent: FC<CheckboxProps> = ({id, block, ...props}) => (
   <Checkbox.Block

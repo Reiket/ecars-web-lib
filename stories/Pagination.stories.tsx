@@ -1,6 +1,6 @@
 import type {ComponentProps} from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
-import {Pagination} from '../lib/components/Pagination/constants';
+import {Pagination} from '../lib/components/Pagination';
 import {PaginationExample} from '../src/components/PaginationExample';
 
 type StoryProps = ComponentProps<typeof Pagination>;

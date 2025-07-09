@@ -2,10 +2,11 @@ import type {FC} from 'react';
 import type {ElementProps} from '@/services/types';
 import {cn} from '@/services/helpers';
 import type {DropdownProps} from './constants';
-import {Dropdown, DROPDOWN_TEST_ID} from './constants';
+import {DROPDOWN_TEST_ID} from './constants';
 import {useClickOutside} from '@/services/hooks/useClickOutside';
+import {Dropdown} from '@/components/Dropdown';
 
-interface Props extends ElementProps, DropdownProps {
+export interface Props extends ElementProps, DropdownProps {
   handleOpen: () => void;
   onClickOutside: (isOpen: boolean) => void;
   isOpen: boolean;

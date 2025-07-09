@@ -32,7 +32,7 @@ export default defineConfig({
       formats: ['cjs', 'es'],
     },
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime'],
+      external: ['react', 'react/jsx-runtime', '**/*.test.ts', '**/*.test.tsx'],
       input: Object.fromEntries(
         glob
           .sync('lib/**/*.{ts,tsx}', {

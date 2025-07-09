@@ -1,6 +1,7 @@
 import {fireEvent, render, screen} from '@testing-library/react';
 import {dropdownOptionsMock} from '@/services/mocks';
-import {Dropdown, DROPDOWN_TEST_ID} from '@/components/Dropdown/constants';
+import {DROPDOWN_TEST_ID} from '@/components/Dropdown/constants';
+import {Dropdown} from '@/components/Dropdown';
 
 const defaultProps = {
   options: dropdownOptionsMock,

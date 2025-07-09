@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import {useRef} from 'react';
+import {useAccordionHeight} from '@/services/hooks/useAccordionHeight';
 
 export interface Props {
   isOpen: boolean;
@@ -7,16 +7,15 @@ export interface Props {
 }
 
 export const AccordionContent: FC<Props> = ({isOpen, children}) => {
-  const contentHeight = useRef<HTMLParagraphElement | null>(null);
-  const accordionStyle = isOpen ? {height: contentHeight.current?.scrollHeight} : {height: 0};
+  const {style, contentRef} = useAccordionHeight(isOpen);
   return (
     <div
-      style={accordionStyle}
+      style={style}
       className="accordion__content"
     >
       <p
         className="accordion__text"
-        ref={contentHeight}
+        ref={contentRef}
       >
         {children}
       </p>

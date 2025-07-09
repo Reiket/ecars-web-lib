@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import {Pagination} from '@/components/Pagination/constants';
+import {Pagination} from '@/components/Pagination';
 import {usePagination} from '@src/services/hooks/usePagination';
 import {pageSizeMock, totalCountPageMock} from '@/services/mocks';
 

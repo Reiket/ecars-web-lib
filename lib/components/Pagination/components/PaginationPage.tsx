@@ -1,7 +1,7 @@
 import type {FC} from 'react';
 import {cn} from '@/services/helpers';
 
-interface Props {
+export interface Props {
   isSelected: boolean;
   page: number;
   disabled?: boolean;

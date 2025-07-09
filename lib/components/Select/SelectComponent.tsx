@@ -1,7 +1,7 @@
-import {Select} from '@/components/Select/constants';
 import type {FC} from 'react';
 import {useMemo} from 'react';
 import type {InputProps} from '@/components/Input/Input';
+import {Select} from '@/components/Select';
 
 export interface Props extends InputProps {
   isOpen: boolean;

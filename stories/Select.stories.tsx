@@ -1,9 +1,10 @@
 import {Meta, StoryObj} from '@storybook/react';
 
 import type {ComponentProps} from 'react';
-import {Select} from '@/components/Select/constants';
+
 import {selectOptionsMock} from '../lib/services/mocks';
 import {useSelect} from '../src/services/hooks/useSelect';
+import {Select} from '../lib/components/Select';
 
 type StoryProps = ComponentProps<typeof Select>;
 

@@ -1,6 +1,6 @@
 import type {ComponentProps} from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
-import {Accordion} from '../lib/components/Accordion/constants';
+import {Accordion} from '../lib/components/Accordion';
 import {accordionContentMock} from '../src/services/mocks';
 import {AccordionExample} from '../src/components/AccordionExample';
 import type {AccordionItem} from '../lib/services/types';

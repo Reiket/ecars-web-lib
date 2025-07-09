@@ -1,6 +1,6 @@
 import {ComponentProps} from 'react';
 import {Meta, StoryObj} from '@storybook/react';
-import {Field} from '../lib/components/Field/constants';
+import {Field} from '../lib/components/Field';
 import {Input} from '../lib/components/Input/Input';
 
 type StoryProps = ComponentProps<typeof Field>;

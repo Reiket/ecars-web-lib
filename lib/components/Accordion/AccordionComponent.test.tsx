@@ -1,5 +1,6 @@
 import {fireEvent, render, screen} from '@testing-library/react';
-import {Accordion, ACCORDION_TEST_ID} from '@/components/Accordion/constants';
+import {ACCORDION_TEST_ID} from '@/components/Accordion/constants';
+import {Accordion} from '@/components/Accordion';
 
 const defaultProps = {
   isOpen: false,
