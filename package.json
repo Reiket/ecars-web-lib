@@ -1,7 +1,7 @@
 {
-  "name": "@Reiket/ecars-web-lib",
+  "name": "ecars-web-lib",
   "private": false,
-  "version": "0.0.24",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "homepage": "https://Reiket.github.io/ecars-web-lib",
@@ -107,9 +107,7 @@
   "author": "Reiket <olinyko2607@gmail.com>",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/Reiket"
+    "registry": "https://registry.npmjs.org/"
   },
-  "sideEffects": [
-    "**/*.css"
-  ]
+  "sideEffects": false
 }
