@@ -6,7 +6,7 @@ exports[`Category component renders category with guides-category 1`] = `
     class="category category--guides"
     data-testid="categoryTestId"
   >
-    guides
+    Guides
   </span>
 </div>
 `;
@@ -17,7 +17,7 @@ exports[`Category component renders category with news-category 1`] = `
     class="category category--news"
     data-testid="categoryTestId"
   >
-    news
+    News
   </span>
 </div>
 `;
@@ -28,7 +28,7 @@ exports[`Category component renders category with reviews-category 1`] = `
     class="category category--reviews"
     data-testid="categoryTestId"
   >
-    reviews
+    Reviews
   </span>
 </div>
 `;
