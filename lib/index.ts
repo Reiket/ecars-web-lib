@@ -1,5 +1,7 @@
 import '@/global.scss';
 
+export type {CategoriesListType} from '@/components/Category/constants';
+
 export {Category} from '@/components/Category/Category';
 export {Checkbox} from '@/components/Checkbox';
 export {Dropdown} from '@/components/Dropdown';
