@@ -1,7 +1,7 @@
 {
   "name": "ecars-web-lib",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "homepage": "https://Reiket.github.io/ecars-web-lib",

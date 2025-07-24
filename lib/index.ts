@@ -1,7 +1,15 @@
 import '@/global.scss';
 
-export type {CategoriesListType} from '@/components/Category/constants';
+export * from '@/services/helpers';
+export * from '@/services/icons';
+export * from '@/services/types';
+export * from '@/services/mocks';
 
+export type {CategoriesListType} from '@/components/Category/constants';
+export {withBlockClass} from '@/services/hoc/withBlockClass';
+export {useAccordionHeight} from '@/services/hooks/useAccordionHeight';
+export {useMatchMedia} from '@/services/hooks/useMatchMedia';
+export {useClickOutside} from '@/services/hooks/useClickOutside';
 export {Category} from '@/components/Category/Category';
 export {Checkbox} from '@/components/Checkbox';
 export {Dropdown} from '@/components/Dropdown';
