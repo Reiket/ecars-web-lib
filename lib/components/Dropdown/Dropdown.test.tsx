@@ -5,10 +5,10 @@ import {Dropdown} from '@/components/Dropdown';
 
 const defaultProps = {
   options: dropdownOptionsMock,
-  onSelect: jest.fn(),
-  handleOpen: jest.fn(),
+  onSelect: vi.fn(),
+  handleOpen: vi.fn(),
   isOpen: false,
-  onClickOutside: jest.fn(),
+  onClickOutside: vi.fn(),
   category: '1',
 };
 

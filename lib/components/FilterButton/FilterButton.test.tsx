@@ -3,7 +3,7 @@ import {FilterButton} from './FilterButton';
 import {RIGHT_ICON_BUTTON_TEST_ID} from '@/components/ButtonWithIcon/constants';
 
 const defaultProps = {
-  onClick: jest.fn(),
+  onClick: vi.fn(),
 };
 
 describe('FilterButton component', () => {

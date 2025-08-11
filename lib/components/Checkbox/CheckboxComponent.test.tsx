@@ -38,7 +38,7 @@ describe('Checkbox component', () => {
   test('onChange event changed checked when user clicks on checkbox', () => {
     const props = {
       checked: false,
-      onChange: jest.fn(),
+      onChange: vi.fn(),
     };
     render(<Checkbox {...props} />);
     const inputElement: HTMLInputElement = screen.getByTestId(CHECKBOX_TEST_INPUT_ID);

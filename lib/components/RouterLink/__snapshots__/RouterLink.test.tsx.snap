@@ -1,4 +1,102 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Router Link component > applies "link-icon" class when withIcon is true 1`] = `
+<div>
+  <a
+    class="link link--gray link--icon"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link with Icon
+  </a>
+</div>
+`;
+
+exports[`Router Link component > renders an external link when "href" is provided 1`] = `
+<div>
+  <a
+    class="link link--gray"
+    data-testid="routerLinkTestId"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component > renders an internal link when "to" is provided 1`] = `
+<div>
+  <a
+    class="link link--gray"
+    data-discover="true"
+    data-testid="routerLinkTestId"
+    href="/internal"
+  >
+    Internal Link
+  </a>
+  ,
+</div>
+`;
+
+exports[`Router Link component > renders links with dark color 1`] = `
+<div>
+  <a
+    class="link link--dark"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component > renders links with gray color 1`] = `
+<div>
+  <a
+    class="link link--gray"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component > renders links with green color 1`] = `
+<div>
+  <a
+    class="link link--green"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Router Link component > renders links with lightgray color 1`] = `
+<div>
+  <a
+    class="link link--lightgray"
+    data-testid="routerLinkTestId"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
 
 exports[`Router Link component applies "link-icon" class when withIcon is true 1`] = `
 <div>

@@ -1,4 +1,37 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Gallery component > renders Gallery component 1`] = `
+<div>
+  <div
+    data-testid="galleryTestId"
+  >
+    <img
+      alt="image-gallery"
+      src="src/assets/react.svg"
+    />
+    <img
+      alt="image-gallery"
+      src="src/assets/react.svg"
+    />
+    <img
+      alt="image-gallery"
+      src="src/assets/react.svg"
+    />
+    <img
+      alt="image-gallery"
+      src="src/assets/react.svg"
+    />
+    <img
+      alt="image-gallery"
+      src="src/assets/react.svg"
+    />
+    <img
+      alt="image-gallery"
+      src="src/assets/react.svg"
+    />
+  </div>
+</div>
+`;
 
 exports[`Gallery component renders Gallery component 1`] = `
 <div>

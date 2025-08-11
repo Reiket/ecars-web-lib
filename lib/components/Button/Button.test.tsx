@@ -56,7 +56,7 @@ describe('Button component', () => {
   });
 
   test('handles the click event', () => {
-    const onClick = jest.fn();
+    const onClick = vi.fn();
     const {container, getByText} = render(
       <Button
         {...props}
@@ -71,7 +71,7 @@ describe('Button component', () => {
   });
 
   test('the onClick event does not fire when button is disabled', () => {
-    const onClick = jest.fn();
+    const onClick = vi.fn();
     const {container, getByText} = render(
       <Button
         {...props}

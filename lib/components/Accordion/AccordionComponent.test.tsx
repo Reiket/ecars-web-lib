@@ -6,11 +6,11 @@ const defaultProps = {
   isOpen: false,
   textContent: 'Test content',
   title: 'Test title',
-  onClick: jest.fn(),
+  onClick: vi.fn(),
 };
 describe('Accordion Component', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
   const isOpenValues = [true, false];
   const renderAccordion = (props = {}) => {
