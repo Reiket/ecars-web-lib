@@ -29,7 +29,7 @@ describe('Fav Button component', () => {
   });
 
   test('handles the click event', () => {
-    const onClick = jest.fn(); // Explicitly typing jest.fn
+    const onClick = vi.fn();
     const {container} = render(
       <FavButton
         type="circle"
@@ -42,7 +42,7 @@ describe('Fav Button component', () => {
   });
 
   test('the onClick event does not fire when button is disabled', () => {
-    const onClick = jest.fn(); // Explicitly typing jest.fn
+    const onClick = vi.fn();
     const {container} = render(
       <FavButton
         type="circle"
@@ -56,7 +56,7 @@ describe('Fav Button component', () => {
   });
 
   test('the active state when has prop isFavorite', () => {
-    const onClick = jest.fn(); // Explicitly typing jest.fn
+    const onClick = vi.fn();
     const {container} = render(
       <FavButton
         type="circle"

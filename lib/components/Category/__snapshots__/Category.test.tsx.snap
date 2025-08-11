@@ -1,4 +1,37 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Category component > renders category with guides-category 1`] = `
+<div>
+  <span
+    class="category category--guides"
+    data-testid="categoryTestId"
+  >
+    Guides
+  </span>
+</div>
+`;
+
+exports[`Category component > renders category with news-category 1`] = `
+<div>
+  <span
+    class="category category--news"
+    data-testid="categoryTestId"
+  >
+    News
+  </span>
+</div>
+`;
+
+exports[`Category component > renders category with reviews-category 1`] = `
+<div>
+  <span
+    class="category category--reviews"
+    data-testid="categoryTestId"
+  >
+    Reviews
+  </span>
+</div>
+`;
 
 exports[`Category component renders category with guides-category 1`] = `
 <div>

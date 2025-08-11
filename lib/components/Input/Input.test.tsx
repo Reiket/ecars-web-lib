@@ -43,7 +43,7 @@ describe('Input component', () => {
     expect(inputElement).toHaveValue(props.value);
   });
   test('should onChange event updates value correctly', () => {
-    const mockOnChange = jest.fn();
+    const mockOnChange = vi.fn();
     const props = {
       value: '',
       onChange: mockOnChange,
@@ -54,7 +54,7 @@ describe('Input component', () => {
     expect(mockOnChange).toHaveBeenCalledWith('test');
   });
   test('onChange event updates input value correctly when typing', () => {
-    const mockOnChange = jest.fn();
+    const mockOnChange = vi.fn();
     const props = {
       value: '',
       onChange: mockOnChange,

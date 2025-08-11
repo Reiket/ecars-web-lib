@@ -10,14 +10,14 @@ import {Pagination} from '@/components/Pagination';
 const props = {
   pages: [1, 2, 3],
   currentPage: 1,
-  onPageClick: jest.fn(),
-  onNextClick: jest.fn(),
-  onPrevClick: jest.fn(),
+  onPageClick: vi.fn(),
+  onNextClick: vi.fn(),
+  onPrevClick: vi.fn(),
 };
 
 describe('Pagination component', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   test('renders component with all page buttons and arrows', () => {

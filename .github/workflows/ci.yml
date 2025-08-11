@@ -33,7 +33,7 @@ jobs:
         run: npx prettier --check 'lib/**/*.{js,jsx,ts,tsx,css,scss}'
         continue-on-error: false
       - name: Run tests
-        run: npx jest --coverage
+        run: npx vitest --run --coverage --reporter=default --reporter=junit
         continue-on-error: false
 
       - name: Upload coverage to Codecov
