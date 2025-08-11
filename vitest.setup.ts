@@ -3,7 +3,6 @@
 import {vi} from 'vitest';
 import {TextEncoder} from 'util';
 import '@testing-library/jest-dom/vitest';
-import '@testing-library/jest-dom';
 
 global.TextEncoder = global.TextEncoder || TextEncoder;
 global.TextDecoder = global.TextDecoder || TextDecoder;
