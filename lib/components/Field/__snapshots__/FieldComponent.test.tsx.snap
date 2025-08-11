@@ -1,4 +1,204 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Field Component > render field component with error - Some error, with label - Email, with id - email 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <label
+      class="field__label"
+      data-testid="fieldLabelTestId"
+      for="email"
+    >
+      Email
+    </label>
+    <input
+      autocomplete="off"
+      class="input error"
+      data-testid="inputTestId"
+      id="email"
+      name="input"
+      type="text"
+      value=""
+    />
+    <p
+      class="field__error"
+    >
+      Some error
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Field Component > render field component with error - Some error, with label - Email, without id 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <label
+      class="field__label"
+      data-testid="fieldLabelTestId"
+      for="input"
+    >
+      Email
+    </label>
+    <input
+      autocomplete="off"
+      class="input error"
+      data-testid="inputTestId"
+      id="input"
+      name="input"
+      type="text"
+      value=""
+    />
+    <p
+      class="field__error"
+    >
+      Some error
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Field Component > render field component with error - Some error, without label, with id - email 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <input
+      autocomplete="off"
+      class="input error"
+      data-testid="inputTestId"
+      id="email"
+      name="input"
+      type="text"
+      value=""
+    />
+    <p
+      class="field__error"
+    >
+      Some error
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Field Component > render field component with error - Some error, without label, without id 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <input
+      autocomplete="off"
+      class="input error"
+      data-testid="inputTestId"
+      id="input"
+      name="input"
+      type="text"
+      value=""
+    />
+    <p
+      class="field__error"
+    >
+      Some error
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Field Component > render field component without error, with label - Email, with id - email 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <label
+      class="field__label"
+      data-testid="fieldLabelTestId"
+      for="email"
+    >
+      Email
+    </label>
+    <input
+      autocomplete="off"
+      class="input"
+      data-testid="inputTestId"
+      id="email"
+      name="input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Field Component > render field component without error, with label - Email, without id 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <label
+      class="field__label"
+      data-testid="fieldLabelTestId"
+      for="input"
+    >
+      Email
+    </label>
+    <input
+      autocomplete="off"
+      class="input"
+      data-testid="inputTestId"
+      id="input"
+      name="input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Field Component > render field component without error, without label, with id - email 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <input
+      autocomplete="off"
+      class="input"
+      data-testid="inputTestId"
+      id="email"
+      name="input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Field Component > render field component without error, without label, without id 1`] = `
+<div>
+  <div
+    class="field"
+    data-testid="fieldTestId"
+  >
+    <input
+      autocomplete="off"
+      class="input"
+      data-testid="inputTestId"
+      id="input"
+      name="input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
 
 exports[`Field Component render field component with error - Some error, with label - Email, with id - email 1`] = `
 <div>

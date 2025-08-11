@@ -1,4 +1,120 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Filter Accordion Component > renders the filter accordion component and title, text correctly 1`] = `
+<div>
+  <div
+    class="filter-accordion"
+    data-testid="filterAccordionTestId"
+  >
+    <div
+      class="filter-accordion__block"
+    >
+      <h2
+        block="filter-accordion"
+        class="filter-accordion__title"
+      >
+        Test title
+      </h2>
+      <button
+        class="filter-accordion__button button button--small button--gray button--transparent"
+        data-testid="buttonTestId"
+        type="button"
+      >
+        Reset
+      </button>
+      <button
+        class="filter-accordion__arrow"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="filter-accordion__content"
+      style="height: 0px;"
+    >
+      <div
+        class="filter-accordion__body"
+      >
+        Test content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Filter Accordion Component > should close the content 1`] = `
+<div>
+  <div
+    class="filter-accordion"
+    data-testid="filterAccordionTestId"
+  >
+    <div
+      class="filter-accordion__block"
+    >
+      <h2
+        block="filter-accordion"
+        class="filter-accordion__title"
+      >
+        Test title
+      </h2>
+      <button
+        class="filter-accordion__button button button--small button--gray button--transparent"
+        data-testid="buttonTestId"
+        type="button"
+      >
+        Reset
+      </button>
+      <button
+        class="filter-accordion__arrow"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="filter-accordion__content"
+      style="height: 0px;"
+    >
+      <div
+        class="filter-accordion__body"
+      >
+        Test content
+      </div>
+    </div>
+  </div>
+</div>
+`;
 
 exports[`Filter Accordion Component renders the filter accordion component and title, text correctly 1`] = `
 <div>

@@ -1,4 +1,41 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavLink component > applies 'link-active' class when the link is active 1`] = `
+<div>
+  <a
+    aria-current="page"
+    class="nav-link _active"
+    data-discover="true"
+    href="/mock"
+  >
+    Active Link
+  </a>
+</div>
+`;
+
+exports[`NavLink component > does not apply 'link-active' class when the link is not active 1`] = `
+<div>
+  <a
+    class="nav-link"
+    data-discover="true"
+    href="/mock"
+  >
+    Test Link
+  </a>
+</div>
+`;
+
+exports[`NavLink component > renders correctly with given children 1`] = `
+<div>
+  <a
+    class="nav-link"
+    data-discover="true"
+    href="/test"
+  >
+    Test Link
+  </a>
+</div>
+`;
 
 exports[`NavLink component applies 'link-active' class when the link is active 1`] = `
 <div>

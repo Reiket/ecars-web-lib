@@ -6,10 +6,10 @@ import {Select} from '@/components/Select';
 
 const defaultProps = {
   options: selectOptionsMock,
-  onClick: jest.fn(),
-  handleSelect: jest.fn(),
-  onClickToOptions: jest.fn(),
-  onChange: jest.fn(),
+  onClick: vi.fn(),
+  handleSelect: vi.fn(),
+  onClickToOptions: vi.fn(),
+  onChange: vi.fn(),
   value: '',
   isOpen: true,
 };

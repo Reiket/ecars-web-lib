@@ -5,18 +5,20 @@ import type {ReactImageGalleryItem} from 'react-image-gallery';
 import {imagesMock} from '@/services/mocks';
 import {GALLERY_TEST_ID} from '@/components/Gallery/constants';
 
-jest.mock('react-image-gallery', () => {
-  return ({items}: {items: ReactImageGalleryItem[]}) => (
-    <div data-testid={GALLERY_TEST_ID}>
-      {items.map((item, index) => (
-        <img
-          key={index}
-          src={item.original}
-          alt="image-gallery"
-        />
-      ))}
-    </div>
-  );
+vi.mock('react-image-gallery', () => {
+  return {
+    default: ({items}: {items: ReactImageGalleryItem[]}) => (
+      <div data-testid={GALLERY_TEST_ID}>
+        {items.map((item, index) => (
+          <img
+            key={index}
+            src={item.original}
+            alt="image-gallery"
+          />
+        ))}
+      </div>
+    ),
+  };
 });
 
 describe('Gallery component', () => {
