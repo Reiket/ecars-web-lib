@@ -1,12 +1,17 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "noEmit": false,
+    "outDir": "dist",
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outDir": "dist",
-    "declarationDir": "dist/types"
+    "noEmit": false,
+    "module": "ESNext",
+    "target": "ES2019",
+    "declarationDir": "dist",
+    "isolatedModules": false,
+    "stripInternal": true,
+    "skipLibCheck": true
   },
   "include": ["lib"],
-  "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"]
+  "exclude": ["node_modules", "**/*.test.*", "**/*.spec.*"]
 }

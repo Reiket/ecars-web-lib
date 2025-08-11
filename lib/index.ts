@@ -5,7 +5,7 @@ export * from '@/services/icons';
 export * from '@/services/types';
 export * from '@/services/mocks';
 
-export type {CategoriesListType} from '@/components/Category/constants';
+export * from '@/components/Category/constants';
 export {withBlockClass} from '@/services/hoc/withBlockClass';
 export {useAccordionHeight} from '@/services/hooks/useAccordionHeight';
 export {useMatchMedia} from '@/services/hooks/useMatchMedia';

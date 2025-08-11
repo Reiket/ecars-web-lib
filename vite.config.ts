@@ -4,8 +4,15 @@ import dts from 'vite-plugin-dts';
 import {libInjectCss} from 'vite-plugin-lib-inject-css';
 import {codecovVitePlugin} from '@codecov/vite-plugin';
 import dotenv from 'dotenv';
+import pkg from './package.json';
 
 dotenv.config();
+
+const externalDeps = [
+  ...Object.keys(pkg.dependencies || {}),
+  ...Object.keys(pkg.peerDependencies || {}),
+  'react/jsx-runtime',
+];
 
 export default defineConfig({
   plugins: [
@@ -30,15 +37,14 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/index.ts'),
-      name: 'ecarsWebLib',
+      name: 'EcarsWebLib',
       fileName: (format) => `index.${format}.js`,
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime'],
+      external: externalDeps,
       output: {
-        entryFileNames: '[name].js',
-        assetFileNames: 'assets/[name][extname]',
+        exports: 'named',
       },
     },
     sourcemap: true,
