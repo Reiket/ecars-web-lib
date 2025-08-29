@@ -1,7 +1,6 @@
-import {ComponentProps} from 'react';
-import {Meta, StoryObj} from '@storybook/react';
-import {Field} from '../lib/components/Field';
-import {Input} from '../lib/components/Input/Input';
+import type {ComponentProps} from 'react';
+import type {Meta, StoryObj} from '@storybook/react';
+import {Field, Input} from '../lib';
 
 type StoryProps = ComponentProps<typeof Field>;
 

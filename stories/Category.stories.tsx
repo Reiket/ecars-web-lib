@@ -1,7 +1,6 @@
-import {ComponentProps} from 'react';
-import {Meta, StoryObj} from '@storybook/react';
-import {Category} from '../lib/components/Category/Category';
-import {CATEGORIES_LIST} from '../lib/components/Category/constants';
+import type {ComponentProps} from 'react';
+import type {Meta, StoryObj} from '@storybook/react';
+import {CATEGORIES_LIST, Category} from '../lib';
 
 type StoryProps = ComponentProps<typeof Category>;
 

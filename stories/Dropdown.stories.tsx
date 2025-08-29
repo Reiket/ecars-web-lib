@@ -1,8 +1,7 @@
-import {Meta, StoryObj} from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react';
 
 import type {ComponentProps} from 'react';
-import {dropdownOptionsMock} from '../lib/services/mocks';
-import {Dropdown} from '../lib/components/Dropdown';
+import {Dropdown, dropdownOptionsMock} from '../lib';
 import {useDropdown} from '../src/services/hooks/useDropdown';
 
 type StoryProps = ComponentProps<typeof Dropdown>;

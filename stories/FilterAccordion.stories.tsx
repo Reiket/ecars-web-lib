@@ -1,10 +1,10 @@
 import type {ComponentProps} from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
 import {accordionContentMock} from '../src/services/mocks';
-import type {AccordionItem} from '../lib/services/types';
+import type {AccordionItem} from '../lib';
+import {FilterAccordion} from '../lib';
 
 import {FilterAccordionExample} from '../src/components/FilterAccordionExample';
-import {FilterAccordion} from '../lib/components/FilterAccordion';
 
 type StoryProps = ComponentProps<typeof FilterAccordion> & {
   items: AccordionItem[];

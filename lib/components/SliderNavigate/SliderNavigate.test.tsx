@@ -3,7 +3,7 @@ import {SliderNavigate} from '@/components/SliderNavigate/SliderNavigate';
 import {
   NAVIGATE_BUTTON_PLACEMENT,
   NAVIGATE_BUTTON_TEST_ID,
-  SLIDER_NAVIGATE_TEST_ID,
+  SLIDER_NAVIGATE_TEST_ID
 } from '@/components/SliderNavigate/constants';
 import {NavigateButton} from '@/components/SliderNavigate/components/NavigateButton';
 

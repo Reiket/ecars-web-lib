@@ -1,11 +1,10 @@
 import type {ComponentProps, ComponentType, ReactNode} from 'react';
 
-import {Meta, StoryObj} from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react';
 import {fn} from '@storybook/test';
-import {Button} from '../lib';
-import {BUTTON_COLOR, BUTTON_SIZE, ButtonAttributesType} from '../lib/components/Button/constants';
-import {ButtonWithIcon} from '../lib/components/ButtonWithIcon/ButtonWithIcon';
-import {Icons} from '../lib/services/icons';
+import {Button, ButtonWithIcon, Icons} from '../lib';
+import type {ButtonAttributesType} from '../lib/components/Button/constants';
+import {BUTTON_COLOR, BUTTON_SIZE} from '../lib/components/Button/constants';
 
 type StoryProps = ComponentProps<typeof Button> & {
   buttonText: string;
