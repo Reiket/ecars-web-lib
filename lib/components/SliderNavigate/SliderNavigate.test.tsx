@@ -17,7 +17,7 @@ describe('Slider Navigate component', () => {
     expect(sliderNavigateElement).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
-  test('renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty', () => {
+  test('renders no buttons if placement is empty', () => {
     vi.spyOn(Object, 'values').mockReturnValue([]);
     const {container} = render(<SliderNavigate />);
     const buttonElements = screen.queryAllByTestId(NAVIGATE_BUTTON_TEST_ID);
