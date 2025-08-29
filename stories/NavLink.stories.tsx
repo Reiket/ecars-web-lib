@@ -1,6 +1,6 @@
-import {ComponentProps} from 'react';
-import {Meta, StoryObj} from '@storybook/react';
-import {NavLink} from '../lib/components/NavLink/NavLink';
+import type {ComponentProps} from 'react';
+import type {Meta, StoryObj} from '@storybook/react';
+import {NavLink} from '../lib';
 import {MemoryRouter} from 'react-router';
 import {MOCK_ROUTE_LINK} from '../lib/components/NavLink/constants';
 

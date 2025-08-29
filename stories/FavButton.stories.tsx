@@ -1,7 +1,7 @@
-import {ComponentProps} from 'react';
-import {Meta, StoryObj} from '@storybook/react';
+import type {ComponentProps} from 'react';
+import type {Meta, StoryObj} from '@storybook/react';
 import {fn} from '@storybook/test';
-import {FavButton} from '../lib/components/FavButton/FavButton';
+import {FavButton} from '../lib';
 import {FAV_BUTTON_TYPE} from '../lib/components/FavButton/constants';
 
 type StoryProps = ComponentProps<typeof FavButton>;

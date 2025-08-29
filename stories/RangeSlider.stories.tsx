@@ -1,6 +1,6 @@
 import type {ComponentProps} from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
-import {RangeSlider} from '../lib/components/RangeSlider/RangeSlider';
+import {RangeSlider} from '../lib';
 import {RangeSliderExample} from '../src/components/RangeSliderExample';
 
 type StoryProps = ComponentProps<typeof RangeSlider>;

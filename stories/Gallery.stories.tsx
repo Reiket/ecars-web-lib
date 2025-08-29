@@ -1,7 +1,6 @@
 import type {ComponentProps} from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
-import {Gallery} from '../lib/components/Gallery/Gallery';
-import {imagesMock} from '../lib/services/mocks';
+import {Gallery, imagesMock} from '../lib';
 
 type StoryProps = ComponentProps<typeof Gallery>;
 

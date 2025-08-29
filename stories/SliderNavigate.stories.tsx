@@ -1,6 +1,6 @@
-import {ComponentProps} from 'react';
-import {Meta, StoryObj} from '@storybook/react';
-import {SliderNavigate} from '../lib/components/SliderNavigate/SliderNavigate';
+import type {ComponentProps} from 'react';
+import type {Meta, StoryObj} from '@storybook/react';
+import {SliderNavigate} from '../lib';
 import {NavigateButton} from '../lib/components/SliderNavigate/components/NavigateButton';
 import {NAVIGATE_BUTTON_PLACEMENT} from '../lib/components/SliderNavigate/constants';
 

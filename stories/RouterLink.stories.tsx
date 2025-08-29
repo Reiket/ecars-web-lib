@@ -1,9 +1,7 @@
-import {ComponentProps, ComponentType} from 'react';
-import {Meta, StoryObj} from '@storybook/react';
-import {RouterLink} from '../lib/components/RouterLink/RouterLink';
+import type {ComponentProps, ComponentType} from 'react';
+import type {Meta, StoryObj} from '@storybook/react';
+import {Icons, LinkWithIcon, RouterLink} from '../lib';
 import {ROUTER_LINK_COLOR} from '../lib/components/RouterLink/constants';
-import {LinkWithIcon} from '../lib/components/LinkWithIcon/LinkWithIcon';
-import {Icons} from '../lib/services/icons';
 
 type StoryProps = ComponentProps<typeof RouterLink> & {
   linkText: string;

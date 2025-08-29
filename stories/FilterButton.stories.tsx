@@ -1,6 +1,6 @@
 import type {ComponentProps} from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
-import {FilterButton} from '../lib/components/FilterButton/FilterButton';
+import {FilterButton} from '../lib';
 
 type StoryProps = ComponentProps<typeof FilterButton> & {
   buttonText: string;
