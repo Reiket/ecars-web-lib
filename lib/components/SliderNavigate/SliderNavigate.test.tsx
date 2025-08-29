@@ -1,11 +1,11 @@
 import {cleanup, render, screen} from '@testing-library/react';
 import {SliderNavigate} from '@/components/SliderNavigate/SliderNavigate';
+import {NavigateButton} from '@/components/SliderNavigate/components/NavigateButton';
 import {
   NAVIGATE_BUTTON_PLACEMENT,
   NAVIGATE_BUTTON_TEST_ID,
   SLIDER_NAVIGATE_TEST_ID
 } from '@/components/SliderNavigate/constants';
-import {NavigateButton} from '@/components/SliderNavigate/components/NavigateButton';
 
 describe('Slider Navigate component', () => {
   afterEach(cleanup);
