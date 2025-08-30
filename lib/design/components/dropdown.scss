@@ -4,7 +4,7 @@
 @mixin dropdownActive() {
   .dropdown-menu {
     &__category {
-      background: s.get-color(s.$dropdownColors, "active-category");
+      background: var(--dropdown-active-category);
     }
     &__arrow {
       transform: scale(1, -1);
@@ -39,7 +39,11 @@
     align-items: center;
     gap: s.rem(4);
     border-radius: s.rem(4);
-    padding: s.rem(3);
+    padding: s.rem(3) s.rem(5);
+  }
+  &__category,
+  &__option {
+    color: var(--dropdown-category-color);
   }
   &__arrow {
     color: inherit;
@@ -69,7 +73,7 @@
     display: flex;
     align-items: center;
     gap: s.rem(5);
-    background: s.get-color(s.$dropdownColors, "option-background");
+    background: var(--dropdown-option-bg);
     cursor: pointer;
     transition: background 0.3s linear;
     > img {
@@ -85,12 +89,30 @@
     }
     @media (any-hover: hover) {
       &:hover {
-        background: s.get-color(s.$dropdownColors, "hover-option");
+        background: var(--dropdown-option-hover);
       }
     }
     &._selected-option {
-      background: s.get-color(s.$dropdownColors, "selected-option");
+      background: var(--dropdown-option-selected);
       cursor: default;
     }
+  }
+}
+
+.dropdown-menu {
+  &--light {
+    --dropdown-active-category: #{s.get-color(s.$dropdownColors, "active-category--light")};
+    --dropdown-option-bg: #{s.get-color(s.$dropdownColors, "option-background--light")};
+    --dropdown-option-hover: #{s.get-color(s.$dropdownColors, "hover-option--light")};
+    --dropdown-option-selected: #{s.get-color(s.$dropdownColors, "selected-option--light")};
+    --dropdown-category-color: #{s.get-color(s.$dropdownColors, "category-color--light")};
+  }
+
+  &--dark {
+    --dropdown-active-category: #{s.get-color(s.$dropdownColors, "active-category--dark")};
+    --dropdown-option-bg: #{s.get-color(s.$dropdownColors, "option-background--dark")};
+    --dropdown-option-hover: #{s.get-color(s.$dropdownColors, "hover-option--dark")};
+    --dropdown-option-selected: #{s.get-color(s.$dropdownColors, "selected-option--dark")};
+    --dropdown-category-color: #{s.get-color(s.$dropdownColors, "category-color--dark")};
   }
 }
