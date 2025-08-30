@@ -1,7 +1,7 @@
 import type {FC} from 'react';
 import type {ElementProps} from '@/services/types';
 import {cn} from '@/services/helpers';
-import type {DropdownProps} from './constants';
+import type {DropdownProps, DropdownThemeType} from './constants';
 import {DROPDOWN_TEST_ID} from './constants';
 import {useClickOutside} from '@/services/hooks/useClickOutside';
 import {Dropdown} from '@/components/Dropdown';
@@ -10,6 +10,7 @@ export interface Props extends ElementProps, DropdownProps {
   handleOpen: () => void;
   onClickOutside: (isOpen: boolean) => void;
   isOpen: boolean;
+  theme: DropdownThemeType;
 }
 export const DropdownComponent: FC<Props> = ({
   category,
@@ -19,6 +20,7 @@ export const DropdownComponent: FC<Props> = ({
   handleOpen,
   isOpen,
   onClickOutside,
+  theme,
 }) => {
   const selectedOption = options.find((option) => option.value === category);
   const dropdownRef = useClickOutside(onClickOutside);
@@ -26,7 +28,7 @@ export const DropdownComponent: FC<Props> = ({
     <div
       data-testid={DROPDOWN_TEST_ID}
       ref={dropdownRef}
-      className={cn(block, 'dropdown-menu', {
+      className={cn(block, 'dropdown-menu', `dropdown-menu--${theme}`, {
         '_dropdown-active': isOpen,
       })}
     >

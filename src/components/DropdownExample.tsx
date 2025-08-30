@@ -8,6 +8,7 @@ export const DropdownExample: FC = () => {
     useDropdown(dropdownOptionsMock);
   return (
     <Dropdown
+      theme="dark"
       onClickOutside={handleOutside}
       isOpen={isDropdownOpen}
       handleOpen={handleOpenClick}
