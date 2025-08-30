@@ -3,7 +3,7 @@ import React, {cloneElement, isValidElement} from 'react';
 import IntrinsicElements = React.JSX.IntrinsicElements;
 
 export interface WithBlockProps {
-  block: string;
+  block?: string;
   children: ReactNode;
 }
 
@@ -33,14 +33,19 @@ const injectBlockProp = (node: ReactNode | ReactNode[], currentBlock: string): R
 };
 
 export const withBlockClass =
-  <P extends object>(Tag: ComponentType<P> | keyof IntrinsicElements, className: string): FC<P & WithBlockProps> =>
-  ({block, children, ...props}) => {
+  <P extends object>(
+    Tag: ComponentType<P> | keyof IntrinsicElements,
+    blockName: string,
+    className?: string,
+  ): FC<P & WithBlockProps> =>
+  ({children, block = blockName, ...props}) => {
     const childrenWithBlock = injectBlockProp(children, block);
 
     return (
       <Tag
-        className={className}
         {...(props as P)}
+        block={block}
+        className={[className, blockName].filter(Boolean).join(' ')}
       >
         {childrenWithBlock}
       </Tag>
