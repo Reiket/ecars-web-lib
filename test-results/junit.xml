@@ -1,357 +1,155 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="158" failures="0" errors="0" time="2.0155934">
-    <testsuite name="lib/components/Accordion/AccordionComponent.test.tsx" timestamp="2025-08-11T17:40:37.730Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.120757">
-        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; renders the accordion component and title, text correctly" time="0.0558794">
+<testsuites name="vitest tests" tests="55" failures="0" errors="0" time="0.966929">
+    <testsuite name="lib/components/FilterButton/FilterButton.test.tsx" timestamp="2025-08-30T16:38:48.238Z" hostname="ASUS" tests="3" failures="0" errors="0" skipped="0" time="0.1263694">
+        <testcase classname="lib/components/FilterButton/FilterButton.test.tsx" name="FilterButton component &gt; renders the filter component correctly" time="0.0399233">
         </testcase>
-        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; should open the content" time="0.0477091">
+        <testcase classname="lib/components/FilterButton/FilterButton.test.tsx" name="FilterButton component &gt; renders RightIcon component" time="0.003779">
         </testcase>
-        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; should close the content" time="0.0046832">
-        </testcase>
-        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; triggers onClick handler when title is clicked" time="0.0108832">
+        <testcase classname="lib/components/FilterButton/FilterButton.test.tsx" name="FilterButton component &gt; calls onClick when clicked" time="0.081255">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/Button/Button.test.tsx" timestamp="2025-08-11T17:40:37.734Z" hostname="ASUS" tests="60" failures="0" errors="0" skipped="0" time="0.3701866">
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size big, type submit and disabled" time="0.1068896">
+    <testsuite name="lib/components/Select/Select.test.tsx" timestamp="2025-08-30T16:38:48.240Z" hostname="ASUS" tests="11" failures="0" errors="0" skipped="0" time="0.148558">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is disabled has a placeholder" time="0.0563338">
+            <system-err>
+Warning: Each child in a list should have a unique &quot;key&quot; prop.
+
+Check the top-level render call using &lt;SelectBlock&gt;. It was passed a child from SelectComponent. See https://reactjs.org/link/warning-keys for more information.
+    at SelectInput (D:\IT-Programming\React\site\ecars-web-lib\lib\components\Select\components\SelectInput.tsx:3:24)
+    at D:\IT-Programming\React\site\ecars-web-lib\lib\services\hoc\withBlockClass.tsx:21:47
+    at div
+    at SelectWrapper (D:\IT-Programming\React\site\ecars-web-lib\lib\components\Select\components\SelectWrapper.tsx:5:26)
+    at SelectComponent (D:\IT-Programming\React\site\ecars-web-lib\lib\components\Select\SelectComponent.tsx:12:3)
+
+            </system-err>
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size big, type submit and disabled" time="0.0079001">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is disabled has no placeholder" time="0.0084945">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size big, type reset and disabled" time="0.0092101">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is not disabled has a placeholder" time="0.0069017">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size big, type reset and disabled" time="0.0070934">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is not disabled has no placeholder" time="0.0059384">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size big, type button and disabled" time="0.0078755">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; calls onChange and handleSelect when input changes" time="0.0156942">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size big, type button and disabled" time="0.0054442">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; calls onClick when block is clicked" time="0.0150941">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size medium, type submit and disabled" time="0.0065405">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; filters options when hasSearch is true and value is typed" time="0.0100275">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size medium, type submit and disabled" time="0.0069949">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; does not render list if search yields no match" time="0.0055938">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size medium, type reset and disabled" time="0.0080643">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; closes list on outside click" time="0.0066236">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size medium, type reset and disabled" time="0.0053384">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; displays the provided value in the input and highlights the corresponding option" time="0.0103117">
         </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size medium, type button and disabled" time="0.0059483">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size medium, type button and disabled" time="0.0027716">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size small, type submit and disabled" time="0.0029518">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size small, type submit and disabled" time="0.002395">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size small, type reset and disabled" time="0.0034805">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size small, type reset and disabled" time="0.0042495">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size small, type button and disabled" time="0.0048096">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color green, size small, type button and disabled" time="0.0044051">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size big, type submit and disabled" time="0.0063829">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size big, type submit and disabled" time="0.003177">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size big, type reset and disabled" time="0.0031122">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size big, type reset and disabled" time="0.0044926">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size big, type button and disabled" time="0.0038174">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size big, type button and disabled" time="0.0049705">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size medium, type submit and disabled" time="0.0056999">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size medium, type submit and disabled" time="0.0022103">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size medium, type reset and disabled" time="0.0034757">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size medium, type reset and disabled" time="0.0040108">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size medium, type button and disabled" time="0.0038468">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size medium, type button and disabled" time="0.0039054">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size small, type submit and disabled" time="0.003352">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size small, type submit and disabled" time="0.002532">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size small, type reset and disabled" time="0.0032098">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size small, type reset and disabled" time="0.002952">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size small, type button and disabled" time="0.0021345">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color white, size small, type button and disabled" time="0.0021267">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size big, type submit and disabled" time="0.003657">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size big, type submit and disabled" time="0.0062257">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size big, type reset and disabled" time="0.0042961">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size big, type reset and disabled" time="0.0040886">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size big, type button and disabled" time="0.0057387">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size big, type button and disabled" time="0.0040413">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size medium, type submit and disabled" time="0.0053027">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size medium, type submit and disabled" time="0.0035296">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size medium, type reset and disabled" time="0.0055523">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size medium, type reset and disabled" time="0.0021485">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size medium, type button and disabled" time="0.0018683">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size medium, type button and disabled" time="0.0017937">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size small, type submit and disabled" time="0.0046121">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size small, type submit and disabled" time="0.0043986">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size small, type reset and disabled" time="0.0058034">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size small, type reset and disabled" time="0.0035362">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size small, type button and disabled" time="0.0023204">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; renders button with color gray, size small, type button and disabled" time="0.0058325">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; changes button text according to the children text" time="0.0057947">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; handles the click event" time="0.0096608">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; the onClick event does not fire when button is disabled" time="0.0033234">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; additional classes are not applied if the button is disabled" time="0.0018402">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; button has button-transparent if receive prop isTransparent" time="0.0019943">
-        </testcase>
-        <testcase classname="lib/components/Button/Button.test.tsx" name="Button component &gt; button has button-icon if receive prop withIcon" time="0.0015708">
+        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; opens the select when typing in the input" time="0.0052726">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" timestamp="2025-08-11T17:40:37.751Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.0594699">
-        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders component correctly" time="0.0331756">
+    <testsuite name="lib/components/Accordion/AccordionComponent.test.tsx" timestamp="2025-08-30T16:38:48.242Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.1179464">
+        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; renders the accordion component and title, text correctly" time="0.0438681">
         </testcase>
-        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders LeftIcon when provided" time="0.0113502">
+        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; should open the content" time="0.0521068">
         </testcase>
-        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders RightIcon when provided" time="0.007641">
+        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; should close the content" time="0.0069173">
         </testcase>
-        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders both LeftIcon and RightIcon when provided" time="0.0048483">
-        </testcase>
-    </testsuite>
-    <testsuite name="lib/components/Category/Category.test.tsx" timestamp="2025-08-11T17:40:37.753Z" hostname="ASUS" tests="3" failures="0" errors="0" skipped="0" time="0.0387163">
-        <testcase classname="lib/components/Category/Category.test.tsx" name="Category component &gt; renders category with guides-category" time="0.0297421">
-        </testcase>
-        <testcase classname="lib/components/Category/Category.test.tsx" name="Category component &gt; renders category with reviews-category" time="0.0037217">
-        </testcase>
-        <testcase classname="lib/components/Category/Category.test.tsx" name="Category component &gt; renders category with news-category" time="0.0034043">
+        <testcase classname="lib/components/Accordion/AccordionComponent.test.tsx" name="Accordion Component &gt; triggers onClick handler when title is clicked" time="0.0132392">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/Checkbox/CheckboxComponent.test.tsx" timestamp="2025-08-11T17:40:37.754Z" hostname="ASUS" tests="9" failures="0" errors="0" skipped="0" time="0.0907096">
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is checked, has an error and input has an error class" time="0.0457373">
+    <testsuite name="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" timestamp="2025-08-30T16:38:48.244Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.1374808">
+        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; renders the filter accordion component and title, text correctly" time="0.0558632">
+            <system-err>
+Warning: Each child in a list should have a unique &quot;key&quot; prop.
+
+Check the top-level render call using &lt;FilterAccordionBlock&gt;. It was passed a child from FilterAccordionComponent. See https://reactjs.org/link/warning-keys for more information.
+    at h2
+    at D:\IT-Programming\React\site\ecars-web-lib\lib\services\hoc\withBlockClass.tsx:21:47
+    at div
+    at FilterAccordionLayout (D:\IT-Programming\React\site\ecars-web-lib\lib\components\FilterAccordion\components\FilterAccordionLayout.tsx:4:34)
+    at FilterAccordionComponent (D:\IT-Programming\React\site\ecars-web-lib\lib\components\FilterAccordion\FilterAccordionComponent.tsx:4:37)
+
+            </system-err>
         </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is checked, has no error" time="0.0068391">
+        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; should open the content" time="0.0562642">
         </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is not checked, has an error and input has an error class" time="0.0055157">
+        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; should close the content" time="0.0052697">
         </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is not checked, has no error" time="0.0043204">
-        </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is checked, has an error and input has an error class" time="0.0036809">
-        </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is checked, has no error" time="0.0024544">
-        </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is not checked, has an error and input has an error class" time="0.0027593">
-        </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is not checked, has no error" time="0.0067666">
-        </testcase>
-        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; onChange event changed checked when user clicks on checkbox" time="0.0105359">
-        </testcase>
-    </testsuite>
-    <testsuite name="lib/components/Dropdown/Dropdown.test.tsx" timestamp="2025-08-11T17:40:37.757Z" hostname="ASUS" tests="5" failures="0" errors="0" skipped="0" time="0.0849284">
-        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; renders the dropdown component correctly" time="0.045697">
-        </testcase>
-        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; calls handleOpen when block is clicked" time="0.0153157">
-        </testcase>
-        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; closes list on outside click" time="0.0044833">
-        </testcase>
-        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; highlights the selected option correctly" time="0.0075173">
-        </testcase>
-        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; calls onSelect when an option is clicked" time="0.0095615">
+        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; triggers onClick handler when arrow is clicked" time="0.0184477">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/Field/FieldComponent.test.tsx" timestamp="2025-08-11T17:40:37.759Z" hostname="ASUS" tests="8" failures="0" errors="0" skipped="0" time="0.0805293">
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component with error - Some error, with label - Email, with id - email" time="0.0507794">
+    <testsuite name="lib/components/Pagination/Pagination.test.tsx" timestamp="2025-08-30T16:38:48.245Z" hostname="ASUS" tests="6" failures="0" errors="0" skipped="0" time="0.1015554">
+        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; renders component with all page buttons and arrows" time="0.0512695">
         </testcase>
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component with error - Some error, with label - Email, without id" time="0.0081591">
+        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; disables prev arrow on first page" time="0.0128799">
         </testcase>
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component without error, with label - Email, with id - email" time="0.0039801">
+        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; calls onPageClick when page button is clicked" time="0.0142595">
         </testcase>
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component without error, with label - Email, without id" time="0.0032287">
+        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; marks the current page as selected" time="0.0078985">
         </testcase>
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component with error - Some error, without label, with id - email" time="0.004274">
+        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; calls onPrevClick and onNextClick" time="0.0051867">
         </testcase>
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component with error - Some error, without label, without id" time="0.0035214">
-        </testcase>
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component without error, without label, with id - email" time="0.0020666">
-        </testcase>
-        <testcase classname="lib/components/Field/FieldComponent.test.tsx" name="Field Component &gt; render field component without error, without label, without id" time="0.0019459">
+        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; disables all buttons and arrows when loading" time="0.0074419">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/FavButton/FavButton.test.tsx" timestamp="2025-08-11T17:40:37.761Z" hostname="ASUS" tests="8" failures="0" errors="0" skipped="0" time="0.1521753">
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; renders button with type transparent and disabled" time="0.1080599">
+    <testsuite name="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" timestamp="2025-08-30T16:38:48.246Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.0697464">
+        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders component correctly" time="0.0442952">
         </testcase>
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; renders button with type transparent and disabled" time="0.0080446">
+        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders LeftIcon when provided" time="0.0112738">
         </testcase>
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; renders button with type circle and disabled" time="0.0093339">
+        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders RightIcon when provided" time="0.006448">
         </testcase>
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; renders button with type circle and disabled" time="0.0041682">
-        </testcase>
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; handles the click event" time="0.0073059">
-        </testcase>
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; the onClick event does not fire when button is disabled" time="0.0036065">
-        </testcase>
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; the active state when has prop isFavorite" time="0.0026686">
-        </testcase>
-        <testcase classname="lib/components/FavButton/FavButton.test.tsx" name="Fav Button component &gt; renders correct icon based on isFavorite prop" time="0.0069322">
+        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders both LeftIcon and RightIcon when provided" time="0.0053254">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/FilterButton/FilterButton.test.tsx" timestamp="2025-08-11T17:40:37.763Z" hostname="ASUS" tests="3" failures="0" errors="0" skipped="0" time="0.147544">
-        <testcase classname="lib/components/FilterButton/FilterButton.test.tsx" name="FilterButton component &gt; renders the filter component correctly" time="0.0421409">
+    <testsuite name="lib/components/Checkbox/CheckboxComponent.test.tsx" timestamp="2025-08-30T16:38:48.247Z" hostname="ASUS" tests="9" failures="0" errors="0" skipped="0" time="0.0952099">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is checked, has an error and input has an error class" time="0.0421869">
         </testcase>
-        <testcase classname="lib/components/FilterButton/FilterButton.test.tsx" name="FilterButton component &gt; renders RightIcon component" time="0.0055625">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is checked, has no error" time="0.0075778">
         </testcase>
-        <testcase classname="lib/components/FilterButton/FilterButton.test.tsx" name="FilterButton component &gt; calls onClick when clicked" time="0.097898">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is not checked, has an error and input has an error class" time="0.0107496">
         </testcase>
-    </testsuite>
-    <testsuite name="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" timestamp="2025-08-11T17:40:37.763Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.1172786">
-        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; renders the filter accordion component and title, text correctly" time="0.0525605">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is disabled, is not checked, has no error" time="0.0050128">
         </testcase>
-        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; should open the content" time="0.0436876">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is checked, has an error and input has an error class" time="0.0071248">
         </testcase>
-        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; should close the content" time="0.0098725">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is checked, has no error" time="0.0056374">
         </testcase>
-        <testcase classname="lib/components/FilterAccordion/FilterAccordionComponent.test.tsx" name="Filter Accordion Component &gt; triggers onClick handler when arrow is clicked" time="0.0093232">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is not checked, has an error and input has an error class" time="0.0038336">
         </testcase>
-    </testsuite>
-    <testsuite name="lib/components/Gallery/Gallery.test.tsx" timestamp="2025-08-11T17:40:37.764Z" hostname="ASUS" tests="2" failures="0" errors="0" skipped="0" time="0.1100435">
-        <testcase classname="lib/components/Gallery/Gallery.test.tsx" name="Gallery component &gt; renders Gallery component" time="0.0393191">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; renders checkbox is not disabled, is not checked, has no error" time="0.0035795">
         </testcase>
-        <testcase classname="lib/components/Gallery/Gallery.test.tsx" name="Gallery component &gt; renders all mock images" time="0.0689343">
+        <testcase classname="lib/components/Checkbox/CheckboxComponent.test.tsx" name="Checkbox component &gt; onChange event changed checked when user clicks on checkbox" time="0.0073059">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/Input/Input.test.tsx" timestamp="2025-08-11T17:40:37.765Z" hostname="ASUS" tests="11" failures="0" errors="0" skipped="0" time="0.0698104">
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is disabled has an error and input has an error class has a placeholder" time="0.0299786">
+    <testsuite name="lib/components/SliderNavigate/SliderNavigate.test.tsx" timestamp="2025-08-30T16:38:48.250Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.0396367">
+        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Slider Navigate component &gt; renders correctly" time="0.0301093">
         </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is disabled has an error and input has an error class has no placeholder" time="0.0041131">
+        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Slider Navigate component &gt; renders no buttons if placement is empty" time="0.0021537">
         </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is disabled has no error has a placeholder" time="0.0037864">
+        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Navigate Button component &gt; renders correctly with left placement" time="0.0036276">
         </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is disabled has no error has no placeholder" time="0.002215">
-        </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is not disabled has an error and input has an error class has a placeholder" time="0.0033099">
-        </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is not disabled has an error and input has an error class has no placeholder" time="0.002127">
-        </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is not disabled has no error has a placeholder" time="0.0015638">
-        </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input is not disabled has no error has no placeholder" time="0.0015661">
-        </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should input has a value which got in props" time="0.0058525">
-        </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; should onChange event updates value correctly" time="0.0084561">
-        </testcase>
-        <testcase classname="lib/components/Input/Input.test.tsx" name="Input component &gt; onChange event updates input value correctly when typing" time="0.0044592">
+        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Navigate Button component &gt; renders correctly with right placement" time="0.002283">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" timestamp="2025-08-11T17:40:37.768Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.0744572">
-        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders component correctly" time="0.0459054">
+    <testsuite name="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" timestamp="2025-08-30T16:38:48.252Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.0391403">
+        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders component correctly" time="0.0237737">
         </testcase>
-        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders LeftIcon when provided" time="0.0139507">
+        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders LeftIcon when provided" time="0.0075334">
         </testcase>
-        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders RightIcon when provided" time="0.0052594">
+        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders RightIcon when provided" time="0.0036636">
         </testcase>
-        <testcase classname="lib/components/LinkWithIcon/LinkWithIcon.test.tsx" name="LinkWithIcon component &gt; renders both LeftIcon and RightIcon when provided" time="0.0074672">
-        </testcase>
-    </testsuite>
-    <testsuite name="lib/components/Pagination/Pagination.test.tsx" timestamp="2025-08-11T17:40:37.769Z" hostname="ASUS" tests="6" failures="0" errors="0" skipped="0" time="0.1043092">
-        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; renders component with all page buttons and arrows" time="0.0496081">
-        </testcase>
-        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; disables prev arrow on first page" time="0.0138566">
-        </testcase>
-        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; calls onPageClick when page button is clicked" time="0.0135383">
-        </testcase>
-        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; marks the current page as selected" time="0.0074149">
-        </testcase>
-        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; calls onPrevClick and onNextClick" time="0.0071727">
-        </testcase>
-        <testcase classname="lib/components/Pagination/Pagination.test.tsx" name="Pagination component &gt; disables all buttons and arrows when loading" time="0.0095475">
+        <testcase classname="lib/components/ButtonWithIcon/ButtonWithIcon.test.tsx" name="ButtonWithIcon component &gt; renders both LeftIcon and RightIcon when provided" time="0.0028895">
         </testcase>
     </testsuite>
-    <testsuite name="lib/components/NavLink/NavLink.test.tsx" timestamp="2025-08-11T17:40:37.770Z" hostname="ASUS" tests="3" failures="0" errors="0" skipped="0" time="0.0634833">
-        <testcase classname="lib/components/NavLink/NavLink.test.tsx" name="NavLink component &gt; renders correctly with given children" time="0.0465059">
+    <testsuite name="lib/components/Dropdown/Dropdown.test.tsx" timestamp="2025-08-30T16:38:48.254Z" hostname="ASUS" tests="6" failures="0" errors="0" skipped="0" time="0.0912857">
+        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; renders the dropdown component correctly in dark theme" time="0.0466969">
         </testcase>
-        <testcase classname="lib/components/NavLink/NavLink.test.tsx" name="NavLink component &gt; applies &apos;link-active&apos; class when the link is active" time="0.0097371">
+        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; renders the dropdown component correctly in light theme" time="0.00816">
         </testcase>
-        <testcase classname="lib/components/NavLink/NavLink.test.tsx" name="NavLink component &gt; does not apply &apos;link-active&apos; class when the link is not active" time="0.0051717">
+        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; calls handleOpen when block is clicked" time="0.0150815">
         </testcase>
-    </testsuite>
-    <testsuite name="lib/components/RangeSlider/RangeSlider.test.tsx" timestamp="2025-08-11T17:40:37.771Z" hostname="ASUS" tests="2" failures="0" errors="0" skipped="0" time="0.0497972">
-        <testcase classname="lib/components/RangeSlider/RangeSlider.test.tsx" name="RangeSlider Component &gt; renders Range Slider component correctly" time="0.0397405">
+        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; closes list on outside click" time="0.0044539">
         </testcase>
-        <testcase classname="lib/components/RangeSlider/RangeSlider.test.tsx" name="RangeSlider Component &gt; renders with correct default range" time="0.008664">
+        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; highlights the selected option correctly" time="0.0055197">
         </testcase>
-    </testsuite>
-    <testsuite name="lib/components/RouterLink/RouterLink.test.tsx" timestamp="2025-08-11T17:40:37.771Z" hostname="ASUS" tests="7" failures="0" errors="0" skipped="0" time="0.0697278">
-        <testcase classname="lib/components/RouterLink/RouterLink.test.tsx" name="Router Link component &gt; renders links with green color" time="0.0338367">
-        </testcase>
-        <testcase classname="lib/components/RouterLink/RouterLink.test.tsx" name="Router Link component &gt; renders links with gray color" time="0.0054621">
-        </testcase>
-        <testcase classname="lib/components/RouterLink/RouterLink.test.tsx" name="Router Link component &gt; renders links with dark color" time="0.0052598">
-        </testcase>
-        <testcase classname="lib/components/RouterLink/RouterLink.test.tsx" name="Router Link component &gt; renders links with lightgray color" time="0.0033528">
-        </testcase>
-        <testcase classname="lib/components/RouterLink/RouterLink.test.tsx" name="Router Link component &gt; applies &quot;link-icon&quot; class when withIcon is true" time="0.0049525">
-        </testcase>
-        <testcase classname="lib/components/RouterLink/RouterLink.test.tsx" name="Router Link component &gt; renders an external link when &quot;href&quot; is provided" time="0.0037685">
-        </testcase>
-        <testcase classname="lib/components/RouterLink/RouterLink.test.tsx" name="Router Link component &gt; renders an internal link when &quot;to&quot; is provided" time="0.0109017">
-        </testcase>
-    </testsuite>
-    <testsuite name="lib/components/Select/Select.test.tsx" timestamp="2025-08-11T17:40:37.772Z" hostname="ASUS" tests="11" failures="0" errors="0" skipped="0" time="0.1355105">
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is disabled has a placeholder" time="0.0495111">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is disabled has no placeholder" time="0.0083792">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is not disabled has a placeholder" time="0.0067694">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; should input is not disabled has no placeholder" time="0.0041543">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; calls onChange and handleSelect when input changes" time="0.0164391">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; calls onClick when block is clicked" time="0.0103071">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; filters options when hasSearch is true and value is typed" time="0.0054731">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; does not render list if search yields no match" time="0.0061837">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; closes list on outside click" time="0.0067915">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; displays the provided value in the input and highlights the corresponding option" time="0.0136052">
-        </testcase>
-        <testcase classname="lib/components/Select/Select.test.tsx" name="Select Component &gt; opens the select when typing in the input" time="0.0057814">
-        </testcase>
-    </testsuite>
-    <testsuite name="lib/components/SliderNavigate/SliderNavigate.test.tsx" timestamp="2025-08-11T17:40:37.774Z" hostname="ASUS" tests="4" failures="0" errors="0" skipped="0" time="0.0761593">
-        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Slider Navigate component &gt; renders correctly" time="0.0568029">
-        </testcase>
-        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Slider Navigate component &gt; renders no buttons if NAVIGATE_BUTTON_PLACEMENT is empty" time="0.0051713">
-        </testcase>
-        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Navigate Button component &gt; renders correctly with left placement" time="0.0076546">
-        </testcase>
-        <testcase classname="lib/components/SliderNavigate/SliderNavigate.test.tsx" name="Navigate Button component &gt; renders correctly with right placement" time="0.004223">
+        <testcase classname="lib/components/Dropdown/Dropdown.test.tsx" name="Dropdown Component &gt; calls onSelect when an option is clicked" time="0.0087002">
         </testcase>
     </testsuite>
 </testsuites>

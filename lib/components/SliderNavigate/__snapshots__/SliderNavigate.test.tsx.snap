@@ -177,6 +177,15 @@ exports[`Slider Navigate component > renders no buttons if NAVIGATE_BUTTON_PLACE
 </div>
 `;
 
+exports[`Slider Navigate component > renders no buttons if placement is empty 1`] = `
+<div>
+  <div
+    class="slider-navigate"
+    data-testid="sliderNavigateTestId"
+  />
+</div>
+`;
+
 exports[`Slider Navigate component renders correctly 1`] = `
 <div>
   <div
