@@ -12,3 +12,10 @@ export interface DropdownProps {
 }
 
 export const DROPDOWN_TEST_ID = 'dropdownTestId';
+
+export const DROPDOWN_THEME = Object.freeze({
+  DARK: 'dark',
+  LIGHT: 'light',
+});
+
+export type DropdownThemeType = (typeof DROPDOWN_THEME)[keyof typeof DROPDOWN_THEME];

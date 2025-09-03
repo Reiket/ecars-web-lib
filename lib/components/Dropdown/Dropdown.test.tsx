@@ -1,6 +1,6 @@
 import {fireEvent, render, screen} from '@testing-library/react';
 import {dropdownOptionsMock} from '@/services/mocks';
-import {DROPDOWN_TEST_ID} from '@/components/Dropdown/constants';
+import {DROPDOWN_TEST_ID, DROPDOWN_THEME} from '@/components/Dropdown/constants';
 import {Dropdown} from '@/components/Dropdown';
 
 const defaultProps = {
@@ -10,14 +10,24 @@ const defaultProps = {
   isOpen: false,
   onClickOutside: vi.fn(),
   category: '1',
+  theme: DROPDOWN_THEME.LIGHT,
 };
 
 describe('Dropdown Component', () => {
-  test('renders the dropdown component correctly', () => {
-    const {container} = render(<Dropdown {...defaultProps} />);
-    const dropdownElement = screen.getByTestId(DROPDOWN_TEST_ID);
-    expect(dropdownElement).toBeInTheDocument();
-    expect(container).toMatchSnapshot();
+  const dropdownThemes = Object.values(DROPDOWN_THEME);
+  dropdownThemes.forEach((theme) => {
+    test(`renders the dropdown component correctly in ${theme} theme`, () => {
+      const {container} = render(
+        <Dropdown
+          {...defaultProps}
+          theme={theme}
+        />,
+      );
+      const dropdownElement = screen.getByTestId(DROPDOWN_TEST_ID);
+      expect(dropdownElement).toBeInTheDocument();
+      expect(dropdownElement).toHaveClass(`dropdown-menu--${theme}`);
+      expect(container).toMatchSnapshot();
+    });
   });
   test('calls handleOpen when block is clicked', () => {
     const {container} = render(

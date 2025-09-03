@@ -54,10 +54,16 @@ $galleryColors: (
   "arrow-background": #000,
 );
 $dropdownColors: (
-  "active-category": #c0bfbf,
-  "option-background": #e6e6e6,
-  "hover-option": #d3d3d3,
-  "selected-option": #c0bfbf,
+  "active-category--light": #c0bfbf,
+  "option-background--light": #e6e6e6,
+  "hover-option--light": #d3d3d3,
+  "selected-option--light": #c0bfbf,
+  "category-color--light": #1a1a1a,
+  "active-category--dark": #2c2b2b,
+  "option-background--dark": #2a2a2a,
+  "hover-option--dark": #333232,
+  "selected-option--dark": #232323,
+  "category-color--dark": #ffffff,
 );
 
 $linkColors: (
@@ -67,7 +73,7 @@ $linkColors: (
   "hover-dark": #484848,
   "gray": #484848,
   "hover-gray": #767676,
-  "hover-lightgray": #767676,
+  "hover-lightgray": #ffffff,
   "lightgray": #a3a3a3,
 );
 
