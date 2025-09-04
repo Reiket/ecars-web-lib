@@ -40,6 +40,11 @@
     gap: s.rem(4);
     border-radius: s.rem(4);
     padding: s.rem(3) s.rem(5);
+    > img {
+      width: s.rem(20);
+      height: s.rem(15);
+      border-radius: s.rem(8);
+    }
   }
   &__category,
   &__option {

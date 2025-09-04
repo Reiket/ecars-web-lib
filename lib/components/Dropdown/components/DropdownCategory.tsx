@@ -13,7 +13,7 @@ export const DropdownCategory: FC<Props> = ({item, handleOpen}) => (
     className="dropdown-menu__category"
   >
     {item?.label}
-    {item?.value}
+    {item?.name}
     <Icons.ArrowNarrowDown className="dropdown-menu__arrow" />
   </button>
 );

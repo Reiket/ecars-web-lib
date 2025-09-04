@@ -11,8 +11,9 @@ exports[`Dropdown Component > calls handleOpen when block is clicked 1`] = `
     >
       <button
         class="dropdown-menu__category"
+        data-value="1"
       >
-        1
+        Option 1
         <svg
           class="dropdown-menu__arrow"
           fill="currentColor"
@@ -38,15 +39,17 @@ exports[`Dropdown Component > calls handleOpen when block is clicked 1`] = `
     >
       <li
         class="dropdown-menu__option _selected-option"
+        data-value="1"
       >
          
-        1
+        Option 1
       </li>
       <li
         class="dropdown-menu__option"
+        data-value="2"
       >
          
-        2
+        Option 2
       </li>
     </ul>
   </div>
@@ -64,8 +67,9 @@ exports[`Dropdown Component > highlights the selected option correctly 1`] = `
     >
       <button
         class="dropdown-menu__category"
+        data-value="1"
       >
-        1
+        Option 1
         <svg
           class="dropdown-menu__arrow"
           fill="currentColor"
@@ -91,15 +95,17 @@ exports[`Dropdown Component > highlights the selected option correctly 1`] = `
     >
       <li
         class="dropdown-menu__option _selected-option"
+        data-value="1"
       >
          
-        1
+        Option 1
       </li>
       <li
         class="dropdown-menu__option"
+        data-value="2"
       >
          
-        2
+        Option 2
       </li>
     </ul>
   </div>
@@ -117,8 +123,9 @@ exports[`Dropdown Component > renders the dropdown component correctly in dark t
     >
       <button
         class="dropdown-menu__category"
+        data-value="1"
       >
-        1
+        Option 1
         <svg
           class="dropdown-menu__arrow"
           fill="currentColor"
@@ -144,15 +151,17 @@ exports[`Dropdown Component > renders the dropdown component correctly in dark t
     >
       <li
         class="dropdown-menu__option _selected-option"
+        data-value="1"
       >
          
-        1
+        Option 1
       </li>
       <li
         class="dropdown-menu__option"
+        data-value="2"
       >
          
-        2
+        Option 2
       </li>
     </ul>
   </div>
@@ -170,8 +179,9 @@ exports[`Dropdown Component > renders the dropdown component correctly in light 
     >
       <button
         class="dropdown-menu__category"
+        data-value="1"
       >
-        1
+        Option 1
         <svg
           class="dropdown-menu__arrow"
           fill="currentColor"
@@ -197,15 +207,17 @@ exports[`Dropdown Component > renders the dropdown component correctly in light 
     >
       <li
         class="dropdown-menu__option _selected-option"
+        data-value="1"
       >
          
-        1
+        Option 1
       </li>
       <li
         class="dropdown-menu__option"
+        data-value="2"
       >
          
-        2
+        Option 2
       </li>
     </ul>
   </div>

@@ -9,7 +9,10 @@ const defaultProps = {
   handleOpen: vi.fn(),
   isOpen: false,
   onClickOutside: vi.fn(),
-  category: '1',
+  selectedOption: {
+    name: 'Option 1',
+    value: '1',
+  },
   theme: DROPDOWN_THEME.LIGHT,
 };
 
@@ -51,11 +54,11 @@ describe('Dropdown Component', () => {
     expect(defaultProps.onClickOutside).toHaveBeenCalled();
   });
   test('highlights the selected option correctly', () => {
-    const selectedCategory = dropdownOptionsMock[0].value;
+    const selectedOption = dropdownOptionsMock[0];
     const {container} = render(
       <Dropdown
         {...defaultProps}
-        category={selectedCategory}
+        selectedOption={selectedOption}
         isOpen
       />,
     );
@@ -74,9 +77,11 @@ describe('Dropdown Component', () => {
     );
     const dropdownElement = screen.getByTestId(DROPDOWN_TEST_ID);
     const options = Array.from(dropdownElement.querySelectorAll('.dropdown-menu__option'));
-    const mockOptionValue = dropdownOptionsMock[0].value;
-    const mockOption = options[0];
-    fireEvent.click(mockOption);
-    expect(defaultProps.onSelect).toHaveBeenCalledWith(mockOptionValue);
+    const mockOption = dropdownOptionsMock[0];
+    const firstMockOption = options.at(0);
+    if (firstMockOption) {
+      fireEvent.click(firstMockOption);
+    }
+    expect(defaultProps.onSelect).toHaveBeenCalledWith(mockOption);
   });
 });

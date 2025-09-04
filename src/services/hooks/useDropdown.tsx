@@ -3,15 +3,16 @@ import {useMatchMedia} from '@/services/hooks/useMatchMedia';
 import type {DropdownOption} from '@/components/Dropdown/constants';
 
 interface UseDropdownResult {
-  selectedCategory: string;
+  selectedOption: DropdownOption;
   isDropdownOpen: boolean;
   handleOpenClick: () => void;
   handleOutside: (isOpen: boolean) => void;
-  handleSelect: (value: string) => void;
+  handleSelect: (option: DropdownOption) => void;
 }
 
 export const useDropdown = (options: DropdownOption[]): UseDropdownResult => {
-  const [selectedCategory, setSelectedCategory] = useState<string>(options[0].value);
+  const [firstOption] = options;
+  const [selectedOption, setSelectedOption] = useState<DropdownOption>(firstOption);
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const isCoarse = useMatchMedia('(pointer: coarse)');
 
@@ -25,15 +26,15 @@ export const useDropdown = (options: DropdownOption[]): UseDropdownResult => {
     setIsDropdownOpen(isOpen);
   };
 
-  const handleSelect = (value: string): void => {
-    setSelectedCategory(value);
+  const handleSelect = (option: DropdownOption): void => {
+    setSelectedOption(option);
     if (isCoarse) {
       setIsDropdownOpen(false);
     }
   };
 
   return {
-    selectedCategory,
+    selectedOption,
     isDropdownOpen,
     handleOpenClick,
     handleOutside,

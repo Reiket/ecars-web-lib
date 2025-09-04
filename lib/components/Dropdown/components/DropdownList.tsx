@@ -2,16 +2,15 @@ import type {FC} from 'react';
 import type {DropdownProps} from '@/components/Dropdown/constants';
 import {Dropdown} from '@/components/Dropdown';
 
-export const DropdownList: FC<DropdownProps> = ({category, options, onSelect}) => (
+export const DropdownList: FC<DropdownProps> = ({selectedOption, options, onSelect}) => (
   <ul className="dropdown-menu__list">
     {options.map((option) => {
-      const {value, label} = option;
-      const isSelected = value === category;
+      const {value} = option;
+      const isSelected = value === selectedOption.value;
       return (
         <Dropdown.Option
           key={value}
-          value={value}
-          label={label}
+          option={option}
           onSelect={onSelect}
           isSelected={isSelected}
         />

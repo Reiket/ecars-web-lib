@@ -2,12 +2,13 @@ import type {ReactNode} from 'react';
 
 export interface DropdownOption {
   value: string;
+  name: string;
   label?: ReactNode;
 }
 
 export interface DropdownProps {
-  onSelect: (value: string) => void;
-  category: string;
+  onSelect: (option: DropdownOption) => void;
+  selectedOption: DropdownOption;
   options: DropdownOption[];
 }
 

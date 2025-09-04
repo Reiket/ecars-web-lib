@@ -13,7 +13,7 @@ export interface Props extends ElementProps, DropdownProps {
   theme: DropdownThemeType;
 }
 export const DropdownComponent: FC<Props> = ({
-  category,
+  selectedOption,
   block,
   options,
   onSelect,
@@ -22,7 +22,6 @@ export const DropdownComponent: FC<Props> = ({
   onClickOutside,
   theme,
 }) => {
-  const selectedOption = options.find((option) => option.value === category);
   const dropdownRef = useClickOutside(onClickOutside);
   return (
     <div
@@ -41,7 +40,7 @@ export const DropdownComponent: FC<Props> = ({
       <Dropdown.List
         onSelect={onSelect}
         options={options}
-        category={category}
+        selectedOption={selectedOption}
       />
     </div>
   );

@@ -9,9 +9,11 @@ export const imagesMock = Array.from({length: 6}, (_) => ({
 
 export const dropdownOptionsMock = [
   {
+    name: 'Option 1',
     value: '1',
   },
   {
+    name: 'Option 2',
     value: '2',
   },
 ];

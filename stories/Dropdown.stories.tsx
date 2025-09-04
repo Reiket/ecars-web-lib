@@ -29,7 +29,7 @@ type Story = StoryObj<StoryProps>;
 
 export const Primary: Story = {
   render: ({...args}) => {
-    const {isDropdownOpen, handleOpenClick, handleOutside, selectedCategory, handleSelect} =
+    const {isDropdownOpen, handleOpenClick, handleOutside, selectedOption, handleSelect} =
       useDropdown(dropdownOptionsMock);
     return (
       <Dropdown
@@ -38,7 +38,7 @@ export const Primary: Story = {
         isOpen={isDropdownOpen}
         handleOpen={handleOpenClick}
         onSelect={handleSelect}
-        category={selectedCategory}
+        selectedOption={selectedOption}
       />
     );
   },

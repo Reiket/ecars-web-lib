@@ -4,7 +4,7 @@ import {dropdownOptionsMock} from '@/services/mocks';
 import {useDropdown} from '@src/services/hooks/useDropdown';
 
 export const DropdownExample: FC = () => {
-  const {isDropdownOpen, handleOpenClick, handleOutside, selectedCategory, handleSelect} =
+  const {isDropdownOpen, handleOpenClick, handleOutside, selectedOption, handleSelect} =
     useDropdown(dropdownOptionsMock);
   return (
     <Dropdown
@@ -13,7 +13,7 @@ export const DropdownExample: FC = () => {
       isOpen={isDropdownOpen}
       handleOpen={handleOpenClick}
       onSelect={handleSelect}
-      category={selectedCategory}
+      selectedOption={selectedOption}
       options={dropdownOptionsMock}
     />
   );

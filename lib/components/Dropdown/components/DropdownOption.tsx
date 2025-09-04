@@ -1,25 +1,27 @@
-import type {FC, ReactNode} from 'react';
+import type {FC} from 'react';
 import {cn} from '@/services/helpers';
+import type {DropdownOption as DropdownOptionType} from '@/components/Dropdown/constants';
 
 export interface Props {
   isSelected: boolean;
-  value: string;
-  label?: ReactNode;
-  onSelect: (value: string) => void;
+  option: DropdownOptionType;
+  onSelect: (option: DropdownOptionType) => void;
 }
 
-export const DropdownOption: FC<Props> = ({label, value, isSelected, onSelect}) => {
+export const DropdownOption: FC<Props> = ({option, isSelected, onSelect}) => {
+  const {label, value, name} = option;
   const handleSelect = () => {
-    onSelect(value);
+    onSelect(option);
   };
   return (
     <li
+      data-value={value}
       onClick={handleSelect}
       className={cn('', 'dropdown-menu__option', {
         '_selected-option': isSelected,
       })}
     >
-      {label && label} {value}
+      {label && label} {name}
     </li>
   );
 };
