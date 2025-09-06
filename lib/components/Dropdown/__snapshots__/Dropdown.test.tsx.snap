@@ -11,7 +11,6 @@ exports[`Dropdown Component > calls handleOpen when block is clicked 1`] = `
     >
       <button
         class="dropdown-menu__category"
-        data-value="1"
       >
         Option 1
         <svg
@@ -67,7 +66,6 @@ exports[`Dropdown Component > highlights the selected option correctly 1`] = `
     >
       <button
         class="dropdown-menu__category"
-        data-value="1"
       >
         Option 1
         <svg
@@ -123,7 +121,6 @@ exports[`Dropdown Component > renders the dropdown component correctly in dark t
     >
       <button
         class="dropdown-menu__category"
-        data-value="1"
       >
         Option 1
         <svg
@@ -179,7 +176,6 @@ exports[`Dropdown Component > renders the dropdown component correctly in light 
     >
       <button
         class="dropdown-menu__category"
-        data-value="1"
       >
         Option 1
         <svg
