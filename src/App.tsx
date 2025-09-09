@@ -22,6 +22,7 @@ import {DropdownExample} from '@src/components/DropdownExample';
 import {RangeSliderExample} from '@src/components/RangeSliderExample';
 import {SliderExample} from '@src/components/SliderExample';
 import {FilterAccordionExample} from '@src/components/FilterAccordionExample';
+import {Logo} from '@/components/Logo/Logo';
 
 export const App: FC = () => {
   return (
@@ -140,6 +141,9 @@ export const App: FC = () => {
       </Section>
       <Section title="Filter Accordion Example">
         <FilterAccordionExample items={accordionContentMock} />
+      </Section>
+      <Section title="Logo Example">
+        <Logo src="/" />
       </Section>
     </>
   );

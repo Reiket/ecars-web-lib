@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Logo Component > render components correctly with src attr 1`] = `
+<div>
+  <a
+    class="logo"
+  >
+    <img
+      alt="Logo"
+      src="https://example.com/logo.png"
+    />
+  </a>
+</div>
+`;
