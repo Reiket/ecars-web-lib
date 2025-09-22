@@ -26,8 +26,10 @@
     transition: transform 0.3s linear;
     transform-origin: bottom right;
   }
-  @media (any-hover: hover) {
-    @include navLinkState;
+  @media (any-hover: hover){
+     &:hover {
+       @include navLinkState;
+     }
   }
   &._active {
     @include navLinkState;

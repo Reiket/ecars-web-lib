@@ -1,7 +1,7 @@
 import {cleanup, render, screen} from '@testing-library/react';
 import {ROUTER_LINK_COLOR, ROUTER_LINK_TEST_ID} from '@/components/RouterLink/constants';
 import {RouterLink} from '@/components/RouterLink/RouterLink';
-import {MemoryRouter} from 'react-router';
+import {MemoryRouter} from 'react-router-dom';
 
 describe('Router Link component', () => {
   afterEach(cleanup);

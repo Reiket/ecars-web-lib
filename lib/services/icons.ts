@@ -7,7 +7,8 @@ import {
 import {FaCheck, FaTwitter} from 'react-icons/fa6';
 import {IoIosClose, IoLogoWhatsapp} from 'react-icons/io';
 import {FaFacebookF, FaYoutube} from 'react-icons/fa';
-import {AiFillInstagram} from 'react-icons/ai';
+import {AiFillHeart, AiFillInstagram, AiOutlineHeart} from 'react-icons/ai';
+import {RiAccountCircleLine} from 'react-icons/ri';
 
 export const Icons = {
   ArrowNarrowRight: MdOutlineKeyboardArrowRight,
@@ -21,4 +22,7 @@ export const Icons = {
   Instagram: AiFillInstagram,
   Whatsapp: IoLogoWhatsapp,
   Email: MdEmail,
+  Favorite: AiOutlineHeart,
+  FavoriteSolid: AiFillHeart,
+  Account: RiAccountCircleLine,
 };

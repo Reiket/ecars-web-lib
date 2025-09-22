@@ -1,9 +1,9 @@
 import type {FC, MouseEvent} from 'react';
-import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai';
 import {cn} from '@/services/helpers';
 import type {FavButtonType} from '@/components/FavButton/constants';
 import {FAV_BUTTON_TEST_ID} from '@/components/FavButton/constants';
 import type {ElementProps} from '@/services/types';
+import {Icons} from '@/services/icons';
 
 interface Props extends ElementProps {
   type: FavButtonType;
@@ -24,7 +24,7 @@ export const FavButton: FC<Props> = ({disabled, block, isFavorite, type, onClick
       onClick={onClick}
       type="button"
     >
-      {isFavorite ? <AiFillHeart /> : <AiOutlineHeart />}
+      {isFavorite ? <Icons.Favorite /> : <Icons.FavoriteSolid />}
     </button>
   );
 };

@@ -1,4 +1,4 @@
-import {NavLink as Link} from 'react-router';
+import {NavLink as Link} from 'react-router-dom';
 import type {FC, ReactNode} from 'react';
 import {cn} from '@/services/helpers';
 import type {ElementProps} from '@/services/types';

@@ -16,6 +16,8 @@ export {Category} from '@/components/Category/Category';
 export {Logo} from '@/components/Logo/Logo';
 export {Checkbox} from '@/components/Checkbox';
 export {Dropdown} from '@/components/Dropdown';
+export type {DropdownThemeType} from '@/components/Dropdown/constants';
+export type {RouterLinkColorType} from '@/components/RouterLink/constants';
 export {FavButton} from '@/components/FavButton/FavButton';
 export {Field} from '@/components/Field';
 export {FilterAccordion} from '@/components/FilterAccordion';

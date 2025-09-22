@@ -1,35 +1,45 @@
 import type {ComponentType, FC, ReactNode} from 'react';
-import React, {cloneElement, isValidElement} from 'react';
-import IntrinsicElements = React.JSX.IntrinsicElements;
+import {cloneElement, Fragment, isValidElement, JSX} from 'react';
+import IntrinsicElements = JSX.IntrinsicElements;
 
 export interface WithBlockProps {
   block?: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
-const injectBlockProp = (node: ReactNode | ReactNode[], currentBlock: string): ReactNode => {
+const injectBlockProp = (node: ReactNode, currentBlock: string): ReactNode => {
   if (!node) {
     return node;
   }
 
   if (Array.isArray(node)) {
-    return node.map((child) => injectBlockProp(child, currentBlock));
+    return node.map((child: ReactNode, index) => (
+      <Fragment key={index}>{injectBlockProp(child, currentBlock)}</Fragment>
+    ));
   }
 
-  if (!isValidElement(node)) {
-    return node;
+  if (isValidElement<WithBlockProps>(node)) {
+    const {block: childOwnBlock, children} = node.props;
+    const isDomElement = typeof node.type === 'string';
+
+    let nextBlock = currentBlock;
+    const propsToInject: Partial<WithBlockProps> = {};
+
+    if (!isDomElement) {
+      if (childOwnBlock) {
+        nextBlock = childOwnBlock;
+        propsToInject.block = childOwnBlock;
+      } else {
+        propsToInject.block = currentBlock;
+      }
+    }
+
+    const childrenWithBlock = injectBlockProp(children, nextBlock);
+
+    return cloneElement(node, propsToInject, childrenWithBlock);
   }
 
-  if (!isValidElement<{block?: string; children?: ReactNode}>(node)) {
-    return node;
-  }
-  const childBlock = node.props.block ?? currentBlock;
-  const propsToInject = node.props.block ? {} : {block: currentBlock};
-  const childrenWithBlock = node.props.children
-    ? injectBlockProp(node.props.children, childBlock)
-    : node.props.children;
-
-  return cloneElement(node, propsToInject, childrenWithBlock);
+  return node;
 };
 
 export const withBlockClass =
@@ -38,14 +48,19 @@ export const withBlockClass =
     blockName: string,
     className?: string,
   ): FC<P & WithBlockProps> =>
-  ({children, block = blockName, ...props}) => {
-    const childrenWithBlock = injectBlockProp(children, block);
+  ({children, block, ...props}) => {
+    const effectiveBlock = blockName;
+
+    const childrenWithBlock = injectBlockProp(children, effectiveBlock);
+    const isDomElement = typeof Tag === 'string';
+
+    const classes = [className, effectiveBlock].filter(Boolean).join(' ');
 
     return (
       <Tag
         {...(props as P)}
-        block={block}
-        className={[className, blockName].filter(Boolean).join(' ')}
+        {...(!isDomElement ? {block: block ?? effectiveBlock} : {})}
+        className={classes}
       >
         {childrenWithBlock}
       </Tag>
