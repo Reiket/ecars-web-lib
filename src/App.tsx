@@ -23,6 +23,7 @@ import {RangeSliderExample} from '@src/components/RangeSliderExample';
 import {SliderExample} from '@src/components/SliderExample';
 import {FilterAccordionExample} from '@src/components/FilterAccordionExample';
 import {Logo} from '@/components/Logo/Logo';
+import {PasswordInput} from '@/components/PasswordInput';
 
 export const App: FC = () => {
   return (
@@ -144,6 +145,9 @@ export const App: FC = () => {
       </Section>
       <Section title="Logo Example">
         <Logo src="/" />
+      </Section>
+      <Section title="Password Input Example">
+        <PasswordInput />
       </Section>
     </>
   );

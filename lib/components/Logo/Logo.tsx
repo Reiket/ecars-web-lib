@@ -7,7 +7,10 @@ interface Props extends ElementProps {
 }
 
 export const Logo: FC<Props> = ({src, block}) => (
-  <a className={cn(block, 'logo')}>
+  <a
+    href="/"
+    className={cn(block, 'logo')}
+  >
     <img
       src={src}
       alt="Logo"

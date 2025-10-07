@@ -29,11 +29,6 @@ export default defineConfig({
       uploadToken: process.env.CODECOV_TOKEN,
     }),
   ],
-  server: {
-    fs: {
-      allow: ['lib', 'src'],
-    },
-  },
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/index.ts'),
