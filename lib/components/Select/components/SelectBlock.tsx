@@ -8,7 +8,7 @@ export interface Props {
 export const SelectBlock: FC<Props> = ({children, onClick}) => (
   <div
     onClick={onClick}
-    className={'select__block'}
+    className="select__block"
   >
     {children}
   </div>

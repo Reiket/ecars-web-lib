@@ -31,9 +31,10 @@ export const SelectComponent: FC<Props> = ({
   value,
   onChange,
   block,
+  disabled,
+  hasError,
   id = 'select',
   name = 'select',
-  disabled,
   hasSearch = false,
   ...props
 }) => {
@@ -48,12 +49,14 @@ export const SelectComponent: FC<Props> = ({
       isOpen={isOpen}
       block={block}
       disabled={disabled}
+      hasError={hasError}
     >
       <Select.Block
         onClick={onClick}
         block="select"
       >
         <Select.Input
+          hasError={hasError}
           disabled={disabled}
           id={id}
           name={name}

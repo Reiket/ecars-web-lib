@@ -355,7 +355,257 @@ exports[`Select Component > should input is disabled has a placeholder 1`] = `
 </div>
 `;
 
+exports[`Select Component > should input is disabled has a placeholder has error 1`] = `
+<div>
+  <div
+    class="select _open disabled error"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        disabled=""
+        id="select"
+        name="select"
+        placeholder="Select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Select Component > should input is disabled has a placeholder has not error 1`] = `
+<div>
+  <div
+    class="select _open disabled"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        disabled=""
+        id="select"
+        name="select"
+        placeholder="Select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Select Component > should input is disabled has no placeholder 1`] = `
+<div>
+  <div
+    class="select _open disabled"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        disabled=""
+        id="select"
+        name="select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Select Component > should input is disabled has no placeholder has error 1`] = `
+<div>
+  <div
+    class="select _open disabled error"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        disabled=""
+        id="select"
+        name="select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Select Component > should input is disabled has no placeholder has not error 1`] = `
 <div>
   <div
     class="select _open disabled"
@@ -479,7 +729,253 @@ exports[`Select Component > should input is not disabled has a placeholder 1`] =
 </div>
 `;
 
+exports[`Select Component > should input is not disabled has a placeholder has error 1`] = `
+<div>
+  <div
+    class="select _open error"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        id="select"
+        name="select"
+        placeholder="Select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Select Component > should input is not disabled has a placeholder has not error 1`] = `
+<div>
+  <div
+    class="select _open"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        id="select"
+        name="select"
+        placeholder="Select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Select Component > should input is not disabled has no placeholder 1`] = `
+<div>
+  <div
+    class="select _open"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        id="select"
+        name="select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Select Component > should input is not disabled has no placeholder has error 1`] = `
+<div>
+  <div
+    class="select _open error"
+    data-testid="selectTestId"
+  >
+    <div
+      class="select__block"
+    >
+      <input
+        autocomplete="off"
+        class="select__input input transparent"
+        data-testid="inputTestId"
+        id="select"
+        name="select"
+        readonly=""
+        type="text"
+        value=""
+      />
+      <svg
+        class="select__arrow"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <ul
+      class="select__options"
+    >
+      <li
+        class="select__option"
+      >
+        Option 1
+      </li>
+      <li
+        class="select__option"
+      >
+        Option 2
+      </li>
+      <li
+        class="select__option"
+      >
+        Another Option
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Select Component > should input is not disabled has no placeholder has not error 1`] = `
 <div>
   <div
     class="select _open"

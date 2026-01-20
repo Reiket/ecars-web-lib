@@ -7,13 +7,13 @@ import {
 } from 'react-icons/md';
 import {FaCheck, FaTwitter} from 'react-icons/fa6';
 import {IoIosClose, IoLogoWhatsapp} from 'react-icons/io';
-import {FaFacebookF, FaYoutube} from 'react-icons/fa';
+import {FaFacebookF, FaGoogle, FaYoutube} from 'react-icons/fa';
 import {AiFillHeart, AiFillInstagram, AiOutlineHeart} from 'react-icons/ai';
 import {RiAccountCircleLine} from 'react-icons/ri';
 import {IoEye, IoEyeOff} from 'react-icons/io5';
 import {GoQuestion} from 'react-icons/go';
 
-export const Icons = {
+export const Icons = Object.freeze({
   ArrowNarrowRight: MdOutlineKeyboardArrowRight,
   ArrowNarrowLeft: MdOutlineKeyboardArrowLeft,
   ArrowNarrowDown: MdOutlineKeyboardArrowDown,
@@ -32,4 +32,7 @@ export const Icons = {
   CloseEye: IoEyeOff,
   EmailOutline: MdOutlineEmail,
   CircleQuestion: GoQuestion,
-};
+  Google: FaGoogle,
+});
+
+export type IconsType = (typeof Icons)[keyof typeof Icons];

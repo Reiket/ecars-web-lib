@@ -1,14 +1,16 @@
 import '@/global.scss';
 
 export * from '@/services/helpers';
+
 export * from '@/services/icons';
 export * from '@/services/types';
 export * from '@/services/mocks';
-
 export * from '@/components/Category/constants';
+
 export type {DropdownOption} from '@/components/Dropdown/constants';
 export {withBlockClass} from '@/services/hoc/withBlockClass';
 export {useAccordionHeight} from '@/services/hooks/useAccordionHeight';
+export {PasswordInput} from '@/components/PasswordInput';
 export {useDropdown} from '@/services/hooks/useDropdown';
 export {useMatchMedia} from '@/services/hooks/useMatchMedia';
 export {useClickOutside} from '@/services/hooks/useClickOutside';

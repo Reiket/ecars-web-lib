@@ -7,6 +7,7 @@
 }
 
 .category {
+  width: max-content;
   padding: s.rem(2) s.rem(6);
   font-size: s.rem(12);
   line-height: math.div(16, 12);

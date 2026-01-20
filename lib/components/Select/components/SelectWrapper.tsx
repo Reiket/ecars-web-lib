@@ -9,9 +9,17 @@ export interface Props extends ElementProps {
   onClickOutside: (isOpen: boolean) => void;
   isOpen: boolean;
   disabled?: boolean;
+  hasError?: boolean;
 }
 
-export const SelectWrapper: FC<Props> = ({children, isOpen, onClickOutside, block, disabled = false}) => {
+export const SelectWrapper: FC<Props> = ({
+  children,
+  isOpen,
+  onClickOutside,
+  block,
+  disabled = false,
+  hasError = false,
+}) => {
   const selectRef = useClickOutside(onClickOutside);
   return (
     <div
@@ -20,6 +28,7 @@ export const SelectWrapper: FC<Props> = ({children, isOpen, onClickOutside, bloc
       className={cn(block, 'select', {
         '_open': isOpen,
         'disabled': disabled,
+        'error': hasError,
       })}
     >
       {children}

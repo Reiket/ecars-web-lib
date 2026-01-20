@@ -1,10 +1,12 @@
 import type {ComponentType, FC, ReactNode} from 'react';
-import {cloneElement, Fragment, isValidElement, JSX} from 'react';
+import {cloneElement, Fragment, isValidElement} from 'react';
+import {JSX} from 'react/jsx-runtime';
 import IntrinsicElements = JSX.IntrinsicElements;
 
 export interface WithBlockProps {
   block?: string;
   children?: ReactNode;
+  className?: string;
 }
 
 const injectBlockProp = (node: ReactNode, currentBlock: string): ReactNode => {
@@ -43,24 +45,19 @@ const injectBlockProp = (node: ReactNode, currentBlock: string): ReactNode => {
 };
 
 export const withBlockClass =
-  <P extends object>(
-    Tag: ComponentType<P> | keyof IntrinsicElements,
-    blockName: string,
-    className?: string,
-  ): FC<P & WithBlockProps> =>
-  ({children, block, ...props}) => {
+  <P extends object>(Tag: ComponentType<P> | keyof IntrinsicElements, blockName: string): FC<P & WithBlockProps> =>
+  ({children, block: parentBlock, ...props}) => {
     const effectiveBlock = blockName;
-
     const childrenWithBlock = injectBlockProp(children, effectiveBlock);
     const isDomElement = typeof Tag === 'string';
 
-    const classes = [className, effectiveBlock].filter(Boolean).join(' ');
+    const finalClasses = [parentBlock].filter(Boolean).join(' ');
 
     return (
       <Tag
         {...(props as P)}
-        {...(!isDomElement ? {block: block ?? effectiveBlock} : {})}
-        className={classes}
+        {...(!isDomElement ? {block: effectiveBlock} : {})}
+        className={finalClasses}
       >
         {childrenWithBlock}
       </Tag>

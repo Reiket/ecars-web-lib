@@ -1,26 +1,17 @@
-import type {ComponentType, FC, ReactNode} from 'react';
+import type {FC, ReactNode} from 'react';
 import type {ButtonProps} from '@/components/Button/Button';
 import {Button} from '@/components/Button/Button';
 import {LEFT_ICON_BUTTON_TEST_ID, RIGHT_ICON_BUTTON_TEST_ID} from '@/components/ButtonWithIcon/constants';
+import type {IconsType} from '@/services/icons';
 
-interface IconProps {
-  className?: string;
-}
-
-export interface ButtonIconProps<T> extends ButtonProps {
+export interface ButtonIconProps extends ButtonProps {
   children: ReactNode;
-  RightIcon?: ComponentType<T>;
-  LeftIcon?: ComponentType<T>;
+  RightIcon?: IconsType;
+  LeftIcon?: IconsType;
   className?: string;
 }
 
-export const ButtonWithIcon: FC<ButtonIconProps<IconProps>> = ({
-  RightIcon,
-  LeftIcon,
-  children,
-  className,
-  ...props
-}) => (
+export const ButtonWithIcon: FC<ButtonIconProps> = ({RightIcon, LeftIcon, children, className, ...props}) => (
   <Button
     withIcon
     {...props}

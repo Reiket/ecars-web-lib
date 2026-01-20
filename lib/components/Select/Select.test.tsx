@@ -20,31 +20,39 @@ const notFoundOptionSelector = '.select__option_empty';
 
 describe('Select Component', () => {
   const disabledOptions = [true, false];
+  const hasErrorOptions = [true, false];
   const placeholderOptions = ['Select', undefined];
   disabledOptions.forEach((disabled) => {
-    placeholderOptions.forEach((placeholder) => {
-      const disabledStatus = disabled ? 'is disabled' : 'is not disabled';
-      const hasPlaceholder = placeholder ? 'has a placeholder' : 'has no placeholder';
-      const testName = `should input ${disabledStatus} ${hasPlaceholder}`;
-      test(testName, () => {
-        const {container} = render(
-          <Select
-            {...defaultProps}
-            disabled={disabled}
-            placeholder={placeholder}
-          />,
-        );
-        const selectElement = screen.getByTestId(SELECT_TEST_ID);
-        const inputElement: HTMLInputElement = screen.getByTestId(INPUT_TEST_ID);
-        if (placeholder) {
-          expect(inputElement).toHaveAttribute('placeholder', placeholder);
-        }
-        expect(selectElement).toBeInTheDocument();
-        expect(inputElement.disabled).toBe(disabled);
-        if (disabled) {
-          expect(selectElement).toHaveClass('disabled');
-        }
-        expect(container).toMatchSnapshot();
+    hasErrorOptions.forEach((error) => {
+      placeholderOptions.forEach((placeholder) => {
+        const disabledStatus = disabled ? 'is disabled' : 'is not disabled';
+        const errorStatus = error ? 'has error' : 'has not error';
+        const hasPlaceholder = placeholder ? 'has a placeholder' : 'has no placeholder';
+        const testName = `should input ${disabledStatus} ${hasPlaceholder} ${errorStatus}`;
+        test(testName, () => {
+          const {container} = render(
+            <Select
+              {...defaultProps}
+              disabled={disabled}
+              hasError={error}
+              placeholder={placeholder}
+            />,
+          );
+          const selectElement = screen.getByTestId(SELECT_TEST_ID);
+          const inputElement: HTMLInputElement = screen.getByTestId(INPUT_TEST_ID);
+          if (placeholder) {
+            expect(inputElement).toHaveAttribute('placeholder', placeholder);
+          }
+          expect(selectElement).toBeInTheDocument();
+          expect(inputElement.disabled).toBe(disabled);
+          if (disabled) {
+            expect(selectElement).toHaveClass('disabled');
+          }
+          if (error) {
+            expect(selectElement).toHaveClass('error');
+          }
+          expect(container).toMatchSnapshot();
+        });
       });
     });
   });

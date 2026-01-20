@@ -149,6 +149,15 @@ export const App: FC = () => {
       <Section title="Password Input Example">
         <PasswordInput />
       </Section>
+      <Section title="Field Example">
+        <Field
+          error="Some error"
+          label="Email"
+          id="input_email"
+        >
+          <Checkbox />
+        </Field>
+      </Section>
     </>
   );
 };
