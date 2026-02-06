@@ -1,6 +1,6 @@
 {
   "name": "ecars-web-lib",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "private": false,
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -106,7 +106,10 @@
     "react-router": "^7.2.0",
     "react-router-dom": "^7.0.1"
   },
-  "repository": "https://github.com/Reiket/ecars-web-lib.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reiket/ecars-web-lib.git"
+  },
   "author": "Reiket <olinyko2607@gmail.com>",
   "license": "MIT",
   "publishConfig": {
