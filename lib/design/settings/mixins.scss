@@ -59,3 +59,30 @@
     border-color: $errorColor;
   }
 }
+
+@mixin buttonCategoryHover($background, $color) {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background;
+    border-radius: 30px;
+    z-index: -1;
+    transform: scale(0.3, 1);
+    opacity: 0;
+    transition: all 0.25s linear 0s;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      color: $color;
+      &:before {
+        transform: scale(1, 1);
+        opacity: 1;
+      }
+    }
+  }
+}

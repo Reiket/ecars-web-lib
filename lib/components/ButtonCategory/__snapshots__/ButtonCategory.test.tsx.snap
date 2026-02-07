@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ButtonCategory Component > renders correctly when isActive is false 1`] = `
+<div>
+  <button
+    class="button-category"
+    data-testid="buttonCategoryTestId"
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`ButtonCategory Component > renders correctly when isActive is true 1`] = `
+<div>
+  <button
+    class="button-category _active"
+    data-testid="buttonCategoryTestId"
+  >
+    button
+  </button>
+</div>
+`;
