@@ -1,8 +1,8 @@
-import type {ComponentProps, ComponentType, ReactNode} from 'react';
+import type {ComponentProps, ReactNode} from 'react';
 
 import type {Meta, StoryObj} from '@storybook/react';
 import {fn} from '@storybook/test';
-import {Button, ButtonWithIcon, Icons} from '../lib';
+import {Button, ButtonWithIcon, Icons, IconsType} from '../lib';
 import type {ButtonAttributesType} from '../lib/components/Button/constants';
 import {BUTTON_COLOR, BUTTON_SIZE} from '../lib/components/Button/constants';
 
@@ -64,7 +64,7 @@ export const Primary: Story = {
   },
 };
 
-const createButtonWithIconStory = (LeftIcon?: ComponentType, RightIcon?: ComponentType) => {
+const createButtonWithIconStory = (LeftIcon?: IconsType, RightIcon?: IconsType) => {
   return {
     render: ({buttonText, ...args}: ButtonIconStoryProps) => (
       <ButtonWithIcon

@@ -1,0 +1,22 @@
+@use "sass:math";
+@use "../settings" as s;
+
+.button-category {
+  color: s.get-color(s.$buttonCategoryColor, "color");
+  font-weight: 500;
+  transition: color 0.3s linear;
+  position: relative;
+  padding: s.rem(8);
+  @include s.buttonCategoryHover(
+    s.get-color(s.$buttonCategoryColor, "hover-background"),
+    s.get-color(s.$buttonCategoryColor, "hover-color")
+  );
+  &._active {
+    color: s.get-color(s.$buttonCategoryColor, "active-color");
+    cursor: default;
+    &:before {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+}
