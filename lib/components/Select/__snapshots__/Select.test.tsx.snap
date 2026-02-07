@@ -366,7 +366,7 @@ exports[`Select Component > should input is disabled has a placeholder has error
     >
       <input
         autocomplete="off"
-        class="select__input input transparent"
+        class="select__input input error transparent"
         data-testid="inputTestId"
         disabled=""
         id="select"
@@ -554,7 +554,7 @@ exports[`Select Component > should input is disabled has no placeholder has erro
     >
       <input
         autocomplete="off"
-        class="select__input input transparent"
+        class="select__input input error transparent"
         data-testid="inputTestId"
         disabled=""
         id="select"
@@ -740,7 +740,7 @@ exports[`Select Component > should input is not disabled has a placeholder has e
     >
       <input
         autocomplete="off"
-        class="select__input input transparent"
+        class="select__input input error transparent"
         data-testid="inputTestId"
         id="select"
         name="select"
@@ -925,7 +925,7 @@ exports[`Select Component > should input is not disabled has no placeholder has 
     >
       <input
         autocomplete="off"
-        class="select__input input transparent"
+        class="select__input input error transparent"
         data-testid="inputTestId"
         id="select"
         name="select"
