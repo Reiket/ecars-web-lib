@@ -3,7 +3,7 @@ import {
   MdOutlineEmail,
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowLeft,
-  MdOutlineKeyboardArrowRight
+  MdOutlineKeyboardArrowRight,
 } from 'react-icons/md';
 import {FaCheck, FaTwitter} from 'react-icons/fa6';
 import {IoIosClose, IoLogoWhatsapp} from 'react-icons/io';
