@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ButtonCopy > renders "Copied!" text and is disabled when isCopied is true 1`] = `
+exports[`ButtonCopy Component > renders "Copied!" text and is disabled when isCopied is true 1`] = `
 <div>
   <button
     class="button button--small button--gray button--icon"
@@ -30,7 +30,7 @@ exports[`ButtonCopy > renders "Copied!" text and is disabled when isCopied is tr
 </div>
 `;
 
-exports[`ButtonCopy > renders with initial text and calls copy function on click 1`] = `
+exports[`ButtonCopy Component > renders with initial text and calls copy function on click 1`] = `
 <div>
   <button
     class="button button--small button--gray button--icon"
