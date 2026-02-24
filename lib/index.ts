@@ -37,3 +37,5 @@ export {SliderNavigate} from '@/components/SliderNavigate/SliderNavigate';
 export {Accordion} from '@/components/Accordion';
 export {ButtonWithIcon} from '@/components/ButtonWithIcon/ButtonWithIcon';
 export {Button} from './components/Button/Button';
+export {ButtonCategory} from './components/ButtonCategory/ButtonCategory';
+export {Loader} from './components/Loader/Loader';

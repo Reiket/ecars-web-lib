@@ -3,6 +3,7 @@ import React from 'react';
 import type {NavigateButtonPlacement} from '@/components/SliderNavigate/constants';
 import {NAVIGATE_BUTTON_TEST_ID} from '@/components/SliderNavigate/constants';
 import {Icons} from '@/services/icons';
+import {cn} from '@/services/helpers';
 
 interface Props {
   placement: NavigateButtonPlacement;
@@ -17,7 +18,7 @@ export const NavigateButton: FC<Props> = ({placement}) => (
   <button
     data-testid={NAVIGATE_BUTTON_TEST_ID}
     type="button"
-    className="slider-navigate__button"
+    className={cn('', `slider-navigate__button slider-navigate__button--${placement}`)}
   >
     {icons[placement]}
   </button>

@@ -1,0 +1,137 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loader Component > render component correctly 1`] = `
+<div>
+  <div
+    class="loader"
+  >
+    <svg
+      class="lp"
+      height="128px"
+      viewBox="0 0 128 128"
+      width="128px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <lineargradient
+          id="grad1"
+          x1="0"
+          x2="0"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0%"
+            stop-color="#000"
+          />
+          <stop
+            offset="100%"
+            stop-color="#fff"
+          />
+        </lineargradient>
+        <mask
+          id="mask1"
+        >
+          <rect
+            fill="url(#grad1)"
+            height="128"
+            width="128"
+            x="0"
+            y="0"
+          />
+        </mask>
+      </defs>
+      <g
+        fill="none"
+        stroke-linecap="round"
+        stroke-width="16"
+      >
+        <circle
+          class="lp__ring"
+          cx="64"
+          cy="64"
+          r="56"
+          stroke="#ddd"
+        />
+        <g
+          stroke="hsl(183,90%,40%)"
+        >
+          <polyline
+            class="lp__fall-line"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay1"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay2"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay3"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay4"
+            points="64,8 64,120"
+          />
+          <circle
+            class="lp__drops"
+            cx="64"
+            cy="64"
+            r="56"
+            transform="rotate(90,64,64)"
+          />
+          <circle
+            class="lp__worm"
+            cx="64"
+            cy="64"
+            r="56"
+            transform="rotate(-90,64,64)"
+          />
+        </g>
+        <g
+          mask="url(#mask1)"
+          stroke="hsl(93,90%,40%)"
+        >
+          <polyline
+            class="lp__fall-line"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay1"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay2"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay3"
+            points="64,8 64,120"
+          />
+          <polyline
+            class="lp__fall-line lp__fall-line--delay4"
+            points="64,8 64,120"
+          />
+          <circle
+            class="lp__drops"
+            cx="64"
+            cy="64"
+            r="56"
+            transform="rotate(90,64,64)"
+          />
+          <circle
+            class="lp__worm"
+            cx="64"
+            cy="64"
+            r="56"
+            transform="rotate(-90,64,64)"
+          />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
